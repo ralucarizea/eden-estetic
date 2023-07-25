@@ -1,0 +1,240 @@
+/* ----------------------------The Reason font -> Handwritten font */
+@font-face {
+  font-family: "TheReason";
+  font-weight: normal;
+  font-style: normal;
+  src: url("./TheReason.ttf") format("truetype");
+}
+/* ----------------------------Montserrat font -> sans serif */
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-style: normal;
+  src: url("./Montserrat-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-style: italic;
+  src: url("./Montserrat-ThinItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-style: normal;
+  src: url("./Montserrat-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-style: italic;
+  src: url("./Montserrat-ExtraLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+
+  font-weight: 300;
+  font-style: normal;
+  src: url("./Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: italic;
+  src: url("./Montserrat-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: italic;
+  src: url("./Montserrat-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  src: url("./Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: italic;
+  src: url("./Montserrat-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+  src: url("./Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: italic;
+  src: url("./Montserrat-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: italic;
+  src: url("./Montserrat-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-style: normal;
+  src: url("./Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-style: italic;
+  src: url("./Montserrat-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./Montserrat-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-style: italic;
+  src: url("./Montserrat-BlackItalic.ttf") format("truetype");
+}
+
+/* ----------------------------Arsenica font -> mild serif */
+@font-face {
+  font-family: "Arsenica";
+  font-weight: 100;
+  font-style: normal;
+  src: url("./ArsenicaTrial-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Arsenica";
+  font-weight: 100;
+  font-style: italic;
+  src: url("./ArsenicaTrial-ThinItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arsenica";
+  font-weight: 300;
+  font-style: normal;
+  src: url("./ArsenicaTrial-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arsenica";
+  font-weight: 300;
+  font-style: italic;
+  src: url("./ArsenicaTrial-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arsenica";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./ArsenicaTrial-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arsenica";
+  font-weight: 500;
+  font-style: normal;
+  src: url("./ArsenicaTrial-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arsenica";
+  font-weight: 500;
+  font-style: italic;
+  src: url("./ArsenicaTrial-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Arsenica";
+  font-weight: 600;
+  font-style: normal;
+  src: url("./ArsenicaTrial-Demibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arsenica";
+  font-weight: 600;
+  font-style: italic;
+  src: url("./ArsenicaTrial-DemiboldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Arsenica";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./ArsenicaTrial-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arsenica";
+  font-weight: 700;
+  font-style: italic;
+  src: url("./ArsenicaTrial-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Arsenica";
+  font-weight: 800;
+  font-style: normal;
+  src: url("./ArsenicaTrial-Extrabold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arsenica";
+  font-weight: 800;
+  font-style: italic;
+  src: url("./ArsenicaTrial-ExtraboldItalic.ttf") format("truetype");
+}
+
+/* ----------------------------Rollgates Luxury font -> mild serif */
+
+@font-face {
+  font-family: "RollgatesLuxury";
+  font-weight: normal;
+  font-style: normal;
+  src: url("./RollgatesLuxury.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RollgatesLuxury";
+  font-weight: normal;
+  font-style: italic;
+  src: url("./RollgatesLuxuryItalic.ttf") format("truetype");
+}
+
+/* ----------------------------Heroeau font -> display serif */
+@font-face {
+  font-family: "Heroeau";
+  font-weight: normal;
+  src: url("./HeroeauElegant.ttf") format("truetype");
+}
