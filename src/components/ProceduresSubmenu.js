@@ -1,4 +1,3 @@
-
 // import { Link } from "react-router-dom";
 import { VscArrowRight } from "react-icons/vsc";
 
@@ -8,9 +7,9 @@ import {
   productMenuGridColNumber,
   green,
   beige,
-  translatedTags
+  translatedTags,
 } from "../assets/constants/constants";
-import {AccordionBox} from '../assets/constants/styledcomponents';
+import { AccordionBox } from "../assets/constants/styledcomponents";
 
 import ProceduresCard from "./ProceduresCard";
 import DynamicCheckboxGroup from "./DynamicCheckboxGroup";
@@ -24,7 +23,6 @@ import {
   AccordionIcon,
   Grid,
   GridItem,
-
 } from "@chakra-ui/react";
 
 // const filtre = {
@@ -33,7 +31,6 @@ import {
 //   ageRecommendation: [],
 //   effects: [],
 // }
-
 
 function mapOverChildArrays(obj) {
   const result = {};
@@ -57,7 +54,7 @@ const ProceduresSubmenu = ({ proceduresData, filterCategories }) => {
 
   const mappedCategories = mapOverChildArrays(filterCategories);
 
-  console.debug(mappedCategories)
+  console.debug(mappedCategories);
 
   return (
     <Grid
@@ -72,14 +69,16 @@ const ProceduresSubmenu = ({ proceduresData, filterCategories }) => {
           {Object.keys(filterCategories).map((category) => (
             <AccordionItem py="4px" key={category}>
               <AccordionButton px="0px">
-                <AccordionBox as="span">{translatedTags[category]?.translation || ''}</AccordionBox>
+                <AccordionBox as="span">
+                  {translatedTags[category]?.translation || ""}
+                </AccordionBox>
                 <AccordionIcon as={VscArrowRight} />
               </AccordionButton>
               <AccordionPanel pb={4}>
                 <DynamicCheckboxGroup categoryKey={category} />
               </AccordionPanel>
             </AccordionItem>
-          ))}     
+          ))}
         </Accordion>
       </GridItem>
       {proceduresData.map((procedure) => (

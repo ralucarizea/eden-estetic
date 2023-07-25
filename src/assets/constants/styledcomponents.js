@@ -6,6 +6,7 @@ export const AccordionBox = styled.div`
   text-align: left;
   font-weight: 500;
   letter-spacing: -1px;
+  // font-size: 15px;
 `;
 
 export const CaptionBox = styled.div`
