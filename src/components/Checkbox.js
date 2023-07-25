@@ -13,10 +13,9 @@ const { definePartsStyle, defineMultiStyleConfig } =
 const baseStyle = definePartsStyle({
   label: {
     fontFamily: "Montserrat",
-    fontSize: "Montserrat",
-    lineHeight: "14px",
+    lineHeight: "10px",
+    fontWeight: "400",
     letterSpacing: "-0.5px",
-    // boxSize: 24,
   },
   control: {
     height: 3,
@@ -25,6 +24,7 @@ const baseStyle = definePartsStyle({
     border:"0.5px solid",
     borderRadius: 0,
     borderColor: `${green}`,
+    
   },
 });
 
@@ -32,6 +32,7 @@ const baseStyle = definePartsStyle({
 const variantCircular = definePartsStyle({
   control: defineStyle({
     rounded: "full",
+  
   }),
 });
 const variantRectangular = definePartsStyle({
@@ -51,6 +52,14 @@ const sizes = {
       // marginLeft: 6
     }),
   }),
+  md: definePartsStyle({
+    control: defineStyle({}),
+    label: defineStyle({
+      fontSize: "16px",
+      
+    }),
+  }),
+
 };
 
 export const checkboxTheme = defineMultiStyleConfig({

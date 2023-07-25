@@ -10,7 +10,7 @@ export const translatedTags = {
   hairfall: {translation:"Subțierea/căderea părului", icon:""},
   dermatitis: {translation:"Afecțiuni dermatologice (dermatită)", icon:""},
   unevenness: {translation:"Asimetrii cosmetice", icon:""},
-  darkcircles: {translation:"Cearcăne & pungi sub ochi", icon:""},
+  darkcircles: {translation:"Cearcăne/pungi sub ochi", icon:""},
   doublechin: {translation:"Bărbie dublă", icon:""},
   dehydratedlips: {translation:"Buze crăpate/deteriorate", icon:""},
   scars: {translation:"Cicatrici, pete & zone hiperpigmentate", icon:""},

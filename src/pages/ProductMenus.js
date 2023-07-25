@@ -41,10 +41,12 @@ function ProductMenus() {
       >
         Servicii oferite
       </Flex>
+
       <Tabs
         fontFamily="Montserrat"
         fontSize="16px"
         size="md"
+        borderColor={green}
         align="center"
         variant="enclosed"
       >
@@ -63,10 +65,13 @@ function ProductMenus() {
           <TabPanel p="0px">
             <DiagnosisSubmenu />
           </TabPanel>
-          <TabPanel>
-            <ProceduresSubmenu proceduresData={servicesData.services.procedures} filterCategories={servicesData.categories}/>
+          <TabPanel p="0px" pt="48px">
+            <ProceduresSubmenu
+              proceduresData={servicesData.services.procedures}
+              filterCategories={servicesData.categories}
+            />
           </TabPanel>
-          <TabPanel>
+          <TabPanel p="0px">
             <CoursesSubmenu />
           </TabPanel>
         </TabPanels>

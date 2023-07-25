@@ -10,7 +10,7 @@ import {
   translatedTags,
 } from "../assets/constants/constants";
 import { AccordionBox } from "../assets/constants/styledcomponents";
-
+import { withMyFilterContext } from "../assets/context/FilterContext";
 import ProceduresCard from "./ProceduresCard";
 import DynamicCheckboxGroup from "./DynamicCheckboxGroup";
 
@@ -43,28 +43,21 @@ function mapOverChildArrays(obj) {
 }
 
 const ProceduresSubmenu = ({ proceduresData, filterCategories }) => {
-  //   const [filteredServices, _] = useState(proceduresData)
-
-  // useEffect(() => {
-  //   filteredServices.filter(....)
-  // }, [filtre])
-
   console.debug(proceduresData);
   console.debug(filterCategories);
-
   const mappedCategories = mapOverChildArrays(filterCategories);
-
   console.debug(mappedCategories);
 
   return (
     <Grid
       width="100%"
-      columnGap={"16px"}
+      columnGap={"24px"}
+      rowGap="24px"
       backgroundColor="inherit"
-      gridTemplateColumns={`4.6fr repeat(${productMenuGridColNumber}, 1fr)`}
+      gridTemplateColumns={`4fr repeat(${productMenuGridColNumber}, 1fr)`}
       gridAutoRows="auto"
     >
-      <GridItem pt="16px" colSpan="1" rowSpan="12" pr="8px" borderRight="1px">
+      <GridItem colSpan="1" rowSpan="12" pr="8px" borderRight="1px">
         <Accordion allowToggle fontFamily="Montserrat">
           {Object.keys(filterCategories).map((category) => (
             <AccordionItem py="4px" key={category}>
@@ -74,7 +67,7 @@ const ProceduresSubmenu = ({ proceduresData, filterCategories }) => {
                 </AccordionBox>
                 <AccordionIcon as={VscArrowRight} />
               </AccordionButton>
-              <AccordionPanel pb={4}>
+              <AccordionPanel pr="0px" pb={4}>
                 <DynamicCheckboxGroup categoryKey={category} />
               </AccordionPanel>
             </AccordionItem>
@@ -83,7 +76,7 @@ const ProceduresSubmenu = ({ proceduresData, filterCategories }) => {
       </GridItem>
       {proceduresData.map((procedure) => (
         <GridItem
-          mt="16px"
+          // mt="16px"
           colSpan={`${productMenuGridColNumber / 3}`}
           rowSpan="auto"
         >
@@ -93,4 +86,4 @@ const ProceduresSubmenu = ({ proceduresData, filterCategories }) => {
     </Grid>
   );
 };
-export default ProceduresSubmenu;
+export default withMyFilterContext(ProceduresSubmenu);
