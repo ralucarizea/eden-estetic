@@ -2,12 +2,17 @@
 import { Box, Icon, Text } from "@chakra-ui/react";
 //local imports
 import "../assets/fonts/fonts.css";
+import {green, beige} from '../assets/constants/constants'
 import ImageContainerSmall from "./ImageContainerSmall";
 import ImageContainerSmallBeige from "./ImageContainerSmallBeige";
 import { VscArrowRight } from "react-icons/vsc";
-import { ServiceGridItem, ServiceTitle, ImageWrapper } from "../assets/constants/styledcomponents";
+import {
+  ServiceGridItem,
+  ServiceTitle,
+  ImageWrapper,
+} from "../assets/constants/styledcomponents";
 
- function MainpageServiceSection({ element }) {
+function MainpageServiceSection({ element }) {
   return (
     <ServiceGridItem backgroundColor={element.backgroundColor}>
       <Box
@@ -33,7 +38,7 @@ import { ServiceGridItem, ServiceTitle, ImageWrapper } from "../assets/constants
         </Text>
       </Box>
       <ImageWrapper>
-        {element.backgroundColor !== "#F3EEE7" ? (
+        {element.backgroundColor !== beige ? (
           <ImageContainerSmallBeige />
         ) : (
           <ImageContainerSmall />

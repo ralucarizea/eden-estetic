@@ -15,6 +15,7 @@ export const CaptionBox = styled.div`
   border-right: 1px solid #6c8a96;
   &:last-child {
     border-right: 0px;
+    color: red;
   }
 `;
 export const CaptionHeading = styled.h1`
@@ -174,3 +175,10 @@ export const Caption = styled.div`
   padding-top: 16px;
   width: 90%;
 `;
+
+export const Ellipse = styled.img`
+  position: absolute;
+  width: 20%;
+  min-width: 184px;
+  rotate: 356.5deg;
+`
