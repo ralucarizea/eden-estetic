@@ -1,16 +1,12 @@
 //3rd party imports
 import {
   Box,
-  Text,
   Flex,
   FormControl,
   FormLabel,
   Input,
-  Button,
+  Text,
   Textarea,
-  InputLeftAddon,
-  InputGroup,
-  Select,
 } from "@chakra-ui/react";
 // import PhoneInput from "react-phone-number-input";
 import { React, useState } from "react";
@@ -26,7 +22,8 @@ const img =
   "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194172/edenestetic/visual2_awtoxi.png";
 
 export default function WhatsappForm() {
-  const [value, setValue] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
 
   return (
     <Flex height="140vh">
@@ -62,7 +59,7 @@ export default function WhatsappForm() {
           fontFamily={"TheReason"}
           position="absolute"
           right="3%"
-          top="25%"
+          top={["25%", "30%"]}
         >
           Trimite-ne un mesaj pe Whatsapp!
         </Text>
@@ -79,8 +76,15 @@ export default function WhatsappForm() {
           <FormControl py="12px">
             <FormLabel>Nume</FormLabel>
             <Input
+              placeholder="Mariana"
+              value={name}
+              onChange={(e) => setName(e?.currentTarget?.value)}
               variant={"flushed"}
               type="text"
+              _placeholder={{
+                color: "rgba(243,238,231, 0.5)",
+                fontStyle: "italic",
+              }}
               borderColor="rgba(243,238,231, 0.3)"
               _focusVisible={{}}
             />
@@ -102,12 +106,13 @@ export default function WhatsappForm() {
           <FormControl py="12px">
             <FormLabel>Mesajul tău</FormLabel>
             <Textarea
-              // placeholder="Bună, Mariana! Sunt interesată să programez o ședință de diagnoză & consultanță pentru săptămâna viitoare. Ai vreun loc disponibil?"
-              placeholder="Scrie mesajul dorit..."
+              placeholder="Bună, Mariana! Sunt interesată să programez o ședință de diagnoză & consultanță pentru săptămâna viitoare. Ai vreun loc disponibil?"
               _placeholder={{
                 color: "rgba(243,238,231, 0.5)",
                 fontStyle: "italic",
               }}
+              value={message}
+              onChange={(e) => setMessage(e?.currentTarget?.value)}
               variant={"flushed"}
               borderColor="rgba(243,238,231, 0.3)"
               _focusVisible={{}}
@@ -117,6 +122,9 @@ export default function WhatsappForm() {
         <ButtonEllipse
           primaryColor={beige}
           secondaryColor={green}
+          onClick={() =>
+            (window.location.href = `https://wa.me/40721234567?text=${message}`)
+          }
           textCTA={"Trimite mesajul"}
           maxHeight={"120"}
           maxWidth={"270"}

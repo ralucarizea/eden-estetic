@@ -1,12 +1,6 @@
-// --------------------3rd party imports
-import {
-  ChakraProvider,
-  extendTheme,
-} from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { Routes, Route } from "react-router-dom";
 import { checkboxTheme } from "./components/Checkbox";
-// --------------------local imports
-// //----pages
 import AboutPage from "./pages/AboutPage";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
@@ -18,6 +12,8 @@ import NotFound from "./pages/NotFound";
 
 // //-----components
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { beige, green } from "./assets/constants/constants";
 
 const theme = extendTheme({
   components: {
@@ -28,7 +24,6 @@ const theme = extendTheme({
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      {/* <BrowserRouter> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -40,6 +35,12 @@ function App() {
         <Route path="/consultance" element={<Consultance />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer
+        primaryColor={`${green}`}
+        secondaryColor={`${beige}`}
+        primaryReversed={"#937569"}
+        secondaryReversed={"#937569"}
+      />
     </ChakraProvider>
   );
 }

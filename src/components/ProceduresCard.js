@@ -1,12 +1,10 @@
 //3rd party imports
-import { Box, Text, Flex, Divider } from "@chakra-ui/react";
-// import { Link } from "react-router-dom";
-//local imports
+import { Box, Divider, Flex, Text } from "@chakra-ui/react";
 import "../assets/fonts/fonts.css";
-// import { Button } from "@chakra-ui/react";
-import { green, beige } from "../assets/constants/constants";
+import { beige } from "../assets/constants/constants";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const MotionBox = motion(Box);
 const gradient =
@@ -28,12 +26,25 @@ export default function ProductMenuCard({ procedure }) {
         border="1px"
         height="100%"
         width="100%"
-        backgroundImage={`url(${procedure.images.display})`}
-        backgroundSize={"cover"}
-        backgroundPosition={"left"}
+        // backgroundImage={`url(${procedure.images.display})`}
+        // backgroundSize={"cover"}
+        // backgroundPosition={"left"}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
+        <LazyLoadImage
+          src={procedure.images.display}
+          alt="Procedure Display"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "left",
+          }}
+        />
         {hover ? (
           <MotionBox
             height="100%"

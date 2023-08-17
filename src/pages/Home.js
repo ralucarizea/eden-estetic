@@ -12,8 +12,7 @@ import Promo from "../components/Promo.js";
 import MainpageCTABanner from "../components/MainpageCTABanner";
 import FAQ from "../components/FAQ";
 import WhatsappForm from "../components/WhatsappForm";
-import Footer from "../components/Footer";
-import { green, beige } from "../assets/constants/constants";
+import { beige, green } from "../assets/constants/constants";
 //-----other files
 import "../assets/fonts/fonts.css";
 //-------------constants
@@ -94,18 +93,6 @@ export default function Home() {
           color={`${beige}`}
         >
           <FAQ />
-        </GridItem>
-        <GridItem
-          backgroundColor={`${green}`}
-          // border={`0.5px solid ${beige}`}
-          color={`${beige}`}
-        >
-          <Footer
-            primaryColor={`${green}`}
-            secondaryColor={`${beige}`}
-            primaryReversed={"#937569"}
-            secondaryReversed={"#937569"}
-          />
         </GridItem>
       </Grid>
     </Box>

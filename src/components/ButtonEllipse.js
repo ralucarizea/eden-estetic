@@ -1,6 +1,5 @@
-import { Button, Image, Box, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { React } from "react";
-import { beige, green } from "../assets/constants/constants";
 import styled from "@emotion/styled";
 // import thin from "./../assets/images/thinLineEllipse--beige.svg";
 // import thick from "./../assets/images/thickLineEllipse-beige.svg";
@@ -41,7 +40,7 @@ const ThinLineEllipse = styled.div`
 const StyledButton = styled.button`
  
   color: ${(props) => props.primaryColor};
-  font-family: "Montserrat";
+  font-family: "Montserrat",serif;
   font-size: ${(props) => props.fontSize}px;
   z-index: 2;
   
@@ -54,6 +53,7 @@ function ButtonEllipse({
   maxWidth,
   maxHeight,
   fontSize,
+  ...rest
 }) {
   return (
     <>
@@ -69,7 +69,11 @@ function ButtonEllipse({
         height="10vh"
         justifyContent="center"
       >
-        <StyledButton secondaryColor={secondaryColor} fontSize={fontSize}>
+        <StyledButton
+          {...rest}
+          secondaryColor={secondaryColor}
+          fontSize={fontSize}
+        >
           {textCTA}
           <ThinLineEllipse maxHeight={maxHeight} maxWidth={maxWidth} />
         </StyledButton>
