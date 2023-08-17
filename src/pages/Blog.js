@@ -1,9 +1,7 @@
-import {  Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import BlogpageHeading from "../components/BlogpageHeading";
 import BlogpageCard from "../components/BlogpageCard";
-import Footer from "../components/Footer";
-
-
+import { beige } from "../assets/constants/constants";
 
 export const blogContent = [
   {
@@ -56,9 +54,6 @@ export const blogContent = [
   },
 ];
 
-const green = "#6c8a96";
-const beige = "#f3eee7";
-
 export default function Blog() {
   return (
     <Flex
@@ -68,13 +63,7 @@ export default function Blog() {
       flexDirection={"column"}
     >
       <BlogpageHeading />
-      <Flex
-        gap="8px"
-        flexDirection="row"
-        overflow={"hidden"}
-        pb="48px"
-      >
-        
+      <Flex gap="8px" flexDirection="row" overflow={"hidden"} pb="48px">
         <Flex width="min-content" gap="8px" flexDirection="column">
           <BlogpageCard post={blogContent[0]} />
           <BlogpageCard post={blogContent[1]} />
@@ -89,11 +78,6 @@ export default function Blog() {
           <BlogpageCard post={blogContent[5]} />
         </Flex>
       </Flex>
-      <Footer
-        primaryColor={`${green}`}
-        secondaryColor={`${beige}`}
-        primaryReversed={"#937569"}
-      />
     </Flex>
   );
 }
