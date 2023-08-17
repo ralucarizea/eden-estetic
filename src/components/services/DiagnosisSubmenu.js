@@ -8,19 +8,19 @@ import {
   Text,
   UnorderedList,
 } from "@chakra-ui/react";
-import "../assets/fonts/fonts.css";
-import thin from "../assets/images/thinLineEllipse.svg";
+import "../../assets/fonts/fonts.css";
+import thin from "../../assets/images/thinLineEllipse.svg";
 import {
   // productMenuGridColNumber,s
   green,
   beige,
   // translatedTags,
-} from "../assets/constants/constants";
+} from "../../assets/constants/constants";
 import {
   DiagnosisCaption,
   DiagnosisHeading,
   DiagnosisNumberedElement,
-} from "../assets/constants/styledcomponents";
+} from "../../assets/constants/styledcomponents";
 
 const DiagnosisSubmenu = () => {
   return (

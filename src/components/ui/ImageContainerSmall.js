@@ -1,8 +1,8 @@
 import { Image } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import thin  from "../assets/images/thinLineEllipse.svg";
-import ellipse from "../assets/images/tintedEllipse.svg";
-import { Ellipse } from "../assets/constants/styledcomponents";
+import thin  from "../../assets/images/thinLineEllipse.svg";
+import ellipse from "../../assets/images/tintedEllipse.svg";
+import { Ellipse } from "../../assets/constants/styledcomponents";
 
 export default function ImageContainerSmall() {
   return (

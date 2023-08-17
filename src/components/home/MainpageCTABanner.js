@@ -3,7 +3,7 @@ import { React } from "react";
 import { Box, Text, Icon } from "@chakra-ui/react";
 // import { VscArrowRight } from "react-icons/vsc";
 //local imports
-import "../assets/fonts/fonts.css";
+import "../../assets/fonts/fonts.css";
 
 export default function MainpageCTABanner() {
   return (

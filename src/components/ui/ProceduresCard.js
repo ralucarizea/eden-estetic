@@ -1,7 +1,7 @@
 //3rd party imports
 import { Box, Divider, Flex, Text } from "@chakra-ui/react";
-import "../assets/fonts/fonts.css";
-import { beige } from "../assets/constants/constants";
+import "../../assets/fonts/fonts.css";
+import { beige } from "../../assets/constants/constants";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";

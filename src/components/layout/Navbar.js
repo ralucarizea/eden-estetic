@@ -3,9 +3,9 @@ import {React} from "react";
 import { Flex, Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 // --------------------local imports
-import "../assets/fonts/fonts.css";
-import { NavbarButtonBox } from "../assets/constants/styledcomponents";
-import { ReactComponent as Logo } from "./../assets/images/logo-edenesteticwhite.svg";
+import "../../assets/fonts/fonts.css";
+import { NavbarButtonBox } from "../../assets/constants/styledcomponents";
+import { ReactComponent as Logo } from "../../assets/images/logo-edenesteticwhite.svg";
 //-------------constants
 
 function Navbar() {

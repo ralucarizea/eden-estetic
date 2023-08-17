@@ -1,9 +1,9 @@
 import { Box, Flex, Grid, GridItem, Text } from "@chakra-ui/react";
-import "../assets/fonts/fonts.css";
-import { green, beige } from "../assets/constants/constants";
-import Footer from "../components/Footer";
+import "../../assets/fonts/fonts.css";
+import { green, beige } from "../../assets/constants/constants";
+import Footer from "../layout/Footer";
 import styled from "@emotion/styled";
-import EllipseContainer from "./EllipseContainer";
+import EllipseContainer from "../ui/EllipseContainer";
 
 const CourseInfoBox = styled.div`
   display: flex;

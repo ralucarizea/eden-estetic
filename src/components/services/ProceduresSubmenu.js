@@ -1,19 +1,19 @@
 // import { Link } from "react-router-dom";
 import { VscArrowRight } from "react-icons/vsc";
 // --------------------local imports
-import "../assets/fonts/fonts.css";
+import "../../assets/fonts/fonts.css";
 import {
   productMenuGridColNumber,
   green,
   beige,
   translatedTags,
-} from "../assets/constants/constants";
-import { AccordionBox } from "../assets/constants/styledcomponents";
+} from "../../assets/constants/constants";
+import { AccordionBox } from "../../assets/constants/styledcomponents";
 import {
   useFilterContext,
   withMyFilterContext,
-} from "../assets/context/FilterContext";
-import ProceduresCard from "./ProceduresCard";
+} from "../../assets/context/FilterContext";
+import ProceduresCard from "../ui/ProceduresCard";
 import DynamicCheckboxGroup from "./DynamicCheckboxGroup";
 import { useAnimate, stagger, motion } from "framer-motion";
 

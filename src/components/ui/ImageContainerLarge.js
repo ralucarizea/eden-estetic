@@ -1,9 +1,9 @@
 
 import { Image } from "@chakra-ui/react";
 import {React} from "react";
-import thin from "./../assets/images/thinLineEllipse.svg";
-import thick from "./../assets/images/thickLineEllipse.svg";
-import ellipse from "../assets/images/tintedEllipse.svg";
+import thin from "../../assets/images/thinLineEllipse.svg";
+import thick from "../../assets/images/thickLineEllipse.svg";
+import ellipse from "../../assets/images/tintedEllipse.svg";
 // import {ellipse} from "../assets/images/tintedEllipse.svg";
 // import { MaskedImage } from "../assets/constants/styledcomponents";
 // import img from "./../assets/images/girl-nobg.png";

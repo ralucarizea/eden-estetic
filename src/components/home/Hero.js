@@ -3,7 +3,7 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import {React} from "react";
 //local imports
 // import img from "./../assets/images/edenEsteticHeroImage1.jpg";
-import "../assets/fonts/fonts.css";
+import "../../assets/fonts/fonts.css";
 
 const Hero = () => {
   return (

@@ -2,9 +2,9 @@
 import { Box } from "@chakra-ui/react";
 import {React} from "react";
 //local imports
-import { mainServiceCategories } from "../assets/constants/constants";
+import { mainServiceCategories } from "../../assets/constants/constants";
 import MainpageServiceSection from "./MainpageServiceSection";
-import "../assets/fonts/fonts.css";
+import "../../assets/fonts/fonts.css";
 
 const MainpageServicesMenu = () => {
   return (

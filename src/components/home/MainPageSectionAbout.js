@@ -1,14 +1,14 @@
 //3rd party imports
 import { Box, Flex, Text, Button } from "@chakra-ui/react";
 // local imports
-import ImageContainerLarge from "./ImageContainerLarge";
-import ButtonEllipse from "./ButtonEllipse";
-import "../assets/fonts/fonts.css";
+import ImageContainerLarge from "../ui/ImageContainerLarge";
+import ButtonEllipse from "../ui/ButtonEllipse";
+import "../../assets/fonts/fonts.css";
 import {
   StatNumbers,
   StatDescriber,
-} from "../assets/constants/styledcomponents";
-import { green, beige } from "../assets/constants/constants";
+} from "../../assets/constants/styledcomponents";
+import { green, beige } from "../../assets/constants/constants";
 //constants
 
 const About = () => {

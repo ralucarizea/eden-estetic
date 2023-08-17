@@ -12,9 +12,9 @@ import {
 } from "@chakra-ui/react";
 import { VscArrowRight } from "react-icons/vsc";
 //local imports
-import "../assets/fonts/fonts.css";
+import "../../assets/fonts/fonts.css";
 // import { Question } from "../assets/constants/styledcomponents";
-import { green, faqMainpage, beige } from "../assets/constants/constants";
+import { green, faqMainpage, beige } from "../../assets/constants/constants";
 //constants
 
 const FAQ = ({ color = beige }) => {

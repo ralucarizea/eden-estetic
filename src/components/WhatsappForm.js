@@ -12,7 +12,7 @@ import {
 import { React, useState } from "react";
 //local imports
 import { beige, green } from "../assets/constants/constants";
-import ButtonEllipse from "./ButtonEllipse";
+import ButtonEllipse from "./ui/ButtonEllipse";
 import "../assets/fonts/fonts.css";
 // import ButtonEllipse from "./ButtonEllipse";
 // import img from "./../assets/images/top-view-cream-container-with-plant.jpg";

@@ -1,16 +1,16 @@
 //3rd party imports
 import { Box, Icon, Text } from "@chakra-ui/react";
 //local imports
-import "../assets/fonts/fonts.css";
-import { green, beige } from "../assets/constants/constants";
-import ImageContainerSmall from "./ImageContainerSmall";
-import ImageContainerSmallBeige from "./ImageContainerSmallBeige";
+import "../../assets/fonts/fonts.css";
+import { green, beige } from "../../assets/constants/constants";
+import ImageContainerSmall from "../ui/ImageContainerSmall";
+import ImageContainerSmallBeige from "../ui/ImageContainerSmallBeige";
 import { VscArrowRight } from "react-icons/vsc";
 import {
   ServiceGridItem,
   ServiceTitle,
   ImageWrapper,
-} from "../assets/constants/styledcomponents";
+} from "../../assets/constants/styledcomponents";
 
 function MainpageServiceSection({ element }) {
   return (

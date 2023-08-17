@@ -10,9 +10,9 @@ import {
 } from "@chakra-ui/react";
 
 //local imports
-import ProceduresSubmenu from "../components/ProceduresSubmenu";
-import DiagnosisSubmenu from "../components/DiagnosisSubmenu";
-import CoursesSubmenu from "../components/CoursesSubmenu";
+import ProceduresSubmenu from "../components/services/ProceduresSubmenu";
+import DiagnosisSubmenu from "../components/services/DiagnosisSubmenu";
+import CoursesSubmenu from "../components/services/CoursesSubmenu";
 // import Footer from "../components/Footer";
 import "../assets/fonts/fonts.css";
 import { green, beige } from "../assets/constants/constants";

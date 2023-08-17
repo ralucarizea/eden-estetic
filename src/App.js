@@ -1,6 +1,6 @@
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { Routes, Route } from "react-router-dom";
-import { checkboxTheme } from "./components/Checkbox";
+import { checkboxTheme } from "./components/ui/Checkbox";
 import AboutPage from "./pages/AboutPage";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
@@ -11,8 +11,8 @@ import Home from "./pages/Home.js";
 import NotFound from "./pages/NotFound";
 
 // //-----components
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 import { beige, green } from "./assets/constants/constants";
 
 const theme = extendTheme({

@@ -6,9 +6,9 @@ import { HiPhone } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 //local imports
-import { ReactComponent as Logo } from "./../assets/images/logo-edenesteticwhite.svg";
-import "../assets/fonts/fonts.css";
-import { IconContainer } from "../assets/constants/styledcomponents";
+import { ReactComponent as Logo } from "../../assets/images/logo-edenesteticwhite.svg";
+import "../../assets/fonts/fonts.css";
+import { IconContainer } from "../../assets/constants/styledcomponents";
 //constants
 
 function Footer({
@@ -237,7 +237,7 @@ function Footer({
                 />
               </IconContainer>
             </Link>
-            <Link href="">
+            <Link href="src/components">
               <IconContainer>
                 <Icon
                   as={HiPhone}

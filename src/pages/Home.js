@@ -4,13 +4,13 @@ import { Box, Grid } from "@chakra-ui/react";
 
 // --------------------local imports
 //-----components
-import Hero from "../components/Hero";
-import MainPageSectionAbout from "../components/MainPageSectionAbout";
-import MainpageServicesMenu from "../components/MainpageServicesMenu";
+import Hero from "../components/home/Hero";
+import MainPageSectionAbout from "../components/home/MainPageSectionAbout";
+import MainpageServicesMenu from "../components/home/MainpageServicesMenu";
 import SocialProof from "../components/SocialProof";
 import Promo from "../components/Promo.js";
-import MainpageCTABanner from "../components/MainpageCTABanner";
-import FAQ from "../components/FAQ";
+import MainpageCTABanner from "../components/home/MainpageCTABanner";
+import FAQ from "../components/layout/FAQ";
 import WhatsappForm from "../components/WhatsappForm";
 import { beige, green } from "../assets/constants/constants";
 //-----other files

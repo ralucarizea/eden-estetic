@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
-import BlogpageHeading from "../components/BlogpageHeading";
-import BlogpageCard from "../components/BlogpageCard";
+import BlogpageHeading from "../components/ui/BlogpageHeading";
+import BlogpageCard from "../components/ui/BlogpageCard";
 import { beige } from "../assets/constants/constants";
 
 export const blogContent = [

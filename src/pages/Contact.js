@@ -1,7 +1,7 @@
 import { beige, green } from "../assets/constants/constants";
 import WhatsappForm from "../components/WhatsappForm";
 import { GridItem } from "@chakra-ui/react";
-import FAQ from "../components/FAQ";
+import FAQ from "../components/layout/FAQ";
 
 function Contact() {
   return (

@@ -3,8 +3,8 @@ import {
   createMultiStyleConfigHelpers,
   defineStyle,
 } from "@chakra-ui/styled-system";
-import "../assets/fonts/fonts.css";
-import { green, beige } from "../assets/constants/constants";
+import "../../assets/fonts/fonts.css";
+import { green, beige } from "../../assets/constants/constants";
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys);

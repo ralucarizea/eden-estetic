@@ -1,8 +1,8 @@
 import { Checkbox, CheckboxGroup, VStack } from "@chakra-ui/react";
-import servicesData from "../assets/constants/data.json";
-import { translatedTags } from "../assets/constants/constants";
+import servicesData from "../../assets/constants/data.json";
+import { translatedTags } from "../../assets/constants/constants";
 import { useEffect, useState, useContext } from "react";
-import { MyFilterContext, useFilterContext } from "../assets/context/FilterContext";
+import { MyFilterContext, useFilterContext } from "../../assets/context/FilterContext";
 
 
 const DynamicCheckboxGroup = ({ categoryKey }) => {

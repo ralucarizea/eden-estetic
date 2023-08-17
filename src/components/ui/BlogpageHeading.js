@@ -2,8 +2,8 @@
 import { Box, Text, Flex } from "@chakra-ui/react";
 
 //local imports
-import "../assets/fonts/fonts.css";
-import { CategoryBox } from "../assets/constants/styledcomponents";
+import "../../assets/fonts/fonts.css";
+import { CategoryBox } from "../../assets/constants/styledcomponents";
 
 export default function BlogHeading() {
   return (

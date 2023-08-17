@@ -3,9 +3,9 @@ import { Box, Text, Flex } from "@chakra-ui/react";
 // import { Link } from "react-router-dom";
 
 //local imports
-import "../assets/fonts/fonts.css";
+import "../../assets/fonts/fonts.css";
 // import img from "./../assets/images/16.jpg";
-import { CategoryBox } from "../assets/constants/styledcomponents";
+import { CategoryBox } from "../../assets/constants/styledcomponents";
 
 export default function BlogCard({ post }) {
   return (
