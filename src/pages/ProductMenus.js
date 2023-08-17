@@ -16,16 +16,16 @@ import CoursesSubmenu from "../components/CoursesSubmenu";
 // import Footer from "../components/Footer";
 import "../assets/fonts/fonts.css";
 import { green, beige } from "../assets/constants/constants";
-import servicesData from "../assets/constants/data.json";
+import data from "../assets/constants/data.json";
 function ProductMenus() {
   return (
     <Flex
       width="100%"
       height="100%"
-      // backgroundColor="purple"
       backgroundColor={`${beige}`}
       color={`${green}`}
-      px="64px"
+      // px="64px"
+      overflowY={"hidden"}
       flexDirection="column"
     >
       <Flex
@@ -51,24 +51,51 @@ function ProductMenus() {
         variant="enclosed"
       >
         <TabList width="100%">
-          <Tab letterSpacing="-1px" fontSize="18px" fontWeight={"500"}>
-            Diagnostic & consultanță{" "}
+          <Tab
+            // borderColor={green}
+            borderColor="transparent"
+            opacity={0.35}
+            _selected={{ opacity: 1 }}
+            rounded={0}
+            letterSpacing="-1px"
+            fontSize="18px"
+            fontWeight={"500"}
+          >
+            Diagnoză & consultanță{" "}
           </Tab>
-          <Tab letterSpacing="-1px" fontSize="18px" fontWeight={"500"}>
+          <Tab
+            // borderColor={green}
+            borderColor="transparent"
+            opacity={0.35}
+            _selected={{ opacity: 1 }}
+            rounded={0}
+            letterSpacing="-1px"
+            fontSize="18px"
+            fontWeight={"500"}
+          >
             Proceduri cosmetice
           </Tab>
-          <Tab letterSpacing="-1px" fontSize="18px" fontWeight={"500"}>
-            Cursuri și certificări{" "}
+          <Tab
+            // borderColor={green}
+            borderColor="transparent"
+            opacity={0.35}
+            _selected={{ opacity: 1 }}
+            rounded={0}
+            letterSpacing="-1px"
+            fontSize="18px"
+            fontWeight={"500"}
+          >
+            Cursuri & certificări{" "}
           </Tab>
         </TabList>
         <TabPanels>
           <TabPanel p="0px">
             <DiagnosisSubmenu />
           </TabPanel>
-          <TabPanel p="0px" pt="48px">
+          <TabPanel pr="20px" pl="0px" pt="48px">
             <ProceduresSubmenu
-              proceduresData={servicesData.services.procedures}
-              filterCategories={servicesData.categories}
+              proceduresData={data.services.procedures}
+              filterCategories={data.categories}
             />
           </TabPanel>
           <TabPanel p="0px">

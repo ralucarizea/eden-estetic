@@ -1,821 +1,1034 @@
 {
   "services": {
     "procedures": [
-        {
-          "ID": "pmul1",
-          "type": "pmu",
-          "name": "Micropigmentarea",
-          "nickname": "buzelor",
-          "description": "",
-          "areaOfApplication": ["lips"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": [""],
-          "solutionTo": ["unevenness"],
-          "bulletFacts": ["Reglarea asimetriilor", "Efect de reîntinerire"],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "Se recomandă realizarea primului retuș la maxim 2 luni de la prima ședință",
-          "price": "700",
-          "time": "100",
-          "activeIngredients": "",
-          "images": { "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194166/edenestetic/closeup10_fvjcf4.png", "before": [], "after": [] },
-          "miscellanous": ""
+      {
+        "ID": "pmul1",
+        "type": "pmu",
+        "name": "Micropigmentarea",
+        "nickname": "buzelor",
+        "description": "",
+        "treatmentAreaCategory": ["lips"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": [""],
+        "cosmeticConcernCategory": ["unevenness"],
+        "bulletFacts": ["Reglarea asimetriilor", "Efect de reîntinerire"],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "Se recomandă realizarea primului retuș la maxim 2 luni de la prima ședință",
+        "price": "700",
+        "time": "100",
+        "activeIngredients": [],
+        "images": {
+          "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519991/brown2-min_kar0th.jpg",
+          "before": [],
+          "after": []
         },
-        {
-          "ID": "pmueb1",
-          "type": "pmu",
-          "name": "Micropigmentarea sprâncenelor",
-          "nickname": "prin tehnica fir cu fir",
-          "description": "",
-          "areaOfApplication": ["eyes"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["lifting"],
-          "solutionTo": ["unevenness"],
-          "bulletFacts": [
-            "Reglarea asimetriilor",
-            "Efect de lifting",
-            "Aspect confundabil cu firele naturale de păr"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "Se recomandă realizarea primului retuș la maxim 2 luni de la prima ședință",
-          "price": "700",
-          "time": "100",
-          "activeIngredients": "",
-          "images": { "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194165/edenestetic/closeup3_djx5gi.png", "before": [], "after": [] },
-          "miscellanous": ""
+        "miscellanous": ""
+      },
+      {
+        "ID": "pmueb1",
+        "type": "pmu",
+        "name": "Micropigmentarea sprâncenelor",
+        "nickname": "prin tehnica fir cu fir",
+        "description": "",
+        "treatmentAreaCategory": ["eyes"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["lifting"],
+        "cosmeticConcernCategory": ["unevenness"],
+        "bulletFacts": [
+          "Reglarea asimetriilor",
+          "Efect de lifting",
+          "Aspect confundabil cu firele naturale de păr"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "Se recomandă realizarea primului retuș la maxim 2 luni de la prima ședință",
+        "price": "700",
+        "time": "100",
+        "activeIngredients": [],
+        "images": {
+          "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519992/brown4_mrqqsy.jpg",
+          "before": [],
+          "after": []
         },
-        {
-          "ID": "pmueb2",
-          "type": "pmu",
-          "name": "Micropigmentarea sprâncenelor",
-          "nickname": "prin tehnica combinată",
-          "description": "",
-          "areaOfApplication": ["eyes"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["lifting"],
-          "solutionTo": ["unevenness"],
-          "bulletFacts": ["Reglarea asimetriilor", "Efect de lifting"],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "Se recomandă realizarea primului retuș la maxim 2 luni de la prima ședință",
-          "price": "850",
-          "time": "100",
-          "activeIngredients": "",
-          "images": { "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194166/edenestetic/closeup7_azht4h.png", "before": [], "after": [] },
-          "miscellanous": ""
+        "miscellanous": ""
+      },
+      {
+        "ID": "pmueb2",
+        "type": "pmu",
+        "name": "Micropigmentarea sprâncenelor",
+        "nickname": "prin tehnica combinată",
+        "description": "",
+        "treatmentAreaCategory": ["eyes"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["lifting"],
+        "cosmeticConcernCategory": ["unevenness"],
+        "bulletFacts": ["Reglarea asimetriilor", "Efect de lifting"],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "Se recomandă realizarea primului retuș la maxim 2 luni de la prima ședință",
+        "price": "850",
+        "time": "100",
+        "activeIngredients": [],
+        "images": {
+          "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519989/brown3-min_ca45zs.jpg",
+          "before": [],
+          "after": []
         },
-        {
-          "ID": "pmuey2",
-          "type": "pmu",
-          "name": "Micropigmentarea",
-          "nickname": "pleoapelor",
-          "description": "",
-          "areaOfApplication": ["eyes"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["lifting"],
-          "solutionTo": ["unevenness"],
-          "bulletFacts": ["Reglarea asimetriilor"],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "Se recomandă realizarea primului retuș la maxim 2 luni de la prima ședință",
-          "price": "750",
-          "time": "120",
-          "activeIngredients": "",
-          "images": { "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194166/edenestetic/closeup8_x6bgam.png", "before": [], "after": [] },
-          "miscellanous": ""
+        "miscellanous": ""
+      },
+      {
+        "ID": "pmuey1",
+        "type": "pmu",
+        "name": "Micropigmentarea",
+        "nickname": "pleoapelor",
+        "description": "",
+        "treatmentAreaCategory": ["eyes"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["lifting"],
+        "cosmeticConcernCategory": ["unevenness"],
+        "bulletFacts": ["Reglarea asimetriilor"],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "Se recomandă realizarea primului retuș la maxim 2 luni de la prima ședință",
+        "price": "750",
+        "time": "120",
+        "activeIngredients": [],
+        "images": {
+          "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519988/brown8-min_cooekr.jpg",
+          "before": [],
+          "after": []
         },
-        {
-          "ID": "pmuey2",
-          "type": "pmu",
-          "name": "Micropigmentarea pleoapelor",
-          "nickname": "prin tehnica shading",
-          "description": "",
-          "areaOfApplication": ["eyes"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["rejuvenating"],
-          "solutionTo": ["unevenness"],
-          "bulletFacts": ["Efect de reîntinerire"],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "Se recomandă realizarea primului retuș la maxim 2 luni de la prima ședință",
-          "price": "850",
-          "time": "120",
-          "activeIngredients": "",
-          "images": { "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194168/edenestetic/closeup9_jokaii.png", "before": [], "after": [] },
-          "miscellanous": ""
+        "miscellanous": ""
+      },
+      {
+        "ID": "pmuey2",
+        "type": "pmu",
+        "name": "Micropigmentarea pleoapelor",
+        "nickname": "prin tehnica shading",
+        "description": "",
+        "treatmentAreaCategory": ["eyes"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["rejuvenating"],
+        "cosmeticConcernCategory": ["unevenness"],
+        "bulletFacts": ["Efect de reîntinerire"],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "Se recomandă realizarea primului retuș la maxim 2 luni de la prima ședință",
+        "price": "850",
+        "time": "120",
+        "activeIngredients": [],
+        "images": {
+          "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519991/brown5_d5svfj.jpg",
+          "before": [],
+          "after": []
         },
-        {
-          "ID": "pmueb3",
-          "type": "pmu",
-          "name": "Intretinere periodica micropigmentare",
-          "nickname": "(6-12 luni)",
-          "description": "",
-          "areaOfApplication": ["eyes", "lips"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": "",
-          "solutionTo": "",
-          "bulletFacts": [],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "850",
-          "time": "100",
-          "activeIngredients": "",
-          "images": { "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194165/edenestetic/closeup5_g8ejs2.png", "before": [], "after": [] },
-          "miscellanous": ""
+        "miscellanous": ""
+      },
+      {
+        "ID": "pmu3",
+        "type": "pmu",
+        "name": "Intretinere periodica micropigmentare",
+        "nickname": "(6-12 luni)",
+        "description": "",
+        "treatmentAreaCategory": ["eyes", "lips"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": [""],
+        "cosmeticConcernCategory": [""],
+        "bulletFacts": [],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "850",
+        "time": "100",
+        "activeIngredients": [],
+        "images": {
+          "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519988/beige5-min_sjzzwz.jpg",
+          "before": [],
+          "after": []
         },
-        {
-          "ID": "pmueb4",
-          "type": "pmu",
-          "name": "Eliminarea tatuajului",
-          "nickname": "cu soluție",
-          "description": "",
-          "areaOfApplication": ["eyes", "lips"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": "",
-          "solutionTo": "",
-          "bulletFacts": [],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "450",
-          "time": "80",
-          "activeIngredients": "",
-          "images": { "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194166/edenestetic/closeup13_qzsgkk.png", "before": [], "after": [] },
-          "miscellanous": ""
+        "miscellanous": ""
+      },
+      {
+        "ID": "pmu1",
+        "type": "pmu",
+        "name": "Eliminarea tatuajului",
+        "nickname": "cu soluție",
+        "description": "",
+        "treatmentAreaCategory": ["eyes", "lips"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": [""],
+        "cosmeticConcernCategory": [""],
+        "bulletFacts": [],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "450",
+        "time": "80",
+        "activeIngredients": [],
+        "images": {
+          "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519991/beige6_f7vjdr.jpg",
+          "before": [],
+          "after": []
         },
-        {
-          "ID": "pmueb5",
-          "type": "pmu",
-          "name": "Neutralizarea",
-          "nickname": "tatuajului",
-          "description": "",
-          "areaOfApplication": ["eyes"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": "",
-          "solutionTo": "",
-          "bulletFacts": [],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "450",
-          "time": "80",
-          "activeIngredients": "",
-          "images": { "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194165/edenestetic/closeup1_j0nsc6.png", "before": [], "after": [] },
-          "miscellanous": ""
+        "miscellanous": ""
+      },
+      {
+        "ID": "pmu2",
+        "type": "pmu",
+        "name": "Neutralizarea",
+        "nickname": "tatuajului",
+        "description": "",
+        "treatmentAreaCategory": ["eyes"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": [""],
+        "cosmeticConcernCategory": [""],
+        "bulletFacts": [],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "450",
+        "time": "80",
+        "activeIngredients": [],
+        "images": {
+          "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519991/beige8_eg7lvz.jpg",
+          "before": [],
+          "after": []
         },
-        {
-          "ID": "pmueb5",
-          "type": "pmu",
-          "name": "Micropigmentare & neutralizarea",
-          "nickname": "sprâncenelor",
-          "description": "",
-          "areaOfApplication": ["eyes"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": "",
-          "solutionTo": "",
-          "bulletFacts": [],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "850",
-          "time": "130",
-          "activeIngredients": "",
-          "images": { "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194166/edenestetic/closeup12_fn2o9l.png", "before": [], "after": [] },
-          "miscellanous": ""
+        "miscellanous": ""
+      },
+      {
+        "ID": "pmueb3",
+        "type": "pmu",
+        "name": "Micropigmentare & neutralizarea",
+        "nickname": "sprâncenelor",
+        "description": "",
+        "treatmentAreaCategory": ["eyes"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": [""],
+        "cosmeticConcernCategory": [""],
+        "bulletFacts": [],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "850",
+        "time": "130",
+        "activeIngredients": [],
+        "images": {
+          "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519991/beige9_krcjey.jpg",
+          "before": [],
+          "after": []
         },
-      
-        {
-          "ID": "aht2",
-          "type": "treatment",
-          "name": "Tratament cu acid hialuronic transformabil",
-          "nickname": "(aplicat prin mezoterapie)",
-          "description": "Varianta aplicată prin mezoterapie a tratatmentului cu acid hialuronic transformabil este menită să livreze substanța activă într-un strat și mai profund al tenului, pentru rezultate și mai durabile.",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["25-30 ani", "30-40 ani", "40-50 ani", "> 50 ani"],
-          "effects": ["plumping", "hydrating"],
-          "solutionTo": ["saggy", "dry", "mature"],
-          "bulletFacts": [
-            "Este un dermo-filler dublu potent datorită îmbinării acidului hialuronic cu hidroxiapatita cu eliberare treptată",
-            "Mineralizează pielea, îmbogățind-o cu ioni de calciu",
-            "Se recomandă și ca tratament de întreținere a efectelor altor proceduri dermato-estetice",
-            "Datorită mezoterapiei, substanța activă ajunge direct în stratul subcutanat, ceea ce face ca efectul tratamentului să fie mai durabil."
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "350",
-          "time": "> 50 ani",
-          "activeIngredients": [],
-          "images": { "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194166/edenestetic/closeup14_usstek.png", "before": [], "after": [] },
-          "miscellanous": []
-        },
-        {
-          "ID": "ao",
-          "type": "treatment",
-          "name": "Tratament",
-          "nickname": "Acne Out",
-          "description": "Terapie dermato-cosmetică special concepută, care reglează microbiomul pielii predispuse la acnee. Se bazează pe un mecanism inteligent care blochează sistemul de comunicații între bacterii – Qurorum Sensing (QS) – principalul responsabil pentru perturbarea microbiomului, leziunilor pielii și acneei. Protagonistul liniei este o substanță inovativă Quora Noni PRCF care conține fitopeptide (biofactori vegetali) din celulele stem Noni, un dermo-hacker inteligent care elimină cauza principală a leziunilor acneice.",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["cleansing"],
-          "solutionTo": ["oily", "acne", "cloggedpores"],
-          "bulletFacts": [
-            "Reduce inflamația",
-            "Reglează funcția glandelor sebacee",
-            "Reduce aspectul dilatat al porilor",
-            "Proprietăți anti-bacteriene și anti-micotice",
-            "Sigilează leziunile post-acneeice",
-            "Menține nivelul de hidratare"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "190",
-          "time": "> 50 ani",
-          "activeIngredients": "",
-          "images": { "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194166/edenestetic/closeup6_tyxexz.png", "before": [], "after": [] }
-        },
-        {
-          "ID": "brf",
-          "type": "treatment",
-          "name": "Tratament",
-          "nickname": "BiostimulareRF",
-          "description": "Tratamentul BiostimulareRF acționează până în straturile profunde ale pielii unde determina contractia fibrelor de colagen existente, declanșând procedeul de neocolageneza.",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["plumping", "rejuvenating", "extrahydrating"],
-          "solutionTo": ["dry", "mature", "saggy"],
-          "bulletFacts": [
-            "Tonifiază și repară - factorul de crestere și alte vitamine sunt transportate in derm, pentru a promova reactivarea fibroblastelor, iar pielea devine plină și elastică.",
-            "Se obține un usor efect de umplere volumetrică a tenului.",
-            "Rejuvenare intensivă",
-            "Suplimentează umiditatea dermului, astfel încât pielea să devina hidratata, pastreaza intotdeauna efectul stralucitor și de hidratare de durată.",
-            "Substantele ajung in proportie de 95% in straturile profunde ale pielii, reconstruind sănătatea acesteia"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "350",
-          "time": "40-50 ani",
-          "activeIngredients": "",
-          "images": { "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194167/edenestetic/closeup15_irxmce.png", "before": [], "after": [] },
-          "miscellanous": []
-        },
-        {
-          "ID": "brp",
-          "type": "treatment",
-          "name": "Tratament Biostimulare+",
-          "nickname": " Redermalizare+ Peeling",
-          "description": "Tratamentul BRP presupune aplicarea unui peeling bifazic cu efect antioxidant, urmată de tratarea pielii cu un cocktail de substanțe active (minerale, acid hialuronic & acid succinic) ce hidratează profund pielea și stimulează producția de colagen",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["25-30 ani", "30-40 ani", "40-50 ani"],
-          "effects": ["anti-aging", "plumping", "rejuvenating", "hydrating"],
-          "solutionTo": ["dry", "mature", "saggy"],
-          "bulletFacts": [
-            "Hidratează și redă elasticitatea pielii",
-            "Asigură suplimentarea de lipide",
-            "Proprietăți antioxidante",
-            "Efect antirid",
-            "Se obține un ușor efect de umplere volumetrică a tenului.",
-            "Regenerare rapidă şi totală a tenului",
-            "Se recomandă și ca tratament de întreținere a efectelor altor proceduri dermato-estetice"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "370",
-          "time": "> 50 ani",
-          "activeIngredients": ["Acid hialuronic", "Acid succinic", "Minerale"],
-          "images": { "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194167/edenestetic/closeup11_kdpcjm.png", "before": [], "after": [] },
-          "miscellanous": []
-        },
-        {
-          "ID": "ch",
-          "type": "treatment",
-          "name": "Tratament",
-          "nickname": "curatare & hidratare",
-          "description": "",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["hydrating", "cleansing"],
-          "solutionTo": [
-            "mature",
-            "oily",
-            "acne",
-            "sensitive",
-            "dry",
-            "cloggedpores"
-          ],
-          "bulletFacts": ["Hidratează și redă elasticitatea pielii"],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "170",
-          "time": "> 50 ani",
-          "activeIngredients": [""],
-          "images": { "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194165/edenestetic/closeup2_clrtlo.png", "before": [], "after": [] },
-          "miscellanous": []
-        },
-        {
-          "ID": "sh",
-          "type": "treatment",
-          "name": "Tratament",
-          "nickname": "SMART Hydration",
-          "description": "Tratament complex & personalizat de hidratare pe bază de acid hialuronic și glicozaminoglicani",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["extrahydrating"],
-          "solutionTo": ["mature", "oily", "sensitive", "dry"],
-          "bulletFacts": [
-            "Reglează nivelul de hidratare",
-            "Întărește bariera de protecția a pielii",
-            "Îmbunătățește structura dermică și epidermică"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "240",
-          "time": "40-50 ani",
-          "activeIngredients": ["Acid hialuronic", "Glicozaminoglicani"],
-          "images": { "display": ["closeup5"], "before": [], "after": [] },
+        "miscellanous": ""
+      },
 
-          "miscellanous": []
+      {
+        "ID": "aht2",
+        "type": "treatment",
+        "name": "Tratament cu acid hialuronic transformabil",
+        "nickname": "(aplicat prin mezoterapie)",
+        "description": "Varianta aplicată prin mezoterapie a tratatmentului cu acid hialuronic transformabil este menită să livreze substanța activă într-un strat și mai profund al tenului, pentru rezultate și mai durabile.",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["25-30 ani", "30-40 ani", "40-50 ani", "> 50 ani"],
+        "desiredResultCategory": ["plumping", "hydrating"],
+        "cosmeticConcernCategory": ["saggy", "dry", "mature"],
+        "bulletFacts": [
+          "Este un dermo-filler dublu potent datorită îmbinării acidului hialuronic cu hidroxiapatita cu eliberare treptată",
+          "Mineralizează pielea, îmbogățind-o cu ioni de calciu",
+          "Se recomandă și ca tratament de întreținere a efectelor altor proceduri dermato-estetice",
+          "Datorită mezoterapiei, substanța activă ajunge direct în stratul subcutanat, ceea ce face ca efectul tratamentului să fie mai durabil."
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "350",
+        "time": "60",
+        "activeIngredients": [],
+        "images": {
+          "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690882193/texture-cream1_1_ii2wac.jpg",
+          "before": [],
+          "after": []
         },
-        {
-          "ID": "ns",
-          "type": "treatment",
-          "name": "Tratament ",
-          "nickname": "NeuroSENSI",
-          "description": "Terapie concepută pentru pielea hipersensibilă, cu rozacee sau cuperoză. Combinația de peptide Endothelyol™ generează un efect calmant asupra vaselor și receptorilor senzoriali de la nivelul pielii.",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["calming"],
-          "solutionTo": ["sensitive", "rosacea"],
-          "bulletFacts": [
-            "Monitorizează activ factorii inflamatori, problemele vasculare și neuroreceptorii sensibilității",
-            "Efect asupra vaselor superficiale (reglarea factorilor angiogeni)",
-            "Reducerea leziunilor vasculare în cazul rozaceei până la 12% după doar 4 săptămâni",
-            "Datorită proprietăților sale calmante și reparatorii, se recomandă aplicarea sa după alte tratamente dermato-cosmetice ce sensibilizează tenul"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "270",
-          "time": "> 50 ani",
-          "activeIngredients": [""],
-          "images": { "display": [], "before": [], "after": [] },
-
-          "miscellanous": []
-        },
-        {
-          "ID": "re",
-          "type": "treatment",
-          "name": "Tratament ",
-          "nickname": "Retinol EXPRESS",
-          "description": "Terapie EXPRESS de rejuvenare rapidă prin fuzionarea retinolului și a vitaminelor A, E și C. Aceasta a devenit posibilă datorită aplicării soluțiilor biotehnologiei ceea ce face sa crească gradul de absorbție cu 89%.",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["anti-aging", "rejuvenating"],
-          "solutionTo": ["mature", "scars"],
-          "bulletFacts": [
-            "Stimulează regenerarea celulară & combate petele și hiperpigmentarea",
-            "Reduce stresul oxidativ",
-            "Reducerea producției de tirozinază și melanină",
-            "Protejează împotriva îmbătrânirii cauzate de radiațiile solare",
-            "Fortifiază pereții vaselor sanguine",
-            "Cei doi derivați ai vitaminei C (Ascorbil Palmitat și Sodium Ascorbil Fosfat) hidratează intens & reduc ridurile"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "250",
-          "time": "40-50 ani",
-          "activeIngredients": ["Ascorbil Palmitat", "Sodium Ascorbil Fosfat"],
-          "images": { "display": [], "before": [], "after": [] },
-
-          "miscellanous": []
-        },
-        {
-          "ID": "frl",
-          "type": "treatment",
-          "name": "Tratament",
-          "nickname": "Fresh Rose Lips",
-          "description": "Tratament pentru buze care repară bariera de apărare a pielii. Greutatea moleculară mică a acidului hialuronic îi permite acestuia penetrarea pielii până în straturile cele mai profunde, umplând zonele crăpate din interior. Acțiunea de umectant natural a acidului hialuronic, alături de proprietățile revitalizante ale glicerinei, înlătură aspectul deteriorat al buzelor. Nu în cele din urmă, extractul de coacază roșie nu joacă doar rolul de pigment natural al buzelor, ci și acționează ca protector împotriva radicalilor liberi, datorită caracterului său antioxidant. În urma tratamentului, buzele capătă un aspect sănătos, lucios, de culoare roz natural.",
-          "areaOfApplication": "Buze",
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["extrahydrating", "rejuvenating", "anti-aging"],
-          "solutionTo": ["mature", "oily", "sensitive", "dry"],
-          "bulletFacts": [
-            "Biostimulare ușoară a buzelor",
-            "Restabilirea culorii naturale & redefinirea conturului buzelor",
-            "Efect anti-îmbătrânire (anti-aging)"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "150",
-          "time": "25-30 ani",
-          "activeIngredients": [
-            "Acid hialuronic 2% ",
-            "Glicerină",
-            "Pigment natural din extract de coacază roșie"
-          ],
-          "images": { "display": [], "before": [], "after": [] },
-
-          "miscellanous": []
-        },
-        {
-          "ID": "do1",
-          "type": "treatment",
-          "name": "Tratament ",
-          "nickname": "DermaOXY??????",
-          "description": "Conceptul de livrare a substanțelor active cosmetice cu ajutorul a oxigenului hiperbaric de puritate 90% a fost dezvoltat de către brand-ul danez DermaOXY cu scopul de a reda pielii echilibrul necesar, contracarând într-un mod foarte rapid și eficient chiar și cele mai timpurii semne ale îmbătrânirii.",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": [
-            "extrahydrating",
-            "rejuvenating",
-            "plumping",
-            "anti-aging",
-            "calming"
-          ],
-          "solutionTo": ["mature", "oily", "sensitive", "dry", "scars"],
-          "bulletFacts": [
-            "Hidratarea intensă a straturilor profunde ale pielii",
-            "Stimularea producției de colagen și elastină",
-            "Grăbește procesul de vindecare în cazul pielii acneice",
-            "Efect anti-îmbătrânire (anti-aging)",
-            "Ten vizibil întinerit, cu aspect suplu, puternic hidratat și cu grad ridicat de elasticitate",
-            "SER HYALURON pentru intensa hidratare si revitalizare cu actiune puternica si efecte  vizibile dupa primul tratament. Pielea are aspect intinerit, luminos, proaspat, ferm si intens hidratat. (Ingredienti: acid hialuronic, syn-coll, amino acizi, vitamine, minerale, omega 3, omega 6, extracte de alge)",
-            "SER SYN– special conceput pentru riduri, netezeste ridurile datorita inlocuitorului de botulina SYN-AKE, hidrateaza, hraneste si vitalizeaza pielea in profunzime.  (Ingredienti: acid hialuronic, syn-coll, syn-ake, coenzima Q10, amino acizi, vitamine, minerale, omega 3, omega 6, extracte de alge)"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "210",
-          "time": "40-50 ani",
-          "activeIngredients": [
-            "DermaOXY Ser SYN-AKE",
-            "DermaOXY SER HYALURON"
-          ],
-          "images": { "display": ["closeup9"], "before": [], "after": [] },
-          "procedureEquipment": "DermaOXY Denmark ",
-          "miscellanous": []
-        },
-        {
-          "ID": "do2",
-          "type": "treatment",
-          "name": "Tratament ",
-          "nickname": "DermaOXY PLUS",
-          "description": "Conceptul de livrare a substanțelor active cosmetice cu ajutorul a oxigenului hiperbaric de puritate 90% a fost dezvoltat de către brand-ul danez DermaOXY cu scopul de a reda pielii echilibrul necesar, contracarând într-un mod foarte rapid și eficient chiar și cele mai timpurii semne ale îmbătrânirii.",
-          "areaOfApplication": ["complexion", "neck", "cleavage"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": [
-            "extrahydrating",
-            "rejuvenating",
-            "plumping",
-            "anti-aging",
-            "calming"
-          ],
-          "solutionTo": ["mature", "oily", "sensitive", "dry", "scars"],
-          "bulletFacts": [
-            "Hidratarea intensă a straturilor profunde ale pielii",
-            "Stimularea producției de colagen și elastină",
-            "Grăbește procesul de vindecare în cazul pielii acneice",
-            "Ten vizibil întinerit, cu aspect suplu, puternic hidratat și cu grad ridicat de elasticitate",
-            "Efect anti-îmbătrânire (anti-aging)"
-          ],
-
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "270",
-          "time": "> 50 ani",
-          "activeIngredients": [
-            "DermaOXY Ser SYN-AKE",
-            "DermaOXY SER HYALURON"
-          ],
-          "images": { "display": ["closeup10"], "before": [], "after": [] },
-          "procedureEquipment": "DermaOXY Denmark ",
-          "miscellanous": []
-        },
-        {
-          "ID": "nep",
-          "type": "treatment",
-          "name": "Peeling",
-          "nickname": "NeuroEXPRESS",
-          "description": "Terapie EXPRESS ce conține neurotransmițători GABA (acid gama-aminobutiric) și NANA (acid N-acetil-5-neuraminic), în combinație cu 30% acid lactic, asigurând netezirea ridurilor și îmbunătățirea tensiunii mecanice a pielii printr-un „efect de îngheț",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["30-40 ani", "40-50 ani", "> 50 ani"],
-          "effects": [
-            "peeling",
-            "extrahydrating",
-            "anti-aging",
-            "rejuvenating",
-            "plumping",
-            "lifting"
-          ],
-          "solutionTo": ["mature", "dry"],
-          "bulletFacts": [
-            "Tratament rapid destinat ocaziilor speciale",
-            "Efect anti-îmbătrânire (anti-aging)",
-            "Ten vizibil întinerit, cu aspect neted și puternic hidratat"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "270",
-          "time": "> 50 ani",
-          "activeIngredients": [
-            "Acid gama-aminobutiric",
-            "Acid N-acetil-5-neuraminic"
-          ],
-          "images": { "display": [], "before": [], "after": [] },
-
-          "miscellanous": []
-        },
-        {
-          "ID": "pmp",
-          "type": "treatment",
-          "name": "Peeling",
-          "nickname": "Mandelic/Pyruvic",
-          "description": "Peelingul cu acid mandelic este potrivit pentru toate tipurile de piele, pe tot parcursul anului. Are proprietăți de rejuvenare, crește fermitatea și flexibilitatea, stimulează sinteza de colagen, controlează flora bacteriană, reglează secreția de sebum, luminează petele pigmentare. Peelingul cu acid pyrurvic întinerește, reconstruiește structura pielii, are proprietăți comedolitice.",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["peeling", "cleansing"],
-          "solutionTo": [
-            "mature",
-            "acne",
-            "sensitive",
-            "dry",
-            "oily",
-            "scars",
-            "cloggedpores"
-          ],
-          "bulletFacts": [
-            "Tratament destinat ocaziilor speciale",
-            "Efect anti-îmbătrânire",
-            "Tratament de reconstrucție a tenului, recomandat uneori în completarea altor intervenții/proceduri dermato-estetice",
-            "Protejează împotriva îmbătrânirii cauzate de radiațiile solare"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "180",
-          "time": "30-40 ani",
-          "activeIngredients": ["Acid Mandelic", "Acid Pyruvic"],
-          "images": { "display": [], "before": [], "after": [] },
-          "procedureEquipment": " ",
-          "miscellanous": []
-        },
-        {
-          "ID": "lb",
-          "type": "treatment",
-          "name": "Tratament",
-          "nickname": "Like BOTOX",
-          "description": "Cea mai bună combinație de acid hialuronic și peptide naturale asemănătoare toxinei botulinice (99,5%). Primul produs de pe piață care poate elimina ridurile frontale prin relaxarea contracției musculare și creșterea ratei de relaxare a mușchilor faciali (la orice vârstă). Reduce ridurile orizontale de pe frunte și ridurile verticale dintre sprâncene, reflectă razele de lumină, îmbunătățind aspectul treimii superioare a feței. Munapsys™ este o nouă generație de peptide asemănătoare botulotoxinei. Capabil să reducă adâncimea celei adânc riduri cu 37,6% în 7 zile Acesta este primul ingredient cosmetic care poate afecta atât mecanismele pre- și postsinaptice de contracție musculară, cât și o nouă componentă a complexului proteic SNARE (Munc-18). După 6 luni, efectul antirid în zona frunții, în perioada de probă de control, a crescut de aproape trei ori.",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["rejuvenating", "plumping", "lifting", "anti-aging"],
-          "solutionTo": ["mature", "oily", "acne", "sensitive", "dry"],
-          "bulletFacts": [
-            "Ameliorează stresul și oboseala pielii",
-            "Lupta împotriva rugozității suprafeței tenului, conferindu-i strălucire",
-            "Îmbunătățește fermitatea și elasticitatea pielii, netezind ridurile",
-            "Efect de lifting"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "400",
-          "time": "40-50 ani",
-          "activeIngredients": [""],
-          "images": { "display": [], "before": [], "after": [] },
-          "procedureEquipment": " ",
-          "miscellanous": []
-        },
-        { "ID": "ps",
-          "name": "Tratament",
-          "type": "treatment",
-          "nickname": "pentru scalp",
-          "description": "Formulă sinergică concepută pentru tratarea problemelor scalpului (dermatită, eczeme, pielea uscată) și pentru prevenirea căderii părului. Contribuie la biostimularea, oxigenarea și revascularizarea țesuturilor și reglarea producției sebumului natural. Este indicat în diferite forme de alopecie. Pentru rezultate eficiente, este indicat a fi folosit în tratamente care implică aparatura cosmetică.",
-          "areaOfApplication": ["scalp"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["calming", "lifting", "hydrating"],
-          "solutionTo": ["hairfall", "dry", "sensitive", "dermatitis"],
-          "bulletFacts": [
-            "Tratament adresat: alopeciei androgene, alopecii areate, pierderii sezoniere a părului, dermatitei seboreice",
-            "Lupta împotriva rugozității suprafeței tenului, conferindu-i strălucire",
-            "Îmbunătățește fermitatea și elasticitatea pielii",
-            "Efect de lifting"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "350",
-          "time": "25-30 ani",
-          "activeIngredients": [
-            "Acid hialuronic",
-            "Pantenol",
-            "Riboflavina (vit. B12)",
-            "Centella asiatica",
-            "Siliciu Organic",
-            "Biotin (vit. B7)",
-            "Niacinamida (vit. B3)"
-          ],
-          "images": { "display": [], "before": [], "after": [] },
-          "miscellanous": []
-        },
-        {
-          "ID": "prpni",
-          "type": "treatment",
-          "name": "Tratament ",
-          "nickname": "PRP non-invaziv",
-          "description": "Terapie-șoc pentru întinerirea complexă a tenului îmbătrânit prematur sau care necesită o regenerare accelerată după proceduri invazive. Fiind inspirat din terapia regenerativă de plasmolifting, acest tratament reprezintă o alternativă non-invazivă la procedurile de întinerire ce folosesc plasma proprie îmbogăţită cu trombocite. ",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["30-40 ani", "40-50 ani", "> 50 ani"],
-          "effects": ["anti-aging", "rejuvenating", "hydrating"],
-          "solutionTo": ["mature"],
-          "bulletFacts": [
-            "Stimulează procesul de regenerare celulară",
-            "Posedă proprietăți antioxidante",
-            "Hidratează și redă elasticitatea pielii",
-            "Efect anti-îmbătrânire",
-            "Se recomandă și ca tratament de întreținere a efectelor altor proceduri dermato-estetice"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "350",
-          "time": "90",
-          "activeIngredients": [],
-          "images": { "display": [], "before": [], "after": [] },
-          "miscellanous": []
-        },
-        {
-          "ID": "pip",
-          "type": "treatment",
-          "name": "Peeling",
-          "nickname": "INTENSE",
-          "description": "În funcție inestetismele pe care le tratăm , peeling-ul se poate efectua cu mai multe tipuri de substanțe și poate ajunge la profunzimi diferite, în funcție de efectul pe care ne dorim să îl obținem. În funcție de problema estetică a pacientului, peeling-urile pot avea agenți chimici reactivi diferiți: peeling AzAc este recomandat pentru pielea sensibilă, cu probleme precum rozacee / acnee vulgară / teleangiectazii; Peeling Phyto fenol - pentru piele matura, pori dilatați, semne post acneice, pete pigmentare, piele deshidratată; peeling RetiFusion - pentru piele matura, ce necesită rejuvenare & combaterea ridurilor. ",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["cleansing", "peeling", "anti-aging"],
-          "solutionTo": [
-            "mature",
-            "scars",
-            "acne",
-            "sensitive",
-            "cloggedpores",
-            "dry",
-            "oily"
-          ],
-          "bulletFacts": [
-            "Posedă proprietăți antiinflamatoare, antioxidante, antifungice și antivirale",
-            "Luminează și uniformizează suprafața tenului, estompând totodată ridurile și petele",
-            "Stimulează sinteza fibrelor regenerative de colagen, îmbunătățind proprietățile elastice ale pielii"
-          ],
-          "contraindications": "Nu se recomandă în sarcină, în timpul alăptării sau în cazurile de diabet, de infecții/ afecțiuni în zona de tratament (herpes, cancer) sau în patologii hepatice severe",
-          "aftercare": "După un peeling, în funcție de intensitatea lui, pielea se poate înroși și descuama pentru câteva zile. Veți fi informați în timpul consultației inițiale despre durata recuperării în funcție de peeling-ul care vă este recomandat.",
-          "freqOfApplication": "Rezultatele peelingurilor apar de la prima ședință. Totuși pentru rezultate cât mai vizibile, se recomandă între 2-4 ședințe la interval de 10 - 25 săptămâni. Efectele peelingului durează aproximativ 12-18 luni, dar se recomandă ședințe de întreținere a rezultatelor la 4-6 luni. Protocolul peeling-urilor se stabilește personalizat în funcție de nevoile pacientului.",
-          "price": "350",
-          "time": "30-40 ani",
-          "activeIngredients": [],
-          "images": { "display": [], "before": [], "after": [] },
-
-          "miscellanous": []
-        },
-        {
-          "ID": "ppa",
-          "type": "treatment",
-          "name": "Tratament antirid ",
-          "nickname": " PEPTIDE Pro Age",
-          "description": "Este o combinație hibridă ingrediente dermato-cosmetice bazate pe peptide biomimetice- unele dintre cele mai eficiente substanțe active care inhibă procesele de îmbătrânire cronologică.",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["anti-aging", "rejuvenating", "extrahydrating"],
-          "solutionTo": ["mature", "dry", "sensitive"],
-          "bulletFacts": [
-            "Stimulează sinteza fibrelor regenerative de colagen și elastină, îmbunătățind proprietățile elastice ale pielii",
-            "Folosirea peptidelor NEUROXEP-018 BREVATE are efect relaxant asupra mușchilor, reducând vizibil ridurile",
-            "Se recomandă efectuarea acestei proceduri alternat cu/după procedura de carboxiterapie"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "270",
-          "time": "> 50 ani",
-          "activeIngredients": [],
-          "images": { "display": [], "before": [], "after": [] },
-
-          "miscellanous": []
-        },
-        {
-          "ID": "mf1",
-          "type": "treatment",
-          "name": " Mezoterapie",
-          "nickname": "fractionata",
-          "description": "Terapia de inducție a colagenului (CIT), cunoscută și sub denumirile de mezoterapie fracționată/ skin-needling/ terapia cu micro-ace, reprezintă unul dintre cele mai căutate tratamente faciale la momentul actual, datorită rezultatelor extrem de rapide și spectaculoase încă de la prima ședință. Cu ajutorul unor ace foarte fine, se injectează sub anestezie locală la nivelul epidermului & dermului un cocktail de aminoacizi și acid hialuronic, menit să reactiveze metabolismul celular și sinteza celor două proteine esențiale pentru sănătatea și frumusețea pielii: colagenul și elastina. Astfel, ridurile fine sunt estompate, tenul este hidratat, microcirculatia este stimulată, pielea devinind mai fermă & vizibil reîntinerită.",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["anti-aging", "rejuvenating", "extrahydrating"],
-          "solutionTo": ["mature", "scars", "darkcircles"],
-          "bulletFacts": [
-            "Îmbunătățește textura pielii",
-            "Estompează ridurile & cearcănele",
-            "Crește tonusul, elasticitatea și strălucirea tenului",
-            "Hidratează profund pielea, stimulează regenerarea celulară și refacerea țesuturilor"
-          ],
-          "contraindications": "Procedură este contraindicată: pe parcursul sarcinii și alăptării; pentru persoanele ce au tendința de a forma cicatrici cheloide, infecții, afecțiuni sau herpes în zona de tratament, boli cutanate cronice; pentru persoanele cu patologii în coagularea sangelui sau care iau tratamente cu anticoagulante; pentru persoanele malignități cutanate; pentru persoanele cărora le-a fost administrat tratament cu izotretinoin in ultimele 3 luni (de exemplu, Roaccutane).",
-          "aftercare": "Pielea este puternic sensibilizată după acest tip de procedură. De aceea, timp de 14 zile după sesiunea de tratament, sunt absolut obligatorii: evitarea expunerii directe la radiații solare naturale/artificiale & folosirea cu regularitate a cremelor cu factor de protecție solară 50. Mai mult decât atât, din cauza permeabilizării intense a pielii, se recomandă ca orice cremă/tratament pe bază de vitamina A sau derivați ai acesteia (precum retinolul, retinalul sau tretinoinul) să fie evitate post-procedură (de exemplu, crema RETIN-A). Dozele mari de vitamina A pot fi toxice!",
-          "freqOfApplication": "Rezultatele peelingurilor apar de la prima ședință. Totuși pentru rezultate cât mai vizibile, se recomandă între 2-4 ședințe la interval de 10 - 25 săptămâni. Efectele peelingului durează aproximativ 12-18 luni, dar se recomandă ședințe de întreținere a rezultatelor la 4-6 luni. Protocolul peeling-urilor se stabilește personalizat în funcție de nevoile pacientului.",
-          "price": "350",
-          "time": "40-50 ani",
-          "activeIngredients": [],
-          "images": { "display": [], "before": [], "after": [] },
-          "miscellanous": []
-        },
-        {
-          "ID": "mf2",
-          "type": "treatment",
-          "name": "Mezoterapie",
-          "nickname": "fractionata PLUS",
-          "description": "Terapia de inducție a colagenului (CIT), cunoscută și sub denumirile de mezoterapie fracționată/ skin-needling/ terapia cu micro-ace, reprezintă unul dintre cele mai căutate tratamente faciale la momentul actual, datorită rezultatelor extrem de rapide și spectaculoase încă de la prima ședință. Cu ajutorul unor ace foarte fine, se injectează sub anestezie locală la nivelul epidermului & dermului un cocktail de aminoacizi și acid hialuronic, menit să reactiveze metabolismul celular și sinteza celor două proteine esențiale pentru sănătatea și frumusețea pielii: colagenul și elastina. Astfel, ridurile fine sunt estompate, tenul este hidratat, microcirculatia este stimulată, pielea devinind mai fermă & vizibil reîntinerită.",
-          "areaOfApplication": ["complexion", "neck", "cleavage"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["anti-aging", "rejuvenating", "extrahydrating"],
-          "solutionTo": ["mature", "scars", "darkcircles"],
-          "bulletFacts": [
-            "Îmbunătățește textura pielii",
-            "Estompează ridurile & cearcănele",
-            "Crește tonusul, elasticitatea și strălucirea tenului",
-            "Hidratează profund pielea, stimulează regenerarea celulară și refacerea țesuturilor"
-          ],
-          "contraindications": "Procedură este contraindicată: pe parcursul sarcinii și alăptării; pentru persoanele ce au tendința de a forma cicatrici cheloide, infecții, afecțiuni sau herpes în zona de tratament, boli cutanate cronice; pentru persoanele cu patologii în coagularea sangelui sau care iau tratamente cu anticoagulante; pentru persoanele malignități cutanate; pentru persoanele cărora le-a fost administrat tratament cu izotretinoin in ultimele 3 luni (de exemplu, Roaccutane).",
-          "aftercare": "Pielea este puternic sensibilizată după acest tip de procedură. De aceea, timp de 14 zile după sesiunea de tratament, sunt absolut obligatorii: evitarea expunerii directe la radiații solare naturale/artificiale & folosirea cu regularitate a cremelor cu factor de protecție solară 50. Mai mult decât atât, din cauza permeabilizării intense a pielii, se recomandă ca orice cremă/tratament pe bază de vitamina A sau derivați ai acesteia (precum retinolul, retinalul sau tretinoinul) să fie evitate post-procedură (de exemplu, crema RETIN-A). Dozele mari de vitamina A pot fi toxice!",
-          "freqOfApplication": "Rezultatele peelingurilor apar de la prima ședință. Totuși pentru rezultate cât mai vizibile, se recomandă între 2-4 ședințe la interval de 10 - 25 săptămâni. Efectele peelingului durează aproximativ 12-18 luni, dar se recomandă ședințe de întreținere a rezultatelor la 4-6 luni. Protocolul peeling-urilor se stabilește personalizat în funcție de nevoile pacientului.",
-          "price": "450",
-          "time": "> 50 ani",
-          "activeIngredients": [],
-          "images": { "display": [], "before": [], "after": [] },
-          "miscellanous": []
-        },
-        {
-          "ID": "rf",
-          "type": "treatment",
-          "name": "Tratament ",
-          "nickname": "Radiofrecventa",
-          "description": "Radiofrecvența facială este o terapie non-invazivă și nedureroasă care tratează lipsa de elasticitate si fermitate a pielii. Undele de radiofrecvență încălzesc țesutul până la temperaturi de 40 grade Celsius, determinând astfel contracția fibrelor de colagen și elastină existente și declanșând totodată procedeul de neocolageneză (crearea de noi fibre de colagen).",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["rejuvenating"],
-          "solutionTo": ["mature", "doublechin"],
-          "bulletFacts": [
-            "Poate remedia aspectul de bărbie dublă datorită acțiunii undelor asupra țesutului adipos",
-            "Vasodilatația produsă de energia calorică crește oxigenarea zonei tratate, făcând-o mai permeabilă față de un aport mai crescut de nutrienți.",
-            "Stimulează sinteza fibrelor regenerative de colagen, îmbunătățind proprietățile elastice ale pielii"
-          ],
-          "contraindications": "Tratamentul se recomandă, de regulă, pentru toate tipurile de ten cu excepția tenurilor hipersensibile/cu cuperoză extinsă",
-          "aftercare": "După un peeling, în funcție de intensitatea lui, pielea se poate înroși și descuama pentru câteva zile. Veți fi informați în timpul consultației inițiale despre durata recuperării în funcție de peeling-ul care vă este recomandat.",
-          "freqOfApplication": "Se recomandă cure de 4 - 6 ședințe/lună, în funcție de inestetismele care se doresc a fi tratate (în medie, o ședință pe săptămână). În cadrul tratamentelor de întreținere, se recomandă efectuarea unei ședințe/lună.",
-          "price": "150",
-          "time": "30-40 ani",
-          "activeIngredients": [],
-          "images": { "display": [], "before": [], "after": [] },
-          "miscellanous": []
-        },
-        {
-          "ID": "aht1",
-          "type": "treatment",
-          "name": "Tratament cu",
-          "nickname": "acid hialuronic transformabil",
-          "description": "Tratamentul cu acid hialuronic transformabil încapsulat crește elasticitatea pielii, susține regenerarea și reînnoirea celulelor, și oferă un efect de umplere a ridurilor similar cu cel obținut pe cale invazivă ",
-          "areaOfApplication": ["complexion"],
-          "ageRecommendation": ["Toate vârstele"],
-          "effects": ["plumping"],
-          "solutionTo": ["dry", "oily", "mature", "sensitive", "saggy"],
-          "bulletFacts": [
-            "Este un dermo-filler dublu potent datorită îmbinării acidului hialuronic cu hidroxiapatita cu eliberare treptată",
-            "Mineralizează pielea, îmbogățind-o cu ioni de calciu",
-            "Se recomandă și ca tratament de întreținere a efectelor altor proceduri dermato-estetice"
-          ],
-          "contraindications": "",
-          "aftercare": "",
-          "freqOfApplication": "",
-          "price": "290",
-          "time": "> 50 ani",
-          "activeIngredients": [],
-          "images": { "display": [], "before": [], "after": [] },
-          "miscellanous": []
+        "miscellanous": []
+      },
+      {
+        "ID": "ao",
+        "type": "treatment",
+        "name": "Tratament",
+        "nickname": "Acne Out",
+        "description": "Terapie dermato-cosmetică special concepută, care reglează microbiomul pielii predispuse la acnee. Se bazează pe un mecanism inteligent care blochează sistemul de comunicații între bacterii – Qurorum Sensing (QS) – principalul responsabil pentru perturbarea microbiomului, leziunilor pielii și acneei. Protagonistul liniei este o substanță inovativă Quora Noni PRCF care conține fitopeptide (biofactori vegetali) din celulele stem Noni, un dermo-hacker inteligent care elimină cauza principală a leziunilor acneice.",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["cleansing"],
+        "cosmeticConcernCategory": ["oily", "acne", "cloggedpores"],
+        "bulletFacts": [
+          "Reduce inflamația",
+          "Reglează funcția glandelor sebacee",
+          "Reduce aspectul dilatat al porilor",
+          "Proprietăți anti-bacteriene și anti-micotice",
+          "Sigilează leziunile post-acneeice",
+          "Menține nivelul de hidratare"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "190",
+        "time": "60",
+        "activeIngredients": [],
+        "images": {
+          "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519989/beige4-min_ajcmqo.jpg",
+          "before": [],
+          "after": []
         }
-      ],
-    "courses": {},
-    "diagnosis": {}
+      },
+      {
+        "ID": "brf",
+        "type": "treatment",
+        "name": "Tratament",
+        "nickname": "BiostimulareRF",
+        "description": "Tratamentul BiostimulareRF acționează până în straturile profunde ale pielii unde determina contractia fibrelor de colagen existente, declanșând procedeul de neocolageneza.",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["plumping", "rejuvenating", "extrahydrating"],
+        "cosmeticConcernCategory": ["dry", "mature", "saggy"],
+        "bulletFacts": [
+          "Tonifiază și repară - factorul de crestere și alte vitamine sunt transportate in derm, pentru a promova reactivarea fibroblastelor, iar pielea devine plină și elastică.",
+          "Se obține un usor efect de umplere volumetrică a tenului.",
+          "Rejuvenare intensivă",
+          "Suplimentează umiditatea dermului, astfel încât pielea să devina hidratata, pastreaza intotdeauna efectul stralucitor și de hidratare de durată.",
+          "Substantele ajung in proportie de 95% in straturile profunde ale pielii, reconstruind sănătatea acesteia"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "350",
+        "time": "40",
+        "activeIngredients": [],
+        "images": {
+          "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690887494/texture-cream3-min_ngkgeu.jpg",
+          "before": [],
+          "after": []
+        },
+        "miscellanous": []
+      },
+      {
+        "ID": "brp",
+        "type": "treatment",
+        "name": "Tratament Biostimulare+",
+        "nickname": " Redermalizare+ Peeling",
+        "description": "Tratamentul BRP presupune aplicarea unui peeling bifazic cu efect antioxidant, urmată de tratarea pielii cu un cocktail de substanțe active (minerale, acid hialuronic & acid succinic) ce hidratează profund pielea și stimulează producția de colagen",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["25-30 ani", "30-40 ani", "40-50 ani"],
+        "desiredResultCategory": [
+          "antiaging",
+          "plumping",
+          "rejuvenating",
+          "hydrating"
+        ],
+        "cosmeticConcernCategory": ["dry", "mature", "saggy"],
+        "bulletFacts": [
+          "Hidratează și redă elasticitatea pielii",
+          "Asigură suplimentarea de lipide",
+          "Proprietăți antioxidante",
+          "Efect antirid",
+          "Se obține un ușor efect de umplere volumetrică a tenului.",
+          "Regenerare rapidă şi totală a tenului",
+          "Se recomandă și ca tratament de întreținere a efectelor altor proceduri dermato-estetice"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "370",
+        "time": "60",
+        "activeIngredients": ["Acid hialuronic", "Acid succinic", "Minerale"],
+        "images": {
+          "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1690882193/texture-cream1_1_ii2wac.jpg",
+          "before": [],
+          "after": []
+        },
+        "miscellanous": []
+      },
+      {
+        "ID": "ch",
+        "type": "treatment",
+        "name": "Tratament",
+        "nickname": "curatare & hidratare",
+        "description": "",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["hydrating", "cleansing"],
+        "cosmeticConcernCategory": [
+          "mature",
+          "oily",
+          "acne",
+          "sensitive",
+          "dry",
+          "cloggedpores"
+        ],
+        "bulletFacts": ["Hidratează și redă elasticitatea pielii"],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "170",
+        "time": "60",
+        "activeIngredients": [],
+        "images": {
+          "display": "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519990/beige3-min_hcxc0m.jpg",
+          "before": [],
+          "after": []
+        },
+        "miscellanous": []
+      },
+      {
+        "ID": "sh",
+        "type": "treatment",
+        "name": "Tratament",
+        "nickname": "SMART Hydration",
+        "description": "Tratament complex & personalizat de hidratare pe bază de acid hialuronic și glicozaminoglicani",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["extrahydrating"],
+        "cosmeticConcernCategory": ["mature", "oily", "sensitive", "dry"],
+        "bulletFacts": [
+          "Reglează nivelul de hidratare",
+          "Întărește bariera de protecția a pielii",
+          "Îmbunătățește structura dermică și epidermică"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "240",
+        "time": "50",
+        "activeIngredients": ["Acid hialuronic", "Glicozaminoglicani"],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519989/green6-min_uklpil.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+
+        "miscellanous": []
+      },
+      {
+        "ID": "ns",
+        "type": "treatment",
+        "name": "Tratament ",
+        "nickname": "NeuroSENSI",
+        "description": "Terapie concepută pentru pielea hipersensibilă, cu rozacee sau cuperoză. Combinația de peptide Endothelyol™ generează un efect calmant asupra vaselor și receptorilor senzoriali de la nivelul pielii.",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["calming"],
+        "cosmeticConcernCategory": ["sensitive", "rosacea"],
+        "bulletFacts": [
+          "Monitorizează activ factorii inflamatori, problemele vasculare și neuroreceptorii sensibilității",
+          "Efect asupra vaselor superficiale (reglarea factorilor angiogeni)",
+          "Reducerea leziunilor vasculare în cazul rozaceei până la 12% după doar 4 săptămâni",
+          "Datorită proprietăților sale calmante și reparatorii, se recomandă aplicarea sa după alte tratamente dermato-cosmetice ce sensibilizează tenul"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "270",
+        "time": "50",
+        "activeIngredients": [],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519992/green5_epynvt.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+
+        "miscellanous": []
+      },
+      {
+        "ID": "re",
+        "type": "treatment",
+        "name": "Tratament ",
+        "nickname": "Retinol EXPRESS",
+        "description": "Terapie EXPRESS de rejuvenare rapidă prin fuzionarea retinolului și a vitaminelor A, E și C. Aceasta a devenit posibilă datorită aplicării soluțiilor biotehnologiei ceea ce face sa crească gradul de absorbție cu 89%.",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["antiaging", "rejuvenating"],
+        "cosmeticConcernCategory": ["mature", "scars"],
+        "bulletFacts": [
+          "Stimulează regenerarea celulară & combate petele și hiperpigmentarea",
+          "Reduce stresul oxidativ",
+          "Reducerea producției de tirozinază și melanină",
+          "Protejează împotriva îmbătrânirii cauzate de radiațiile solare",
+          "Fortifiază pereții vaselor sanguine",
+          "Cei doi derivați ai vitaminei C (Ascorbil Palmitat și Sodium Ascorbil Fosfat) hidratează intens & reduc ridurile"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "250",
+        "time": "40",
+        "activeIngredients": ["Ascorbil Palmitat", "Sodium Ascorbil Fosfat"],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519992/beige_e08he1.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+
+        "miscellanous": []
+      },
+      {
+        "ID": "frl",
+        "type": "treatment",
+        "name": "Tratament",
+        "nickname": "Fresh Rose Lips",
+        "description": "Tratament pentru buze care repară bariera de apărare a pielii. Greutatea moleculară mică a acidului hialuronic îi permite acestuia penetrarea pielii până în straturile cele mai profunde, umplând zonele crăpate din interior. Acțiunea de umectant natural a acidului hialuronic, alături de proprietățile revitalizante ale glicerinei, înlătură aspectul deteriorat al buzelor. Nu în cele din urmă, extractul de coacază roșie nu joacă doar rolul de pigment natural al buzelor, ci și acționează ca protector împotriva radicalilor liberi, datorită caracterului său antioxidant. În urma tratamentului, buzele capătă un aspect sănătos, lucios, de culoare roz natural.",
+        "treatmentAreaCategory": "Buze",
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": [
+          "extrahydrating",
+          "rejuvenating",
+          "antiaging"
+        ],
+        "cosmeticConcernCategory": ["mature", "oily", "sensitive", "dry"],
+        "bulletFacts": [
+          "Biostimulare ușoară a buzelor",
+          "Restabilirea culorii naturale & redefinirea conturului buzelor",
+          "Efect anti-îmbătrânire (antiaging)"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "150",
+        "time": "30",
+        "activeIngredients": [
+          "Acid hialuronic 2% ",
+          "Glicerină",
+          "Pigment natural din extract de coacază roșie"
+        ],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519988/beige1-min_swgp7w.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+
+        "miscellanous": []
+      },
+      {
+        "ID": "do1",
+        "type": "treatment",
+        "name": "Tratament ",
+        "nickname": "DermaOXY??????",
+        "description": "Conceptul de livrare a substanțelor active cosmetice cu ajutorul a oxigenului hiperbaric de puritate 90% a fost dezvoltat de către brand-ul danez DermaOXY cu scopul de a reda pielii echilibrul necesar, contracarând într-un mod foarte rapid și eficient chiar și cele mai timpurii semne ale îmbătrânirii.",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": [
+          "extrahydrating",
+          "rejuvenating",
+          "plumping",
+          "antiaging",
+          "calming"
+        ],
+        "cosmeticConcernCategory": [
+          "mature",
+          "oily",
+          "sensitive",
+          "dry",
+          "scars"
+        ],
+        "bulletFacts": [
+          "Hidratarea intensă a straturilor profunde ale pielii",
+          "Stimularea producției de colagen și elastină",
+          "Grăbește procesul de vindecare în cazul pielii acneice",
+          "Efect anti-îmbătrânire (antiaging)",
+          "Ten vizibil întinerit, cu aspect suplu, puternic hidratat și cu grad ridicat de elasticitate",
+          "SER HYALURON pentru intensa hidratare si revitalizare cu actiune puternica si efecte  vizibile dupa primul tratament. Pielea are aspect intinerit, luminos, proaspat, ferm si intens hidratat. (Ingredienti: acid hialuronic, syn-coll, amino acizi, vitamine, minerale, omega 3, omega 6, extracte de alge)",
+          "SER SYN– special conceput pentru riduri, netezeste ridurile datorita inlocuitorului de botulina SYN-AKE, hidrateaza, hraneste si vitalizeaza pielea in profunzime.  (Ingredienti: acid hialuronic, syn-coll, syn-ake, coenzima Q10, amino acizi, vitamine, minerale, omega 3, omega 6, extracte de alge)"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "210",
+        "time": "50",
+        "activeIngredients": ["DermaOXY Ser SYN-AKE", "DermaOXY SER HYALURON"],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519994/gray2-min_qv2qum.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+        "procedureEquipment": "DermaOXY Denmark ",
+        "miscellanous": []
+      },
+      {
+        "ID": "do2",
+        "type": "treatment",
+        "name": "Tratament ",
+        "nickname": "DermaOXY PLUS",
+        "description": "Conceptul de livrare a substanțelor active cosmetice cu ajutorul a oxigenului hiperbaric de puritate 90% a fost dezvoltat de către brand-ul danez DermaOXY cu scopul de a reda pielii echilibrul necesar, contracarând într-un mod foarte rapid și eficient chiar și cele mai timpurii semne ale îmbătrânirii.",
+        "treatmentAreaCategory": ["complexion", "neck", "cleavage"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": [
+          "extrahydrating",
+          "rejuvenating",
+          "plumping",
+          "antiaging",
+          "calming"
+        ],
+        "cosmeticConcernCategory": [
+          "mature",
+          "oily",
+          "sensitive",
+          "dry",
+          "scars"
+        ],
+        "bulletFacts": [
+          "Hidratarea intensă a straturilor profunde ale pielii",
+          "Stimularea producției de colagen și elastină",
+          "Grăbește procesul de vindecare în cazul pielii acneice",
+          "Ten vizibil întinerit, cu aspect suplu, puternic hidratat și cu grad ridicat de elasticitate",
+          "Efect anti-îmbătrânire (antiaging)"
+        ],
+
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "270",
+        "time": "50",
+        "activeIngredients": ["DermaOXY Ser SYN-AKE", "DermaOXY SER HYALURON"],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519990/brown9_fmdkgd.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+        "procedureEquipment": "DermaOXY Denmark ",
+        "miscellanous": []
+      },
+      {
+        "ID": "nep",
+        "type": "treatment",
+        "name": "Peeling",
+        "nickname": "NeuroEXPRESS",
+        "description": "Terapie EXPRESS ce conține neurotransmițători GABA (acid gama-aminobutiric) și NANA (acid N-acetil-5-neuraminic), în combinație cu 30% acid lactic, asigurând netezirea ridurilor și îmbunătățirea tensiunii mecanice a pielii printr-un „efect de îngheț",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["30-40 ani", "40-50 ani", "> 50 ani"],
+        "desiredResultCategory": [
+          "peeling",
+          "extrahydrating",
+          "antiaging",
+          "rejuvenating",
+          "plumping",
+          "lifting"
+        ],
+        "cosmeticConcernCategory": ["mature", "dry"],
+        "bulletFacts": [
+          "Tratament rapid destinat ocaziilor speciale",
+          "Efect anti-îmbătrânire (antiaging)",
+          "Ten vizibil întinerit, cu aspect neted și puternic hidratat"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "270",
+        "time": "60",
+        "activeIngredients": [
+          "Acid gama-aminobutiric",
+          "Acid N-acetil-5-neuraminic"
+        ],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519990/green4_c1rrxt.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+
+        "miscellanous": []
+      },
+      {
+        "ID": "pmp",
+        "type": "treatment",
+        "name": "Peeling",
+        "nickname": "Mandelic/Pyruvic",
+        "description": "Peelingul cu acid mandelic este potrivit pentru toate tipurile de piele, pe tot parcursul anului. Are proprietăți de rejuvenare, crește fermitatea și flexibilitatea, stimulează sinteza de colagen, controlează flora bacteriană, reglează secreția de sebum, luminează petele pigmentare. Peelingul cu acid pyrurvic întinerește, reconstruiește structura pielii, are proprietăți comedolitice.",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["peeling", "cleansing"],
+        "cosmeticConcernCategory": [
+          "mature",
+          "acne",
+          "sensitive",
+          "dry",
+          "oily",
+          "scars",
+          "cloggedpores"
+        ],
+        "bulletFacts": [
+          "Tratament destinat ocaziilor speciale",
+          "Efect anti-îmbătrânire",
+          "Tratament de reconstrucție a tenului, recomandat uneori în completarea altor intervenții/proceduri dermato-estetice",
+          "Protejează împotriva îmbătrânirii cauzate de radiațiile solare"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "180",
+        "time": "30",
+        "activeIngredients": ["Acid Mandelic", "Acid Pyruvic"],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1690887773/texture-gel2_1_qe2npm.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+        "procedureEquipment": " ",
+        "miscellanous": []
+      },
+      {
+        "ID": "lb",
+        "type": "treatment",
+        "name": "Tratament",
+        "nickname": "Like BOTOX",
+        "description": "Cea mai bună combinație de acid hialuronic și peptide naturale asemănătoare toxinei botulinice (99,5%). Primul produs de pe piață care poate elimina ridurile frontale prin relaxarea contracției musculare și creșterea ratei de relaxare a mușchilor faciali (la orice vârstă). Reduce ridurile orizontale de pe frunte și ridurile verticale dintre sprâncene, reflectă razele de lumină, îmbunătățind aspectul treimii superioare a feței. Munapsys™ este o nouă generație de peptide asemănătoare botulotoxinei. Capabil să reducă adâncimea celei adânc riduri cu 37,6% în 7 zile Acesta este primul ingredient cosmetic care poate afecta atât mecanismele pre- și postsinaptice de contracție musculară, cât și o nouă componentă a complexului proteic SNARE (Munc-18). După 6 luni, efectul antirid în zona frunții, în perioada de probă de control, a crescut de aproape trei ori.",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": [
+          "rejuvenating",
+          "plumping",
+          "lifting",
+          "antiaging"
+        ],
+        "cosmeticConcernCategory": [
+          "mature",
+          "oily",
+          "acne",
+          "sensitive",
+          "dry"
+        ],
+        "bulletFacts": [
+          "Ameliorează stresul și oboseala pielii",
+          "Lupta împotriva rugozității suprafeței tenului, conferindu-i strălucire",
+          "Îmbunătățește fermitatea și elasticitatea pielii, netezind ridurile",
+          "Efect de lifting"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "400",
+        "time": "40",
+        "activeIngredients": [],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1690882195/texture-cream2_1_txzdvy.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+        "procedureEquipment": " ",
+        "miscellanous": []
+      },
+      {
+        "ID": "ps",
+        "name": "Tratament",
+        "type": "treatment",
+        "nickname": "pentru scalp",
+        "description": "Formulă sinergică concepută pentru tratarea problemelor scalpului (dermatită, eczeme, pielea uscată) și pentru prevenirea căderii părului. Contribuie la biostimularea, oxigenarea și revascularizarea țesuturilor și reglarea producției sebumului natural. Este indicat în diferite forme de alopecie. Pentru rezultate eficiente, este indicat a fi folosit în tratamente care implică aparatura cosmetică.",
+        "treatmentAreaCategory": ["scalp"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["calming", "lifting", "hydrating"],
+        "cosmeticConcernCategory": [
+          "hairfall",
+          "dry",
+          "sensitive",
+          "dermatitis"
+        ],
+        "bulletFacts": [
+          "Tratament adresat: alopeciei androgene, alopecii areate, pierderii sezoniere a părului, dermatitei seboreice",
+          "Lupta împotriva rugozității suprafeței tenului, conferindu-i strălucire",
+          "Îmbunătățește fermitatea și elasticitatea pielii",
+          "Efect de lifting"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "350",
+        "time": "30",
+        "activeIngredients": [
+          "Acid hialuronic",
+          "Pantenol",
+          "Riboflavina (vit. B12)",
+          "Centella asiatica",
+          "Siliciu Organic",
+          "Biotin (vit. B7)",
+          "Niacinamida (vit. B3)"
+        ],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1690887494/texture-cream3-min_ngkgeu.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+        "miscellanous": []
+      },
+      {
+        "ID": "prpni",
+        "type": "treatment",
+        "name": "Tratament ",
+        "nickname": "PRP non-invaziv",
+        "description": "Terapie-șoc pentru întinerirea complexă a tenului îmbătrânit prematur sau care necesită o regenerare accelerată după proceduri invazive. Fiind inspirat din terapia regenerativă de plasmolifting, acest tratament reprezintă o alternativă non-invazivă la procedurile de întinerire ce folosesc plasma proprie îmbogăţită cu trombocite. ",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["30-40 ani", "40-50 ani", "> 50 ani"],
+        "desiredResultCategory": ["antiaging", "rejuvenating", "hydrating"],
+        "cosmeticConcernCategory": ["mature"],
+        "bulletFacts": [
+          "Stimulează procesul de regenerare celulară",
+          "Posedă proprietăți antioxidante",
+          "Hidratează și redă elasticitatea pielii",
+          "Efect anti-îmbătrânire",
+          "Se recomandă și ca tratament de întreținere a efectelor altor proceduri dermato-estetice"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "350",
+        "time": "90",
+        "activeIngredients": [],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519993/green_o8jncp.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+        "miscellanous": []
+      },
+      {
+        "ID": "pip",
+        "type": "treatment",
+        "name": "Peeling",
+        "nickname": "INTENSE",
+        "description": "În funcție inestetismele pe care le tratăm , peeling-ul se poate efectua cu mai multe tipuri de substanțe și poate ajunge la profunzimi diferite, în funcție de efectul pe care ne dorim să îl obținem. În funcție de problema estetică a pacientului, peeling-urile pot avea agenți chimici reactivi diferiți: peeling AzAc este recomandat pentru pielea sensibilă, cu probleme precum rozacee / acnee vulgară / teleangiectazii; Peeling Phyto fenol - pentru piele matura, pori dilatați, semne post acneice, pete pigmentare, piele deshidratată; peeling RetiFusion - pentru piele matura, ce necesită rejuvenare & combaterea ridurilor. ",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["cleansing", "peeling", "antiaging"],
+        "cosmeticConcernCategory": [
+          "mature",
+          "scars",
+          "acne",
+          "sensitive",
+          "cloggedpores",
+          "dry",
+          "oily"
+        ],
+        "bulletFacts": [
+          "Posedă proprietăți antiinflamatoare, antioxidante, antifungice și antivirale",
+          "Luminează și uniformizează suprafața tenului, estompând totodată ridurile și petele",
+          "Stimulează sinteza fibrelor regenerative de colagen, îmbunătățind proprietățile elastice ale pielii"
+        ],
+        "contraindications": "Nu se recomandă în sarcină, în timpul alăptării sau în cazurile de diabet, de infecții/ afecțiuni în zona de tratament (herpes, cancer) sau în patologii hepatice severe",
+        "aftercare": "După un peeling, în funcție de intensitatea lui, pielea se poate înroși și descuama pentru câteva zile. Veți fi informați în timpul consultației inițiale despre durata recuperării în funcție de peeling-ul care vă este recomandat.",
+        "freqOfApplication": "Rezultatele peelingurilor apar de la prima ședință. Totuși pentru rezultate cât mai vizibile, se recomandă între 2-4 ședințe la interval de 10 - 25 săptămâni. Efectele peelingului durează aproximativ 12-18 luni, dar se recomandă ședințe de întreținere a rezultatelor la 4-6 luni. Protocolul peeling-urilor se stabilește personalizat în funcție de nevoile pacientului.",
+        "price": "350",
+        "time": "30",
+        "activeIngredients": [],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519990/gray4-min_tdeu3o.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+
+        "miscellanous": []
+      },
+      {
+        "ID": "ppa",
+        "type": "treatment",
+        "name": "Tratament antirid ",
+        "nickname": " PEPTIDE Pro Age",
+        "description": "Este o combinație hibridă ingrediente dermato-cosmetice bazate pe peptide biomimetice- unele dintre cele mai eficiente substanțe active care inhibă procesele de îmbătrânire cronologică.",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": [
+          "antiaging",
+          "rejuvenating",
+          "extrahydrating"
+        ],
+        "cosmeticConcernCategory": ["mature", "dry", "sensitive"],
+        "bulletFacts": [
+          "Stimulează sinteza fibrelor regenerative de colagen și elastină, îmbunătățind proprietățile elastice ale pielii",
+          "Folosirea peptidelor NEUROXEP-018 BREVATE are efect relaxant asupra mușchilor, reducând vizibil ridurile",
+          "Se recomandă efectuarea acestei proceduri alternat cu/după procedura de carboxiterapie"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "270",
+        "time": "60",
+        "activeIngredients": [],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1691526061/close-up-texture-cream_18_-min_omrnmb.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+
+        "miscellanous": []
+      },
+      {
+        "ID": "mf1",
+        "type": "treatment",
+        "name": " Mezoterapie",
+        "nickname": "fractionata",
+        "description": "Terapia de inducție a colagenului (CIT), cunoscută și sub denumirile de mezoterapie fracționată/ skin-needling/ terapia cu micro-ace, reprezintă unul dintre cele mai căutate tratamente faciale la momentul actual, datorită rezultatelor extrem de rapide și spectaculoase încă de la prima ședință. Cu ajutorul unor ace foarte fine, se injectează sub anestezie locală la nivelul epidermului & dermului un cocktail de aminoacizi și acid hialuronic, menit să reactiveze metabolismul celular și sinteza celor două proteine esențiale pentru sănătatea și frumusețea pielii: colagenul și elastina. Astfel, ridurile fine sunt estompate, tenul este hidratat, microcirculatia este stimulată, pielea devinind mai fermă & vizibil reîntinerită.",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": [
+          "antiaging",
+          "rejuvenating",
+          "extrahydrating"
+        ],
+        "cosmeticConcernCategory": ["mature", "scars", "darkcircles"],
+        "bulletFacts": [
+          "Îmbunătățește textura pielii",
+          "Estompează ridurile & cearcănele",
+          "Crește tonusul, elasticitatea și strălucirea tenului",
+          "Hidratează profund pielea, stimulează regenerarea celulară și refacerea țesuturilor"
+        ],
+        "contraindications": "Procedură este contraindicată: pe parcursul sarcinii și alăptării; pentru persoanele ce au tendința de a forma cicatrici cheloide, infecții, afecțiuni sau herpes în zona de tratament, boli cutanate cronice; pentru persoanele cu patologii în coagularea sangelui sau care iau tratamente cu anticoagulante; pentru persoanele malignități cutanate; pentru persoanele cărora le-a fost administrat tratament cu izotretinoin in ultimele 3 luni (de exemplu, Roaccutane).",
+        "aftercare": "Pielea este puternic sensibilizată după acest tip de procedură. De aceea, timp de 14 zile după sesiunea de tratament, sunt absolut obligatorii: evitarea expunerii directe la radiații solare naturale/artificiale & folosirea cu regularitate a cremelor cu factor de protecție solară 50. Mai mult decât atât, din cauza permeabilizării intense a pielii, se recomandă ca orice cremă/tratament pe bază de vitamina A sau derivați ai acesteia (precum retinolul, retinalul sau tretinoinul) să fie evitate post-procedură (de exemplu, crema RETIN-A). Dozele mari de vitamina A pot fi toxice!",
+        "freqOfApplication": "Rezultatele peelingurilor apar de la prima ședință. Totuși pentru rezultate cât mai vizibile, se recomandă între 2-4 ședințe la interval de 10 - 25 săptămâni. Efectele peelingului durează aproximativ 12-18 luni, dar se recomandă ședințe de întreținere a rezultatelor la 4-6 luni. Protocolul peeling-urilor se stabilește personalizat în funcție de nevoile pacientului.",
+        "price": "350",
+        "time": "40",
+        "activeIngredients": [],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1691519993/gray3-min_yfgc4b.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+        "miscellanous": []
+      },
+      {
+        "ID": "mf2",
+        "type": "treatment",
+        "name": "Mezoterapie",
+        "nickname": "fractionata PLUS",
+        "description": "Terapia de inducție a colagenului (CIT), cunoscută și sub denumirile de mezoterapie fracționată/ skin-needling/ terapia cu micro-ace, reprezintă unul dintre cele mai căutate tratamente faciale la momentul actual, datorită rezultatelor extrem de rapide și spectaculoase încă de la prima ședință. Cu ajutorul unor ace foarte fine, se injectează sub anestezie locală la nivelul epidermului & dermului un cocktail de aminoacizi și acid hialuronic, menit să reactiveze metabolismul celular și sinteza celor două proteine esențiale pentru sănătatea și frumusețea pielii: colagenul și elastina. Astfel, ridurile fine sunt estompate, tenul este hidratat, microcirculatia este stimulată, pielea devinind mai fermă & vizibil reîntinerită.",
+        "treatmentAreaCategory": ["complexion", "neck", "cleavage"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": [
+          "antiaging",
+          "rejuvenating",
+          "extrahydrating"
+        ],
+        "cosmeticConcernCategory": ["mature", "scars", "darkcircles"],
+        "bulletFacts": [
+          "Îmbunătățește textura pielii",
+          "Estompează ridurile & cearcănele",
+          "Crește tonusul, elasticitatea și strălucirea tenului",
+          "Hidratează profund pielea, stimulează regenerarea celulară și refacerea țesuturilor"
+        ],
+        "contraindications": "Procedură este contraindicată: pe parcursul sarcinii și alăptării; pentru persoanele ce au tendința de a forma cicatrici cheloide, infecții, afecțiuni sau herpes în zona de tratament, boli cutanate cronice; pentru persoanele cu patologii în coagularea sangelui sau care iau tratamente cu anticoagulante; pentru persoanele malignități cutanate; pentru persoanele cărora le-a fost administrat tratament cu izotretinoin in ultimele 3 luni (de exemplu, Roaccutane).",
+        "aftercare": "Pielea este puternic sensibilizată după acest tip de procedură. De aceea, timp de 14 zile după sesiunea de tratament, sunt absolut obligatorii: evitarea expunerii directe la radiații solare naturale/artificiale & folosirea cu regularitate a cremelor cu factor de protecție solară 50. Mai mult decât atât, din cauza permeabilizării intense a pielii, se recomandă ca orice cremă/tratament pe bază de vitamina A sau derivați ai acesteia (precum retinolul, retinalul sau tretinoinul) să fie evitate post-procedură (de exemplu, crema RETIN-A). Dozele mari de vitamina A pot fi toxice!",
+        "freqOfApplication": "Rezultatele peelingurilor apar de la prima ședință. Totuși pentru rezultate cât mai vizibile, se recomandă între 2-4 ședințe la interval de 10 - 25 săptămâni. Efectele peelingului durează aproximativ 12-18 luni, dar se recomandă ședințe de întreținere a rezultatelor la 4-6 luni. Protocolul peeling-urilor se stabilește personalizat în funcție de nevoile pacientului.",
+        "price": "450",
+        "time": "60",
+        "activeIngredients": [],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1691526193/close-up-texture-cream_19_-min_ejubuh.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+        "miscellanous": []
+      },
+      {
+        "ID": "rf",
+        "type": "treatment",
+        "name": "Tratament ",
+        "nickname": "Radiofrecventa",
+        "description": "Radiofrecvența facială este o terapie non-invazivă și nedureroasă care tratează lipsa de elasticitate si fermitate a pielii. Undele de radiofrecvență încălzesc țesutul până la temperaturi de 40 grade Celsius, determinând astfel contracția fibrelor de colagen și elastină existente și declanșând totodată procedeul de neocolageneză (crearea de noi fibre de colagen).",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["rejuvenating"],
+        "cosmeticConcernCategory": ["mature", "doublechin"],
+        "bulletFacts": [
+          "Poate remedia aspectul de bărbie dublă datorită acțiunii undelor asupra țesutului adipos",
+          "Vasodilatația produsă de energia calorică crește oxigenarea zonei tratate, făcând-o mai permeabilă față de un aport mai crescut de nutrienți.",
+          "Stimulează sinteza fibrelor regenerative de colagen, îmbunătățind proprietățile elastice ale pielii"
+        ],
+        "contraindications": "Tratamentul se recomandă, de regulă, pentru toate tipurile de ten cu excepția tenurilor hipersensibile/cu cuperoză extinsă",
+        "aftercare": "După un peeling, în funcție de intensitatea lui, pielea se poate înroși și descuama pentru câteva zile. Veți fi informați în timpul consultației inițiale despre durata recuperării în funcție de peeling-ul care vă este recomandat.",
+        "freqOfApplication": "Se recomandă cure de 4 - 6 ședințe/lună, în funcție de inestetismele care se doresc a fi tratate (în medie, o ședință pe săptămână). În cadrul tratamentelor de întreținere, se recomandă efectuarea unei ședințe/lună.",
+        "price": "150",
+        "time": "30",
+        "activeIngredients": [],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1691525933/view-delicious-ice-cream-min_xu6am2.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+        "miscellanous": []
+      },
+      {
+        "ID": "aht1",
+        "type": "treatment",
+        "name": "Tratament cu",
+        "nickname": "acid hialuronic transformabil",
+        "description": "Tratamentul cu acid hialuronic transformabil încapsulat crește elasticitatea pielii, susține regenerarea și reînnoirea celulelor, și oferă un efect de umplere a ridurilor similar cu cel obținut pe cale invazivă ",
+        "treatmentAreaCategory": ["complexion"],
+        "ageCategory": ["Toate vârstele"],
+        "desiredResultCategory": ["plumping"],
+        "cosmeticConcernCategory": [
+          "dry",
+          "oily",
+          "mature",
+          "sensitive",
+          "saggy"
+        ],
+        "bulletFacts": [
+          "Este un dermo-filler dublu potent datorită îmbinării acidului hialuronic cu hidroxiapatita cu eliberare treptată",
+          "Mineralizează pielea, îmbogățind-o cu ioni de calciu",
+          "Se recomandă și ca tratament de întreținere a efectelor altor proceduri dermato-estetice"
+        ],
+        "contraindications": [],
+        "aftercare": "",
+        "freqOfApplication": "",
+        "price": "290",
+        "time": "60",
+        "activeIngredients": [],
+        "images": {
+          "display": [
+            "https://res.cloudinary.com/dgykbnubn/image/upload/v1691525934/close-up-texture-cream_20_-min_ql0toa.jpg"
+          ],
+          "before": [],
+          "after": []
+        },
+        "miscellanous": []
+      }
+    ]
   },
   "categories": {
-    "ageCategory": ["< 25 ani", "25-30 ani", "30-40 ani", "40-50 ani", "> 50 ani", "Toate vârstele"],
+    "ageCategory": [
+      "< 25 ani",
+      "25-30 ani",
+      "30-40 ani",
+      "40-50 ani",
+      "> 50 ani",
+      "Toate vârstele"
+    ],
     "treatmentAreaCategory": [
       "complexion",
       "scalp",

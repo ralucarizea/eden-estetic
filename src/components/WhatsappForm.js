@@ -10,25 +10,29 @@ import {
   Textarea,
   InputLeftAddon,
   InputGroup,
+  Select,
 } from "@chakra-ui/react";
-import { React } from "react";
+// import PhoneInput from "react-phone-number-input";
+import { React, useState } from "react";
 //local imports
+import { beige, green } from "../assets/constants/constants";
+import ButtonEllipse from "./ButtonEllipse";
 import "../assets/fonts/fonts.css";
+// import ButtonEllipse from "./ButtonEllipse";
 // import img from "./../assets/images/top-view-cream-container-with-plant.jpg";
 // import EllipseImgBackground from "./EllipseImgBackground";
 
 const img =
   "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194172/edenestetic/visual2_awtoxi.png";
 
+export default function WhatsappForm() {
+  const [value, setValue] = useState("");
 
-  export default function WhatsappForm() {
   return (
     <Flex height="140vh">
       <Box
-        // border="2px solid cyan"
         width="50%"
         height="100%"
-        //  maxHeight={"700px"}
         backgroundImage={`url(${img})`}
         backgroundSize={"cover"}
         backgroundRepeat={"no-repeat"}
@@ -39,77 +43,84 @@ const img =
         height="100%"
         flexDirection={"column"}
         justifyContent={"center"}
-        p="100px"
+        p="80px"
         position="relative"
         borderBottom={`0.5px solid #f3eee7`}
       >
-        <Text fontSize={"66px"} pb="64px" fontFamily={"RollgatesLuxury"}>
+        <Text
+          fontSize={"68px"}
+          pb="72px"
+          fontFamily={"RollgatesLuxury"}
+          // fontWeight={"300"}
+          letterSpacing={"-1px"}
+        >
           {" "}
           Ai vreo curiozitate?{" "}
         </Text>
         <Text
-          fontSize={"36px"}
+          fontSize={"40px"}
           fontFamily={"TheReason"}
           position="absolute"
-          right="24px"
-          top="27%"
+          right="3%"
+          top="25%"
         >
           Trimite-ne un mesaj pe Whatsapp!
         </Text>
-        <Text fontSize={"18px"} fontFamily={"Montserrat"} width="64%">
-          Promitem că te contactăm înapoi cât de repede cu putință
-        </Text>
-        <Box py="48px" fontFamily={"Montserrat"}>
-          {/* <Form> */}
+        {/* <Text
+          pl="12px"
+          fontSize={"20px"}
+          fontFamily={"Montserrat"}
+          fontWeight={"300"}
+          letterSpacing={"-1px"}
+        >
+          Promitem ca te contactam inapoi cat de repede cu putinta!
+        </Text> */}
+        <Box pt="48px" pb="10vh" fontFamily={"Montserrat"}>
           <FormControl py="12px">
             <FormLabel>Nume</FormLabel>
-            <Input variant={"flushed"} type="text" focusBorderColor="#f3eee7" />
-            {/* <FormHelperText>We'll never share your email.</FormHelperText> */}
+            <Input
+              variant={"flushed"}
+              type="text"
+              borderColor="rgba(243,238,231, 0.3)"
+              _focusVisible={{}}
+            />
           </FormControl>
           <FormControl py="12px">
             <FormLabel>Număr de telefon</FormLabel>
-            <InputGroup>
-              <InputLeftAddon
-                children="+40"
-                color="#f3eee7"
-                backgroundColor="#6c8a96"
-                borderTop="0px"
-                borderRight="0px"
-                borderLeft="0px"
-                borderColor="#f3eee7"
-                borderRadius="0px"
-                px="12px"
-              />
-              <Input
-                variant={"flushed"}
-                type="tel"
-                focusBorderColor="#f3eee7"
-              />
-            </InputGroup>
-
-            {/* <FormHelperText>We'll never share your email.</FormHelperText> */}
+            <Input
+              variant={"flushed"}
+              type="tel"
+              borderColor="rgba(243,238,231, 0.3)"
+              placeholder="+40..."
+              _placeholder={{
+                color: "rgba(243,238,231, 0.5)",
+                fontStyle: "italic",
+              }}
+              _focusVisible={{}}
+            />
           </FormControl>
           <FormControl py="12px">
             <FormLabel>Mesajul tău</FormLabel>
             <Textarea
-              placeholder="Introdu aici mesajul dorit..."
-              _placeholder={{ color: "#cfcac4" }}
+              // placeholder="Bună, Mariana! Sunt interesată să programez o ședință de diagnoză & consultanță pentru săptămâna viitoare. Ai vreun loc disponibil?"
+              placeholder="Scrie mesajul dorit..."
+              _placeholder={{
+                color: "rgba(243,238,231, 0.5)",
+                fontStyle: "italic",
+              }}
               variant={"flushed"}
-              focusBorderColor="#f3eee7"
+              borderColor="rgba(243,238,231, 0.3)"
+              _focusVisible={{}}
             />
-            {/* <FormHelperText>We'll never share your email.</FormHelperText> */}
           </FormControl>
         </Box>
-        <Button
-          fontFamily={"RollgatesLuxury"}
-          fontStyle={"italic"}
-          fontSize={"20px"}
-          type="submit"
-        >
-          {" "}
-          Trimite
-        </Button>
-        {/* </Form> */}
+        <ButtonEllipse
+          primaryColor={beige}
+          secondaryColor={green}
+          textCTA={"Trimite mesajul"}
+          maxHeight={"120"}
+          maxWidth={"270"}
+        />
       </Flex>
     </Flex>
   );

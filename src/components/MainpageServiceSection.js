@@ -2,7 +2,7 @@
 import { Box, Icon, Text } from "@chakra-ui/react";
 //local imports
 import "../assets/fonts/fonts.css";
-import {green, beige} from '../assets/constants/constants'
+import { green, beige } from "../assets/constants/constants";
 import ImageContainerSmall from "./ImageContainerSmall";
 import ImageContainerSmallBeige from "./ImageContainerSmallBeige";
 import { VscArrowRight } from "react-icons/vsc";

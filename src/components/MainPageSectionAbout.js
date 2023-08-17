@@ -2,8 +2,13 @@
 import { Box, Flex, Text, Button } from "@chakra-ui/react";
 // local imports
 import ImageContainerLarge from "./ImageContainerLarge";
+import ButtonEllipse from "./ButtonEllipse";
 import "../assets/fonts/fonts.css";
-import { StatNumbers, StatDescriber} from '../assets/constants/styledcomponents'
+import {
+  StatNumbers,
+  StatDescriber,
+} from "../assets/constants/styledcomponents";
+import { green, beige } from "../assets/constants/constants";
 //constants
 
 const About = () => {
@@ -61,21 +66,20 @@ const About = () => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </Text>
-          <Text pb="64px">
+          <Text pb="84px">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum.
           </Text>
         </Box>
-        <Button
-          fontFamily={"RollgatesLuxury"}
-          fontStyle={"italic"}
-          fontSize={"20px"}
-        >
-          {" "}
-          Afla toata povestea
-        </Button>
+        <ButtonEllipse
+          primaryColor={green}
+          secondaryColor={beige}
+          textCTA={"Citeste mai multe"}
+          maxHeight={"84"}
+          maxWidth={"230"}
+        />
       </Box>
     </Flex>
   );

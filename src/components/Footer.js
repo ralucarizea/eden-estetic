@@ -11,15 +11,19 @@ import "../assets/fonts/fonts.css";
 import { IconContainer } from "../assets/constants/styledcomponents";
 //constants
 
-
- function Footer({primaryColor, secondaryColor, primaryReversed, secondaryReversed}) {
+function Footer({
+  primaryColor,
+  secondaryColor,
+  primaryReversed,
+  secondaryReversed,
+}) {
   return (
     <Flex
       // px="64px"
       backgroundColor={`${primaryColor}`}
       color={`${secondaryColor}`}
       height="150vh"
-      width="99vw"
+      width="100%"
       flexDirection={"column"}
       justifyContent={"flex-end"}
       // border="2px solid purple"
@@ -68,7 +72,12 @@ import { IconContainer } from "../assets/constants/styledcomponents";
         ></Box>
       </Flex>
 
-      <Divider width="90%" alignSelf={"center"} mb="36px" color={`${primaryColor}`} />
+      <Divider
+        width="90%"
+        alignSelf={"center"}
+        mb="36px"
+        color={`${primaryColor}`}
+      />
 
       <Flex
         height="35vh"
@@ -80,7 +89,13 @@ import { IconContainer } from "../assets/constants/styledcomponents";
         <Box position={"relative"}>
           {" "}
           <Box width="100%" height="100%">
-            <Logo alt="" width="100%" height="100%" viewBox="0 0 250 44" />
+            <Logo
+              alt=""
+              width="100%"
+              height="100%"
+              viewBox="0 0 250 44"
+              fill={secondaryColor}
+            />
           </Box>
           <Text
             fontSize={"21px"}
@@ -183,7 +198,7 @@ import { IconContainer } from "../assets/constants/styledcomponents";
           </Flex>
         </Flex>
       </Flex>
-      {/* <Flex
+      <Flex
         width="100%"
         height="4vh"
         display="flex"
@@ -204,22 +219,37 @@ import { IconContainer } from "../assets/constants/styledcomponents";
           <Flex width="8%" display="flex" justifyContent={"space-between"}>
             <Link href="https://www.facebook.com/EdenEsteticCenter/?locale=ro_RO">
               <IconContainer>
-                <Icon as={SiFacebook} color={`${secondaryColor}`} width="16px" height="16px"/>
+                <Icon
+                  as={SiFacebook}
+                  color={`${secondaryColor}`}
+                  width="16px"
+                  height="16px"
+                />
               </IconContainer>
             </Link>
             <Link href="https://www.instagram.com/marianavladescu/">
               <IconContainer>
-                <Icon as={SiInstagram} color={`${secondaryColor}`} width="16px" height="16px" />
+                <Icon
+                  as={SiInstagram}
+                  color={`${secondaryColor}`}
+                  width="16px"
+                  height="16px"
+                />
               </IconContainer>
             </Link>
             <Link href="">
               <IconContainer>
-                <Icon as={HiPhone} color={`${secondaryColor}`}width="16px" height="16px"/>
+                <Icon
+                  as={HiPhone}
+                  color={`${secondaryColor}`}
+                  width="16px"
+                  height="16px"
+                />
               </IconContainer>
             </Link>
           </Flex>
         </Flex>
-      </Flex> */}
+      </Flex>
     </Flex>
   );
 }

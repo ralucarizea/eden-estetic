@@ -6,41 +6,47 @@ export const beige = "#f3eee7";
 //data constants
 
 export const translatedTags = {
-  acne: {translation:"Acnee", icon:""},
-  hairfall: {translation:"Subțierea/căderea părului", icon:""},
-  dermatitis: {translation:"Afecțiuni dermatologice (dermatită)", icon:""},
-  unevenness: {translation:"Asimetrii cosmetice", icon:""},
-  darkcircles: {translation:"Cearcăne/pungi sub ochi", icon:""},
-  doublechin: {translation:"Bărbie dublă", icon:""},
-  dehydratedlips: {translation:"Buze crăpate/deteriorate", icon:""},
-  scars: {translation:"Cicatrici, pete & zone hiperpigmentate", icon:""},
-  saggy: {translation:"Piele lăsată", icon:""},
-  cloggedpores: {translation:"Pori dilatați", icon:""},
-  rosacea: {translation:"Cuperoză/rozacee", icon:""},
-  dry: {translation:"Ten deshidratat/uscat", icon:""},
-  oily: {translation:"Ten gras/mixt", icon:""},
-  mature: {translation:"Ten matur/tern", icon:""},
-  sensitive:{translation:"Ten sensibil/iritat", icon:""},
-  rejuvenating: {translation:"Rejuvenare & regenerare celulară", icon:""},
-  antiaging: {translation:"Prevenirea îmbătrânirii (anti-aging)", icon:""},
-  cleansing: {translation:"Curățare blândă (la suprafața pielii)", icon:""},
-  calming: {translation:"Calmare & reparare", icon:""},
-  plumping: {translation:"Umplere volumetrică (plumping)", icon:""},
-  peeling: {translation:"Curățare în profunzime (exfoliant/peeling)", icon:""},
-  lifting: {translation:"Lifting", icon:""},
-  extrahydrating: {translation:"Hidratare intensivă", icon:""},
-  hydrating: {translation:"Hidratare blândă", icon:""},
-  scalp: {translation:"Scalp", icon:""},
-  cleavage: {translation:"Decolteu", icon:""},
-  lips: {translation:"Buze", icon:""},
-  eyes: {translation:"Zona ochilor", icon:""},
-  neck: {translation:"Gât", icon:""},
-  complexion: {translation:"Ten", icon:""},
-  ageCategory: {translation:"Vârstă", icon:""},
-  treatmentAreaCategory: {translation:"Zona de tratament", icon:""},
-  cosmeticConcernCategory: {translation:"Tipul de problemă cosmetică", icon:""},
-  desiredResultCategory: {translation:"Efectul dorit", icon:""},
-}
+  acne: { translation: "Acnee", icon: "" },
+  hairfall: { translation: "Subțierea/căderea părului", icon: "" },
+  dermatitis: { translation: "Afecțiuni dermatologice (dermatită)", icon: "" },
+  unevenness: { translation: "Asimetrii cosmetice", icon: "" },
+  darkcircles: { translation: "Cearcăne/pungi sub ochi", icon: "" },
+  doublechin: { translation: "Bărbie dublă", icon: "" },
+  dehydratedlips: { translation: "Buze crăpate/deteriorate", icon: "" },
+  scars: { translation: "Cicatrici, pete & zone hiperpigmentate", icon: "" },
+  saggy: { translation: "Piele lăsată", icon: "" },
+  cloggedpores: { translation: "Pori dilatați", icon: "" },
+  rosacea: { translation: "Cuperoză/rozacee", icon: "" },
+  dry: { translation: "Ten deshidratat/uscat", icon: "" },
+  oily: { translation: "Ten gras/mixt", icon: "" },
+  mature: { translation: "Ten matur/tern", icon: "" },
+  sensitive: { translation: "Ten sensibil/iritat", icon: "" },
+  rejuvenating: { translation: "Rejuvenare & regenerare celulară", icon: "" },
+  antiaging: { translation: "Prevenirea îmbătrânirii (anti-aging)", icon: "" },
+  cleansing: { translation: "Curățare blândă (la suprafața pielii)", icon: "" },
+  calming: { translation: "Calmare & reparare", icon: "" },
+  plumping: { translation: "Umplere volumetrică (plumping)", icon: "" },
+  peeling: {
+    translation: "Curățare în profunzime (exfoliant/peeling)",
+    icon: "",
+  },
+  lifting: { translation: "Lifting", icon: "" },
+  extrahydrating: { translation: "Hidratare intensivă", icon: "" },
+  hydrating: { translation: "Hidratare blândă", icon: "" },
+  scalp: { translation: "Scalp", icon: "" },
+  cleavage: { translation: "Decolteu", icon: "" },
+  lips: { translation: "Buze", icon: "" },
+  eyes: { translation: "Zona ochilor", icon: "" },
+  neck: { translation: "Gât", icon: "" },
+  complexion: { translation: "Ten", icon: "" },
+  ageCategory: { translation: "Vârstă", icon: "" },
+  treatmentAreaCategory: { translation: "Zona de tratament", icon: "" },
+  cosmeticConcernCategory: {
+    translation: "Tipul de problemă cosmetică",
+    icon: "",
+  },
+  desiredResultCategory: { translation: "Efectul dorit", icon: "" },
+};
 export const mainServiceCategories = [
   {
     title: "Diagnostic & consultanta cosmetica",
@@ -78,3 +84,32 @@ export const mainServiceCategories = [
   },
 ];
 
+export const faqMainpage = [
+  {
+    question: "De ce as alege o schema personalizata de tratament cosmetic?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    question:
+      "Este normal sa imi simt tenul sensibilizat in urma anumitor tratamente?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    question: "Cum ar trebui să îngrijesc o zonă după efectuarea unui tatuaj?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    question: "Cum aflu ce tip de tratament se potrivește tipului meu de ten?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    question:
+      "Sunt recomandate tratamentele cosmetice avansate persoanelor sub 30 ani?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+];

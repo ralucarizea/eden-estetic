@@ -46,9 +46,9 @@ export const PersonDiv = styled.div`
   margin-inline: auto;
   margin-bottom: 36px;
   max-width: 24rem;
-  display:grid;
-  justify-content:center;
-  align-items:end;
+  display: grid;
+  justify-content: center;
+  align-items: end;
   position: relative;
 `;
 
@@ -105,7 +105,7 @@ export const StatNumbers = styled.div`
   font-style: normal;
 `;
 export const StatDescriber = styled.div`
-  margin-top: -12px; 
+  margin-top: -12px;
   font-size: 24px;
   font-family: "Montserrat";
   font-weight: 400;
@@ -136,13 +136,13 @@ export const ServiceTitle = styled.p`
   font-family: "RollgatesLuxury";
 `;
 export const NavbarButtonBox = styled.div`
-width: 12%;
-border-left: 1px solid #f3eee7;
-height: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 17px;
+  width: 12%;
+  border-left: 1px solid #f3eee7;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
 `;
 
 export const Persona = styled.div`
@@ -182,4 +182,26 @@ export const Ellipse = styled.img`
   width: 20%;
   min-width: 184px;
   rotate: 356.5deg;
-`
+`;
+export const DiagnosisHeading = styled.div`
+  font-family: "RollgatesLuxury";
+  font-size: 42px;
+`;
+export const DiagnosisCaption = styled.div`
+  font-family: "Montserrat";
+  letter-spacing: -1px;
+  line-height: 26px;
+  font-size: 15px;
+  padding: 24px 120px 0px 24px;
+  position: ${(props) => props.position};
+`;
+export const DiagnosisNumberedElement = styled.div`
+  font-family: "RollgatesLuxury";
+  font-size: 220px;
+  position: ${(props) => props.position};
+  line-height: 0px;
+  left: ${(props) => props.left};
+  right: ${(props) => props.right};
+  top: ${(props) => props.top};
+  transform: ${(props) => props.transform};
+`;
