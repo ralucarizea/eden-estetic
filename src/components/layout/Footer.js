@@ -75,7 +75,7 @@ function Footer({
             right="0"
             margin={"0 auto"}
           >
-            <Link href="https://www.facebook.com/EdenEsteticCenter/?locale=ro_RO">
+            <a href="https://www.facebook.com/EdenEsteticCenter/?locale=ro_RO">
               <IconContainer>
                 <Icon
                   as={SiFacebook}
@@ -85,8 +85,8 @@ function Footer({
                   mx="8px"
                 />
               </IconContainer>
-            </Link>
-            <Link href="src/components">
+            </a>
+            <a href="https://www.instagram.com/marianavladescu/">
               <IconContainer>
                 <Icon
                   as={HiPhone}
@@ -96,8 +96,8 @@ function Footer({
                   mx="8px"
                 />
               </IconContainer>
-            </Link>
-            <Link href="https://www.instagram.com/marianavladescu/">
+            </a>
+            <a href="https://www.instagram.com/marianavladescu/">
               <IconContainer>
                 <Icon
                   as={SiInstagram}
@@ -107,7 +107,7 @@ function Footer({
                   mx="8px"
                 />
               </IconContainer>
-            </Link>
+            </a>
           </Flex>
         </Box>
       </Flex>
