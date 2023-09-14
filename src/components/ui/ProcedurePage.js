@@ -8,21 +8,30 @@ import {
   Tab,
   TabPanel,
   TabPanels,
+  Image,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import data from "../../../src/assets/constants/data.json";
 import { green, beige } from "../../assets/constants/constants";
 import { ProductPageImageContainer } from "../../assets/constants/styledcomponents";
-// import ButtonEllipse from "./ButtonEllipse";
+
 export default function ProcedurePage() {
   const [procedure, setProcedure] = useState({});
   const { procedureId } = useParams();
-  console.debug("slo");
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [procedure]);
+
   useEffect(() => {
     const procedures = data.services.procedures;
-    setProcedure(procedures.find((procedure) => procedure.ID === procedureId));
-  }, []);
+    setProcedure(procedures.find((procedure) => procedure?.ID === procedureId));
+  }, [procedureId]);
+
   return (
     <Flex
       backgroundColor={beige}
@@ -40,18 +49,18 @@ export default function ProcedurePage() {
         pt="5vh"
         justifyContent={"space-evenly"}
       >
-        <ProductPageImageContainer backgroundColor={procedure.images?.display}>
-          ewtwevtbw
-        </ProductPageImageContainer>
-        <ProductPageImageContainer backgroundColor={procedure.images?.display}>
-          ewtwevtbw
-        </ProductPageImageContainer>
-        <ProductPageImageContainer backgroundColor={procedure.images?.display}>
-          ewtwevtbw
-        </ProductPageImageContainer>
-        <ProductPageImageContainer backgroundColor={procedure.images?.display}>
-          ewtwevtbw
-        </ProductPageImageContainer>
+        <ProductPageImageContainer
+          backgroundColor={procedure?.images?.display}
+        ></ProductPageImageContainer>
+        <ProductPageImageContainer
+          backgroundColor={procedure?.images?.display}
+        ></ProductPageImageContainer>
+        <ProductPageImageContainer
+          backgroundColor={procedure?.images?.display}
+        ></ProductPageImageContainer>
+        <ProductPageImageContainer
+          backgroundColor={procedure?.images?.display}
+        ></ProductPageImageContainer>
       </Flex>
       <Flex
         flexDirection="column"
@@ -61,7 +70,6 @@ export default function ProcedurePage() {
         width={"55%"}
         borderLeft={`1px solid ${green}`}
         height="60%"
-        // backgroundColor={"red"}
         position={"sticky"}
         top={"0"}
         fontFamily={"Montserrat"}
@@ -77,7 +85,7 @@ export default function ProcedurePage() {
           lineHeight={"58px"}
         >
           {" "}
-          {procedure.name + " " + procedure.nickname}
+          {procedure?.name + " " + procedure?.nickname}
         </Text>
         <Flex
           my="3vh"
@@ -88,7 +96,7 @@ export default function ProcedurePage() {
           // border={`1px solid ${green}`}
           width="fit-content"
         >
-          <Box>{procedure.price} RON </Box>
+          <Box>{procedure?.price} RON </Box>
           <Box
             height="3px"
             width="3px"
@@ -96,7 +104,7 @@ export default function ProcedurePage() {
             backgroundColor={green}
             mx="8px"
           />
-          <Box>{procedure.time} MIN</Box>
+          <Box>{procedure?.time} MIN</Box>
         </Flex>
         <Box
           width="85%"
@@ -107,11 +115,12 @@ export default function ProcedurePage() {
           lineHeight={"30px"}
           letterSpacing={"-0.5px"}
         >
-          {procedure.description}
+          {procedure?.description}
         </Box>
         <Button
           backgroundColor={green}
           color={beige}
+          border={`1px solid ${green}`}
           // fontFamily={"RollgatesLuxury"}
           my="3vh"
           width="fit-content"
@@ -183,19 +192,17 @@ export default function ProcedurePage() {
             fontSize={"15px"}
             border={`0.5px solid ${green}`}
             minHeight="25vh"
-            // color={beige}
-            // backgroundColor={green}
           >
-            <TabPanel>{procedure.bulletFacts}</TabPanel>
-            <TabPanel>{procedure.cosmeticConcernCategory}</TabPanel>
+            <TabPanel>{procedure?.bulletFacts}</TabPanel>
+            <TabPanel>{procedure?.cosmeticConcernCategory}</TabPanel>
             <TabPanel>
-              {procedure.activeIngredients
-                ? procedure.activeIngredients
+              {procedure?.activeIngredients
+                ? procedure?.activeIngredients
                 : "Intreaba specialistul pentru mai multe detalii"}
             </TabPanel>
             <TabPanel>
-              {procedure.aftercare
-                ? procedure.aftercare
+              {procedure?.aftercare
+                ? procedure?.aftercare
                 : "Evită expunerea directă la radiații pentru aprox. 5-7 zile. Înainte de culcare, aplică o cremă intens hidratantă potrivită tipului tău de ten. Pe timpul zilei, se recomandă aplicarea unei loțiuni cu factor ridicat de protecție."}
             </TabPanel>
           </TabPanels>
@@ -209,7 +216,7 @@ export default function ProcedurePage() {
           fontSize="20px"
         >
           <Text my="24px">Proprietăți & beneficii:</Text>
-          {procedure.bulletFacts?.map((fact) => (
+          {procedure?.bulletFacts?.map((fact) => (
             <Box
               ml="8px"
               width="100%"

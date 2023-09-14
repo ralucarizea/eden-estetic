@@ -3,7 +3,23 @@ export const productMenuGridColNumber = 12;
 //theming constants
 export const green = "#6c8a96";
 export const beige = "#f3eee7";
+export const primary = "#6D9787";
 //data constants
+
+export const ROUTES = {
+  HOME: "/",
+  ABOUT: "/despre-noi",
+  BLOG: "/blog",
+  CONTACT: "/contact",
+  SERVICES: "/servicii",
+  DIAGNOSIS: "/servicii/diagnoza",
+  PROCEDURES: "/servicii/proceduri",
+  COURSES: "/servicii/cursuri",
+  PROCEDURE: "/:procedureId",
+  PRICING_LIST: "/preturi",
+  CONSULTANCE: "/consultanta",
+  NOT_FOUND: "*",
+};
 
 export const translatedTags = {
   acne: { translation: "Acnee", icon: "" },
@@ -33,7 +49,6 @@ export const translatedTags = {
   lifting: { translation: "Lifting", icon: "" },
   extrahydrating: { translation: "Hidratare intensivă", icon: "" },
   hydrating: { translation: "Hidratare blândă", icon: "" },
-  hairfall: { translation: "Scalp", icon: "" },
   cleavage: { translation: "Decolteu", icon: "" },
   lips: { translation: "Buze", icon: "" },
   eyes: { translation: "Zona ochilor", icon: "" },

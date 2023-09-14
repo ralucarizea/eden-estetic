@@ -16,6 +16,7 @@ import WhatsappForm from "../components/WhatsappForm";
 import { beige, green } from "../assets/constants/constants";
 //-----other files
 import "../assets/fonts/fonts.css";
+import { useEffect } from "react";
 //-------------constants
 const GridItem = styled.div`
   grid-column: 1 / 7;
@@ -27,6 +28,13 @@ const GridItem = styled.div`
 `;
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <Box width="100%" overflow="hidden">
       <Grid

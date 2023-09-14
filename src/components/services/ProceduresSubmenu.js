@@ -66,7 +66,7 @@ function useStaggerAnimation(filteredProcedures) {
       {
         duration: 0.4,
         delay: staggerMenuItems,
-      }
+      },
     );
   }, [filteredProcedures]);
 
@@ -86,17 +86,10 @@ const ProceduresSubmenu = ({ proceduresData, filterCategories }) => {
   useEffect(() => {
     setFilteredProcedures(
       proceduresData.filter((product) =>
-        checkIfProductIsFilterable(product, selectedCheckboxes)
-      )
+        checkIfProductIsFilterable(product, selectedCheckboxes),
+      ),
     );
-  }, [selectedCheckboxes]);
-
-  useEffect(() => {
-    console.log(
-      "RE-rendering -> New value for filteredProcedures: ",
-      filteredProcedures
-    );
-  }, [filteredProcedures]);
+  }, [proceduresData, selectedCheckboxes]);
 
   return (
     <Grid

@@ -4,8 +4,15 @@ import {
   CaptionHeading,
   CaptionText,
 } from "../assets/constants/styledcomponents";
+import { useEffect } from "react";
 
 function AboutPage() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <Flex

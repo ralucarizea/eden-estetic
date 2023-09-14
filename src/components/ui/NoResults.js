@@ -1,6 +1,7 @@
-import { Box, Flex, GridItem, Text } from "@chakra-ui/react";
-import { beige, green } from "../../assets/constants/constants";
+import { GridItem } from "@chakra-ui/react";
+import { green } from "../../assets/constants/constants";
 import "../../assets/fonts/fonts.css";
+
 export default function NoResults() {
   return (
     <GridItem

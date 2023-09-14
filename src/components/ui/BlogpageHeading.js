@@ -15,8 +15,7 @@ export default function BlogHeading() {
       alignContent={"center"}
       py="80px"
       width="100%"
-      px ="10vw"
-      
+      px="10vw"
     >
       <Box
         p={`0px 0px 16px 0px`}
@@ -27,7 +26,7 @@ export default function BlogHeading() {
       >
         Articole blog
       </Box>
-      <Flex  fontSize={"14px"}>
+      <Flex fontSize={"14px"}>
         <CategoryBox>
           <Text>Reparare</Text>
         </CategoryBox>

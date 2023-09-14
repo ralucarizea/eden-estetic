@@ -2,8 +2,16 @@ import { beige, green } from "../assets/constants/constants";
 import WhatsappForm from "../components/WhatsappForm";
 import { GridItem } from "@chakra-ui/react";
 import FAQ from "../components/layout/FAQ";
+import { useEffect } from "react";
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <>
       <GridItem

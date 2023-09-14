@@ -46,7 +46,6 @@ export default function ProceduresCard({ procedure }) {
       position="relative"
       alignItems={"flex-end"}
       justifyContent={"flex-end"}
-      // color={`${beige}`}
       color={`${hexToRgbToTextColor(procedure.images.display)}`}
       backgroundColor={procedure.images.display}
     >
@@ -56,15 +55,11 @@ export default function ProceduresCard({ procedure }) {
         border="1px"
         height="100%"
         width="100%"
-        // backgroundImage={`url(${procedure.images.display})`}
-        // backgroundSize={"cover"}
-        // backgroundPosition={"left"}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
         <Box
           backgroundColor={procedure.images.display}
-          opacity="0.78"
           alt="Procedure Display"
           style={{
             position: "absolute",
@@ -81,10 +76,9 @@ export default function ProceduresCard({ procedure }) {
             height="100%"
             width="100%"
             zIndex="10"
+            initial={{ opacity: 0 }}
             animate={{
-              backdropFilter: "blur(8.3px)",
-              backgroundColor: "()",
-              duration: 3000,
+              opacity: 1,
             }}
             sx={{}}
           >
@@ -107,7 +101,7 @@ export default function ProceduresCard({ procedure }) {
                 background={"transparent"}
                 py="4px"
                 borderTop={`1px solid ${hexToRgbToTextColor(
-                  procedure.images.display
+                  procedure.images.display,
                 )}`}
               >
                 <Box>ZONĂ TRATAMENT</Box>
@@ -116,7 +110,7 @@ export default function ProceduresCard({ procedure }) {
                     <StyledIcon
                       definition={convertToIconFormat(area)}
                       fillColor={`${hexToRgbToTextColor(
-                        procedure.images.display
+                        procedure.images.display,
                       )}`}
                     />
                   ))}
@@ -129,18 +123,14 @@ export default function ProceduresCard({ procedure }) {
                   alignItems={"center"}
                   background={"transparent"}
                   borderTop={`1px solid ${hexToRgbToTextColor(
-                    procedure.images.display
+                    procedure.images.display,
                   )}`}
-                  // borderBottom={`1px solid ${hexToRgbToTextColor(
-                  //   procedure.images.display
-                  // )}`}
                   py="4px"
                 >
                   <Box>EFECTUL VIZIBIL</Box>
                   <HStack spacing="6px">
                     {procedure.desiredResultCategory?.map((effect) => (
                       <StyledIcon definition={convertToIconFormat(effect)} />
-                      // <Box>{effect} </Box>
                     ))}
                   </HStack>
                 </Flex>
@@ -150,18 +140,16 @@ export default function ProceduresCard({ procedure }) {
                 height="auto"
                 justifyContent={"center"}
                 pr="4px"
-                // background={"orange"}
                 mt="24px"
               >
                 <Button
-                  // height="12%"
                   color="inherit"
                   width="auto"
                   background={procedure.images.display}
                   fontSize={"10px"}
                   borderRadius={"0px"}
                   border={`1px solid ${hexToRgbToTextColor(
-                    procedure.images.display
+                    procedure.images.display,
                   )}`}
                 >
                   Citeste mai multe
@@ -188,7 +176,6 @@ export default function ProceduresCard({ procedure }) {
               fontSize="28px"
               fontWeight="400"
               fontFamily="RollgatesLuxury"
-              // letterSpacing="-0.5px"
               lineHeight="28px"
               width="100%"
               height="auto"

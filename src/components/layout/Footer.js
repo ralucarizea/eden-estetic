@@ -1,15 +1,12 @@
-//3rd party imports
-
 import { Box, Text, Icon, Flex, Divider } from "@chakra-ui/react";
 import { SiFacebook, SiInstagram } from "react-icons/si";
 import { HiPhone } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
-//local imports
 import { ReactComponent as Logo } from "../../assets/images/logo-edenesteticwhite.svg";
 import "../../assets/fonts/fonts.css";
 import { IconContainer } from "../../assets/constants/styledcomponents";
-//constants
+import { ROUTES } from "../../assets/constants/constants";
 
 function Footer({
   primaryColor,
@@ -19,14 +16,12 @@ function Footer({
 }) {
   return (
     <Flex
-      // px="64px"
       backgroundColor={`${primaryColor}`}
       color={`${secondaryColor}`}
       height="150vh"
       width="100%"
       flexDirection={"column"}
       justifyContent={"flex-end"}
-      // border="2px solid purple"
     >
       <Flex
         height="55%"
@@ -169,14 +164,14 @@ function Footer({
             <Text fontFamily="RollgatesLuxury" fontSize={"22px"} pb="4px">
               Meniu
             </Text>
-            <Link to="/">
+            <Link to={ROUTES.HOME}>
               <Box pb="4px">Acasă</Box>
             </Link>
-            <Link to="/about">
+            <Link to={ROUTES.ABOUT}>
               <Box pb="4px">Despre noi</Box>
             </Link>
 
-            <Link to="/pricing-list">
+            <Link to={ROUTES.PRICING_LIST}>
               <Box pb="4px">Listă de prețuri</Box>
             </Link>
           </Flex>
@@ -184,8 +179,6 @@ function Footer({
             flexDirection="column"
             alignItems={"flex-end"}
             textAlign={"end"}
-            // mx="60px"
-            // backgroundColor={"aqua"}
             maxWidth="40%"
           >
             <Text fontFamily="RollgatesLuxury" fontSize={"22px"} pb="4px">
@@ -222,26 +215,20 @@ function Footer({
             <Text fontFamily="RollgatesLuxury" fontSize={"22px"} pb="4px">
               Servicii
             </Text>
-            <Link to="/product-list">
+            <Link to={ROUTES.DIAGNOSIS}>
               <Box textAlign={"end"} pb="6px">
                 Diagnoză & consultanță{" "}
               </Box>
-              {/* <Box mt="-6px" pb="6px"> */}
-
-              {/* </Box> */}
             </Link>
-            <Link to="/product-list">
+            <Link to={ROUTES.SERVICES}>
               <Box textAlign={"end"} pb="6px">
                 Tratamente dermato-cosmetice
               </Box>
-              {/* <Box mt="-6px" > */}
-
-              {/* </Box> */}
             </Link>
-            <Link to="/product-list">
+            <Link to={ROUTES.SERVICES}>
               <Box pb="6px">Make-up permanent</Box>
             </Link>
-            <Link to="/product-list">
+            <Link to={ROUTES.COURSES}>
               <Box>Cursuri & certificări</Box>
             </Link>
           </Flex>
@@ -253,14 +240,11 @@ function Footer({
         display="flex"
         alignItems={"center"}
         justifyContent={"center"}
-        // backgroundColor={`${secondaryColor}`}
         backgroundColor={`${primaryColor}`}
         fontSize={"12px"}
-        // color={`${primaryColor}`}
         color={`${secondaryColor}`}
       >
         <Flex
-          // flexDirection={"column"}
           width="100%"
           justifyContent={"center"}
           alignItems={"center"}
@@ -272,7 +256,6 @@ function Footer({
         >
           <Text> DESIGN & DEVELOPMENT BY RALUCA RIZEA.</Text>
           <Text fontWeight={"400"} ml="8px">
-            {" "}
             ALL RIGHTS RESERVED.
           </Text>
         </Flex>

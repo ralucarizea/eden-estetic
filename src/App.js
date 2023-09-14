@@ -1,5 +1,5 @@
-import { ChakraProvider, Switch, extendTheme } from "@chakra-ui/react";
-import { Routes, Route } from "react-router-dom";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { Route, Routes } from "react-router-dom";
 import { checkboxTheme } from "./components/ui/Checkbox";
 import AboutPage from "./pages/AboutPage";
 import Blog from "./pages/Blog";
@@ -16,7 +16,7 @@ import Footer from "./components/layout/Footer";
 import ProceduresSubmenu from "./components/services/ProceduresSubmenu";
 import DiagnosisSubmenu from "./components/services/DiagnosisSubmenu";
 import CoursesSubmenu from "./components/services/CoursesSubmenu";
-import { beige, green } from "./assets/constants/constants";
+import { beige, green, ROUTES } from "./assets/constants/constants";
 import data from "../src/assets/constants/data.json";
 import ProcedurePage from "./components/ui/ProcedurePage";
 
@@ -31,15 +31,14 @@ function App() {
     <ChakraProvider theme={theme}>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<AboutPage />} />
-        <Route path="blog" element={<Blog />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="product-menu" element={<ProductMenus />}>
-          {/* <Switch> */}
-          <Route path="diagnosis" element={<DiagnosisSubmenu />} />
+        <Route path={ROUTES.HOME} element={<Home />} />
+        <Route path={ROUTES.ABOUT} element={<AboutPage />} />
+        <Route path={ROUTES.BLOG} element={<Blog />} />
+        <Route path={ROUTES.CONTACT} element={<Contact />} />
+        <Route path={ROUTES.SERVICES} element={<ProductMenus />}>
+          <Route path={ROUTES.DIAGNOSIS} element={<DiagnosisSubmenu />} />
           <Route
-            path="procedures"
+            path={ROUTES.PROCEDURES}
             element={
               <ProceduresSubmenu
                 proceduresData={data.services.procedures}
@@ -47,13 +46,12 @@ function App() {
               />
             }
           ></Route>
-          <Route path="courses" element={<CoursesSubmenu />} />
-          {/* </Switch> */}
+          <Route path={ROUTES.COURSES} element={<CoursesSubmenu />} />
         </Route>
-        <Route path=":procedureId" element={<ProcedurePage />} />
-        <Route path="/pricing-list" element={<PricingList />} />
-        <Route path="/consultance" element={<Consultance />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path={ROUTES.PROCEDURE} element={<ProcedurePage />} />
+        <Route path={ROUTES.PRICING_LIST} element={<PricingList />} />
+        <Route path={ROUTES.CONSULTANCE} element={<Consultance />} />
+        <Route path={ROUTES.NOT_FOUND} element={<NotFound />} />
       </Routes>
       <Footer
         primaryColor={`${green}`}

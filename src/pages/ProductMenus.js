@@ -1,27 +1,48 @@
-import {
-  Flex,
-  Tabs,
-  TabList,
-  TabPanels,
-  Tab,
-  TabPanel,
-} from "@chakra-ui/react";
-import { Routes, Route, Link, Outlet } from "react-router-dom";
-import ProceduresSubmenu from "../components/services/ProceduresSubmenu";
-import DiagnosisSubmenu from "../components/services/DiagnosisSubmenu";
-import CoursesSubmenu from "../components/services/CoursesSubmenu";
-// import Footer from "../components/Footer";
+import { Flex, Tab, TabList, TabPanels, Tabs } from "@chakra-ui/react";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import "../assets/fonts/fonts.css";
-import { green, beige } from "../assets/constants/constants";
-import data from "../assets/constants/data.json";
+import { beige, green, ROUTES } from "../assets/constants/constants";
+import { useEffect, useState } from "react";
+
 function ProductMenus() {
+  const [tabIndex, setTabIndex] = useState(0);
+  const location = useLocation();
+
+  const handleTabsChange = (index) => {
+    setTabIndex(index);
+  };
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [location]);
+
+  useEffect(() => {
+    const locationPath = location.pathname;
+
+    switch (locationPath) {
+      case ROUTES.DIAGNOSIS:
+        setTabIndex(0);
+        break;
+      case ROUTES.PROCEDURES:
+        setTabIndex(1);
+        break;
+      case ROUTES.COURSES:
+        setTabIndex(2);
+        break;
+      default:
+        break;
+    }
+  }, [location, tabIndex]);
+
   return (
     <Flex
       width="100%"
       height="100%"
       backgroundColor={`${beige}`}
       color={`${green}`}
-      // px="64px"
       overflowY={"hidden"}
       flexDirection="column"
     >
@@ -30,7 +51,6 @@ function ProductMenus() {
         justifyContent="center"
         alignItems="center"
         flexDirection="column"
-        // backgroundColor="green"
         pt="120px"
         pb="60px"
         fontSize="72px"
@@ -40,6 +60,9 @@ function ProductMenus() {
       </Flex>
 
       <Tabs
+        index={tabIndex}
+        onChange={handleTabsChange}
+        defaultIndex={1}
         fontFamily="Montserrat"
         fontSize="16px"
         size="md"
@@ -48,9 +71,8 @@ function ProductMenus() {
         variant="enclosed"
       >
         <TabList width="100%">
-          <Link to="/product-menu/diagnosis">
+          <Link to={ROUTES.DIAGNOSIS}>
             <Tab
-              // borderColor={green}
               borderColor="transparent"
               opacity={0.35}
               _selected={{ opacity: 1 }}
@@ -59,12 +81,11 @@ function ProductMenus() {
               fontSize="18px"
               fontWeight={"500"}
             >
-              Diagnoză & consultanță{" "}
+              Diagnoză & consultanță
             </Tab>
           </Link>
-          <Link to="/product-menu/procedures">
+          <Link to={ROUTES.PROCEDURES}>
             <Tab
-              // borderColor={green}
               borderColor="transparent"
               opacity={0.35}
               _selected={{ opacity: 1 }}
@@ -76,9 +97,8 @@ function ProductMenus() {
               Proceduri cosmetice
             </Tab>
           </Link>
-          <Link to="/product-menu/courses">
+          <Link to={ROUTES.COURSES}>
             <Tab
-              // borderColor={green}
               borderColor="transparent"
               opacity={0.35}
               _selected={{ opacity: 1 }}
@@ -87,23 +107,11 @@ function ProductMenus() {
               fontSize="18px"
               fontWeight={"500"}
             >
-              Cursuri & certificări{" "}
+              Cursuri & certificări
             </Tab>
           </Link>
         </TabList>
         <TabPanels>
-          {/* <TabPanel p="0px">
-            <DiagnosisSubmenu />
-          </TabPanel>
-          <TabPanel pr="20px" pl="0px" pt="48px">
-            <ProceduresSubmenu
-              // proceduresData={data.services.procedures}
-              // filterCategories={data.categories}
-            />
-          </TabPanel>{" "}
-          <TabPanel p="0px">
-            <CoursesSubmenu />
-          </TabPanel> */}
           <Outlet />
         </TabPanels>
       </Tabs>

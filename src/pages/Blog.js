@@ -2,6 +2,7 @@ import { Flex } from "@chakra-ui/react";
 import BlogpageHeading from "../components/ui/BlogpageHeading";
 import BlogpageCard from "../components/ui/BlogpageCard";
 import { beige } from "../assets/constants/constants";
+import { useEffect } from "react";
 
 export const blogContent = [
   {
@@ -55,6 +56,12 @@ export const blogContent = [
 ];
 
 export default function Blog() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <Flex
       justifyContent={"center"}
