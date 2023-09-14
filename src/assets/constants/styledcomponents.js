@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { beige, green } from "./constants";
 // import ellipse from "../images/tintedEllipse.svg";
 
 export const AccordionBox = styled.div`
@@ -13,7 +14,7 @@ export const CaptionBox = styled.div`
   padding: 24px 44px;
   width: 28%;
   height: inherit;
-  border-right: 1px solid #6c8a96;
+  border-right: 1px solid ${green};
   &:last-child {
     border-right: 0px;
     color: red;
@@ -28,8 +29,8 @@ export const CaptionText = styled.p`
   font-size: 14px;
 `;
 export const CategoryBox = styled.button`
-  background-color: #6c8a96;
-  color: #f3eee7;
+  background-color: ${green};
+  color: ${beige};
   padding: 0.5rem;
   margin-left: 0.5rem;
   font-weight: 400;
@@ -79,13 +80,15 @@ export const Question = styled.div`
 `;
 
 export const IconContainer = styled.div`
-  width: 24px;
-  height: 24px;
-  background-color: #6c8a96;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.5rem;
+  background-color: ${green};
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0px 16px;
 `;
 // export const MaskedImage = styled.div`
 //   background-image: url("https://res.cloudinary.com/dgykbnubn/image/upload/v1690194168/edenestetic/mainpage-about_em1jvf.png");
@@ -137,7 +140,7 @@ export const ServiceTitle = styled.p`
 `;
 export const NavbarButtonBox = styled.div`
   width: 12%;
-  border-left: 1px solid #f3eee7;
+  border-left: 1px solid ${beige};
   height: 100%;
   display: flex;
   align-items: center;
@@ -146,24 +149,29 @@ export const NavbarButtonBox = styled.div`
 `;
 
 export const Persona = styled.div`
+  height: 50vh;
+  width: 36vw;
+  margin: 0px 24px;
+  border: 1.5px solid ${green};
+  padding: 36px 48px 40px 48px;
   display: grid;
-  grid-template-columns: 1fr minmax(auto, 124px);
-  grid-template-rows: 1fr 3fr;
-  border: 1.5px solid #6c8a96;
-  padding: 36px 64px 0px 64px;
+  grid-template-columns: 1fr 100px;
+  grid-template-rows: minmax(100px, 1fr) 1fr;
 `;
 export const Name = styled.div`
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  // border-bottom: 1px solid #6c8a96;
+  // border-bottom: 1px solid ${green};
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 28px;
+  font-family: "RollgatesLuxury";
+  font-style: italic;
 `;
 export const ProfilePic = styled.div`
-  width: 92px;
-  height: 92px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-image: url(${(props) => props.src});
   background-position: center;
@@ -175,6 +183,8 @@ export const ProfilePic = styled.div`
 export const Caption = styled.div`
   padding-top: 16px;
   width: 90%;
+  font-family: "Montserrat";
+  font-style: normal;
 `;
 
 export const Ellipse = styled.img`
@@ -204,4 +214,45 @@ export const DiagnosisNumberedElement = styled.div`
   right: ${(props) => props.right};
   top: ${(props) => props.top};
   transform: ${(props) => props.transform};
+`;
+export const StyledSliderButton = styled.button`
+  position: ${(props) => props.position};
+  z-index: ${(props) => props.zIndex};
+  left: ${(props) => props.left};
+  right: ${(props) => props.right};
+  top: ${(props) => props.top};
+  bottom: ${(props) => props.bottom};
+  border-radius: 50%;
+  background: transparent;
+  &:hover {{background-color : ${green}; 
+            color: ${beige};  
+            opacity: 0.8;
+            transition: 210ms ease-in;}}
+  // &:active {{
+  //   background-color : ${beige};
+  //           color : ${green}; 
+  //           border: 0.5px solid ${green};  
+  //           border-radius: 50%;
+  //           opacity: 0.8;
+  //           }}
+`;
+
+// export const CarouselThumb = styled.div`
+//   width: 24px;
+//   height: 24px;
+//   border-radius: 50%;
+//   position: ${(props) => props.position};
+//   line-height: 0px;
+//   left: ${(props) => props.left};
+//   right: ${(props) => props.right};
+//   top: ${(props) => props.top};
+//   transform: ${(props) => props.transform};
+// `;
+
+export const ProductPageImageContainer = styled.div`
+  margin-bottom: 24px;
+  width: 100%;
+  height: 60vh;
+  border-radius: 8px;
+  background-color: ${(props) => props.backgroundColor};
 `;

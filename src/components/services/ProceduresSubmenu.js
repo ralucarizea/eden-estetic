@@ -1,11 +1,8 @@
-// import { Link } from "react-router-dom";
-import { VscArrowRight } from "react-icons/vsc";
-// --------------------local imports
 import "../../assets/fonts/fonts.css";
 import {
   productMenuGridColNumber,
   green,
-  beige,
+  // beige,
   translatedTags,
 } from "../../assets/constants/constants";
 import { AccordionBox } from "../../assets/constants/styledcomponents";
@@ -16,8 +13,6 @@ import {
 import ProceduresCard from "../ui/ProceduresCard";
 import DynamicCheckboxGroup from "./DynamicCheckboxGroup";
 import { useAnimate, stagger, motion } from "framer-motion";
-
-//-------------constants
 import {
   Accordion,
   AccordionItem,
@@ -28,43 +23,8 @@ import {
   GridItem,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-
-// function mapOverChildArrays(obj) {
-//   const result = {};
-//   for (const category in obj) {
-//     if (Array.isArray(obj[category])) {
-//       result[category] = obj[category].map((item) => item);
-//     }
-//   }
-//   return result;
-// }
-
-// function filteringByCurrentFilters(allDataArray, filtersObject) {
-//   let filteredProductArray = [];
-//   for (const i in Object.keys(filtersObject)) {
-//     filteredProductArray = allDataArray.filter((product) =>
-//       product.i
-//         .map((propery) => .i.toString())
-//         .includes(i)
-//     );
-//   }
-//   return filteredProductArray;
-// }
-
-// const filterProduct = (product, filters) => {
-//   for (let [key, value] of Object.entries(filters)) {
-//     console.debug({key})
-//     const productAgeCategories = product[key]; // e.g., ['Toate vârstele']
-//     const selectedAgeCategories = value; // e.g., ['Toate vârstele']
-//     const isSomeIncluded = productAgeCategories.some(category => selectedAgeCategories.includes(category));
-//     return isSomeIncluded;
-//   }
-// }
-
-// function isArrayEmpty(array) {
-//   if (Array.isArray(array) && array.length) return false;
-//   return true;
-// }
+import NoResults from "../ui/NoResults";
+import { Link } from "react-router-dom";
 
 function checkIfProductIsFilterable(product, filtersObject) {
   let ok = 0;
@@ -124,7 +84,6 @@ const ProceduresSubmenu = ({ proceduresData, filterCategories }) => {
   }, []);
 
   useEffect(() => {
-    // console.log(" RE-rendering -> New value for arr : ", arr);
     setFilteredProcedures(
       proceduresData.filter((product) =>
         checkIfProductIsFilterable(product, selectedCheckboxes)
@@ -142,14 +101,13 @@ const ProceduresSubmenu = ({ proceduresData, filterCategories }) => {
   return (
     <Grid
       width="100%"
-      columnGap={"24px"}
-      rowGap="24px"
+      gap="8px"
       backgroundColor="inherit"
       gridTemplateColumns={`4.4fr repeat(${productMenuGridColNumber}, 1fr)`}
       gridAutoRows="auto"
       ref={scope}
     >
-      <GridItem colSpan="1" rowSpan="12" borderRight="1px">
+      <GridItem colSpan="1" rowSpan="16" borderRight="1px">
         <Accordion allowMultiple fontFamily="Montserrat">
           {Object.keys(filterCategories).map((category) => (
             <AccordionItem borderColor={green} key={category} pl="20px">
@@ -166,21 +124,21 @@ const ProceduresSubmenu = ({ proceduresData, filterCategories }) => {
           ))}
         </Accordion>
       </GridItem>
-      {/* {console.log("filteredProcedures is: ", filteredProcedures)} */}
       {filteredProcedures?.length ? (
-        filteredProcedures.map((procedure) => (
+        filteredProcedures.map((procedure, index) => (
           <GridItem
             className="procedure-service"
             key={procedure.ID}
-            // mt="16px"
-            colSpan={`${productMenuGridColNumber / 3}`}
+            colSpan={index % 4 === 0 || index % 4 === 3 ? 7 : 5}
             rowSpan="auto"
           >
-            <ProceduresCard procedure={procedure} />
+            <Link to={`/${procedure.ID}`}>
+              <ProceduresCard procedure={procedure} />
+            </Link>
           </GridItem>
         ))
       ) : (
-        <>Nu am gasit niciun serviciu :(</>
+        <NoResults />
       )}
     </Grid>
   );

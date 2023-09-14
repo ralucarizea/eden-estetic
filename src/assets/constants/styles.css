@@ -1,0 +1,10 @@
+.use-spring-carousel-thumbs-wrapper {
+  background: pink;
+  justify-content: center;
+}
+.use-spring-carousel-track-wrapper:first {
+  /* background: pink;
+  font-size: 10px; */
+  /* justify-content: center; */
+  /* padding-left: 200px; */
+}

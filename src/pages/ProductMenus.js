@@ -1,15 +1,12 @@
-//3rd party imports
 import {
   Flex,
-  Box,
   Tabs,
   TabList,
   TabPanels,
   Tab,
   TabPanel,
 } from "@chakra-ui/react";
-
-//local imports
+import { Routes, Route, Link, Outlet } from "react-router-dom";
 import ProceduresSubmenu from "../components/services/ProceduresSubmenu";
 import DiagnosisSubmenu from "../components/services/DiagnosisSubmenu";
 import CoursesSubmenu from "../components/services/CoursesSubmenu";
@@ -51,71 +48,65 @@ function ProductMenus() {
         variant="enclosed"
       >
         <TabList width="100%">
-          <Tab
-            // borderColor={green}
-            borderColor="transparent"
-            opacity={0.35}
-            _selected={{ opacity: 1 }}
-            rounded={0}
-            letterSpacing="-1px"
-            fontSize="18px"
-            fontWeight={"500"}
-          >
-            Diagnoză & consultanță{" "}
-          </Tab>
-          <Tab
-            // borderColor={green}
-            borderColor="transparent"
-            opacity={0.35}
-            _selected={{ opacity: 1 }}
-            rounded={0}
-            letterSpacing="-1px"
-            fontSize="18px"
-            fontWeight={"500"}
-          >
-            Proceduri cosmetice
-          </Tab>
-          <Tab
-            // borderColor={green}
-            borderColor="transparent"
-            opacity={0.35}
-            _selected={{ opacity: 1 }}
-            rounded={0}
-            letterSpacing="-1px"
-            fontSize="18px"
-            fontWeight={"500"}
-          >
-            Cursuri & certificări{" "}
-          </Tab>
+          <Link to="/product-menu/diagnosis">
+            <Tab
+              // borderColor={green}
+              borderColor="transparent"
+              opacity={0.35}
+              _selected={{ opacity: 1 }}
+              rounded={0}
+              letterSpacing="-1px"
+              fontSize="18px"
+              fontWeight={"500"}
+            >
+              Diagnoză & consultanță{" "}
+            </Tab>
+          </Link>
+          <Link to="/product-menu/procedures">
+            <Tab
+              // borderColor={green}
+              borderColor="transparent"
+              opacity={0.35}
+              _selected={{ opacity: 1 }}
+              rounded={0}
+              letterSpacing="-1px"
+              fontSize="18px"
+              fontWeight={"500"}
+            >
+              Proceduri cosmetice
+            </Tab>
+          </Link>
+          <Link to="/product-menu/courses">
+            <Tab
+              // borderColor={green}
+              borderColor="transparent"
+              opacity={0.35}
+              _selected={{ opacity: 1 }}
+              rounded={0}
+              letterSpacing="-1px"
+              fontSize="18px"
+              fontWeight={"500"}
+            >
+              Cursuri & certificări{" "}
+            </Tab>
+          </Link>
         </TabList>
         <TabPanels>
-          <TabPanel p="0px">
+          {/* <TabPanel p="0px">
             <DiagnosisSubmenu />
           </TabPanel>
           <TabPanel pr="20px" pl="0px" pt="48px">
             <ProceduresSubmenu
-              proceduresData={data.services.procedures}
-              filterCategories={data.categories}
+              // proceduresData={data.services.procedures}
+              // filterCategories={data.categories}
             />
-          </TabPanel>
+          </TabPanel>{" "}
           <TabPanel p="0px">
             <CoursesSubmenu />
-          </TabPanel>
+          </TabPanel> */}
+          <Outlet />
         </TabPanels>
       </Tabs>
-      {/* <Flex
-          width="100%"
-          justifyContent="space-between"
-          alignItems="center"
-          borderBottom="1px"
-          fontFamily="Montserrat"
-          letterSpacing="-1px"
-          fontWeight="500"
-          fontSize="18px"
-        >
-          <Box>Filtre</Box>
-          <Box>Sortează după</Box>
-        </Flex> */}
     </Flex>
   );
 }

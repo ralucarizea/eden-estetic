@@ -8,20 +8,23 @@ import EllipseContainer from "../ui/EllipseContainer";
 const CourseInfoBox = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 400px;
-  padding: 48px 0px 0px 0px;
-  margin-right: 168px;
+  // align-items: flex-start;
+  height: 68vh;
+  border: ${(props) => props.border};
+  color: ${(props) => props.color};
+  background-color: ${(props) => props.bg};
+  margin-bottom: 44px;
 `;
-const CourseTitle = styled.h1`
-  font-size: 18px;
-  letter-spacing: -1px;
-  font-weight: 600;
-  font-family: "Montserrat";
+const CourseTitle = styled.p`
+  font-size: 28px;
+  // letter-spacing: -1px;
+  font-weight: 300;
+  font-family: "RollgatesLuxury";
   //   font-style: italic;
-  padding-bottom: 12px;
+  padding: 36px 12px;
 `;
 const CourseDescription = styled.div`
+  padding: 0px 36px 12px;
   text-align: left;
   font-size: 16px;
   letter-spacing: -1px;
@@ -34,18 +37,17 @@ const CoursesSubmenu = () => {
       mt="120px"
       height="auto"
       width="100%"
-      columnGap={"24px"}
-      //   rowGap="24px"
-      //   backgroundColor="inherit"
-      gridTemplateColumns={`repeat(6, 1fr)`}
+      columnGap={"12px"}
+      backgroundColor={beige}
+      gridTemplateColumns={`repeat(12, 1fr)`}
       gridAutoRows={`auto`}
-      //   overflowY={"hidden"}
     >
       <GridItem
-        colSpan="6"
+        colSpan="12"
         // rowSpan="1"
-        borderBottom={`0.5px solid ${green}`}
+        // borderBottom={`0.5px solid ${green}`}
         background={beige}
+        pb={16}
       >
         <Flex
           flexDirection={"column"}
@@ -72,7 +74,56 @@ const CoursesSubmenu = () => {
           </Text>
         </Flex>
       </GridItem>
-      <GridItem colSpan="6">
+      <GridItem colSpan={4} pl={20}>
+        <CourseInfoBox bg={green} color={beige}>
+          <CourseTitle>
+            Curs <Text as="i"> Full Lips</Text>
+          </CourseTitle>
+          <CourseDescription>
+            {" "}
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet tend
+            to repeat predefined chunks as necessary, making this the first true
+            generator on the Internet.
+          </CourseDescription>
+        </CourseInfoBox>
+      </GridItem>
+      <GridItem colSpan={4} px={10}>
+        <CourseInfoBox border={`0.5px solid ${green}`} bg={beige} color={green}>
+          <CourseTitle>
+            Curs <Text as="i"> Permanent Makeup ULTRA</Text>{" "}
+          </CourseTitle>
+          <CourseDescription>
+            {" "}
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+            below for those interested. Sections 1.10.32 and 1.10.33 from "de
+            Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+            exact original form, accompanied by English versions from the 1914
+            translation by H. Rackham.
+          </CourseDescription>
+        </CourseInfoBox>
+      </GridItem>
+      <GridItem colSpan={4} pr={20}>
+        <CourseInfoBox bg={green} color={beige}>
+          <CourseTitle>
+            Curs <Text as="i"> Brow Magic</Text>{" "}
+          </CourseTitle>
+          <CourseDescription>
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete
+            account of the system, and expound the actual teachings of the great
+            explorer of the truth, the master-builder of human happiness. No one
+            rejects, dislikes, or avoids pleasure itself, because it is
+            pleasure, but because those who do not know how to pursue pleasure
+            rationally encounter consequences that are extremely painful.
+          </CourseDescription>
+        </CourseInfoBox>
+      </GridItem>
+      {/* <GridItem colSpan="6">
         <Flex background={beige} height="55vh">
           <Flex
             width="68%"
@@ -128,14 +179,7 @@ const CoursesSubmenu = () => {
             borderBottom={`0.5px solid ${beige}`}
           ></Flex>
         </Flex>
-      </GridItem>
-      <GridItem gridColumn={"1/-1"}>
-        <Footer
-          primaryColor={`${green}`}
-          secondaryColor={`${beige}`}
-          primaryReversed={"#937569"}
-        />{" "}
-      </GridItem>
+      </GridItem> */}
     </Grid>
   );
 };

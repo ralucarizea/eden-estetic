@@ -10,6 +10,7 @@ import MainpageServicesMenu from "../components/home/MainpageServicesMenu";
 import SocialProof from "../components/SocialProof";
 import Promo from "../components/Promo.js";
 import MainpageCTABanner from "../components/home/MainpageCTABanner";
+import MainPagePartnerBrands from "../components/home/MainPagePartnerBrands";
 import FAQ from "../components/layout/FAQ";
 import WhatsappForm from "../components/WhatsappForm";
 import { beige, green } from "../assets/constants/constants";
@@ -78,6 +79,13 @@ export default function Home() {
           color={`${green}`}
         >
           <SocialProof />
+        </GridItem>
+        <GridItem
+          backgroundColor={`${beige}`}
+          // border={"1px solid ${green}"}
+          color={`${green}`}
+        >
+          <MainPagePartnerBrands />
         </GridItem>
         <GridItem
           backgroundColor={`${green}`}

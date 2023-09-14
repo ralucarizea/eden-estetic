@@ -69,7 +69,52 @@ function Footer({
           borderRadius="50% 50% 0% 0%"
           backgroundColor={`${secondaryColor}`}
           position={"relative"}
-        ></Box>
+        >
+          <Flex
+            width="100%"
+            display="flex"
+            justifyContent={"center"}
+            position={"absolute"}
+            bottom="10%"
+            left="0"
+            right="0"
+            margin={"0 auto"}
+          >
+            <Link href="https://www.facebook.com/EdenEsteticCenter/?locale=ro_RO">
+              <IconContainer>
+                <Icon
+                  as={SiFacebook}
+                  color={`${secondaryColor}`}
+                  width="0.7em"
+                  height="0.7em"
+                  mx="8px"
+                />
+              </IconContainer>
+            </Link>
+            <Link href="src/components">
+              <IconContainer>
+                <Icon
+                  as={HiPhone}
+                  color={`${secondaryColor}`}
+                  width="0.7em"
+                  height="0.7em"
+                  mx="8px"
+                />
+              </IconContainer>
+            </Link>
+            <Link href="https://www.instagram.com/marianavladescu/">
+              <IconContainer>
+                <Icon
+                  as={SiInstagram}
+                  color={`${secondaryColor}`}
+                  width="0.7em"
+                  height="0.7em"
+                  mx="8px"
+                />
+              </IconContainer>
+            </Link>
+          </Flex>
+        </Box>
       </Flex>
 
       <Divider
@@ -171,23 +216,27 @@ function Footer({
           <Flex
             flexDirection="column"
             alignItems={"flex-end"}
-            maxWidth="33%"
+            maxWidth="36%"
             textAlign={"end"}
           >
             <Text fontFamily="RollgatesLuxury" fontSize={"22px"} pb="4px">
               Servicii
             </Text>
             <Link to="/product-list">
-              <Box textAlign={"end"}>Diagnostic & </Box>
-              <Box mt="-6px" pb="6px">
-                consultanță cosmetică
+              <Box textAlign={"end"} pb="6px">
+                Diagnoză & consultanță{" "}
               </Box>
+              {/* <Box mt="-6px" pb="6px"> */}
+
+              {/* </Box> */}
             </Link>
             <Link to="/product-list">
-              <Box textAlign={"end"}>Tratamente </Box>
-              <Box mt="-6px" pb="6px">
-                dermato-cosmetice
+              <Box textAlign={"end"} pb="6px">
+                Tratamente dermato-cosmetice
               </Box>
+              {/* <Box mt="-6px" > */}
+
+              {/* </Box> */}
             </Link>
             <Link to="/product-list">
               <Box pb="6px">Make-up permanent</Box>
@@ -211,43 +260,21 @@ function Footer({
         color={`${secondaryColor}`}
       >
         <Flex
-          width="90%"
-          justifyContent={"space-between"}
+          // flexDirection={"column"}
+          width="100%"
+          justifyContent={"center"}
           alignItems={"center"}
+          fontSize={"9px"}
+          fontFamily={"Montserrat"}
+          letterSpacing={"1.5px"}
+          fontWeight={"300"}
+          userSelect={"none"}
         >
-          <Text fontSize={"11px"}>Website creat de Raluca Rizea</Text>
-          <Flex width="8%" display="flex" justifyContent={"space-between"}>
-            <Link href="https://www.facebook.com/EdenEsteticCenter/?locale=ro_RO">
-              <IconContainer>
-                <Icon
-                  as={SiFacebook}
-                  color={`${secondaryColor}`}
-                  width="16px"
-                  height="16px"
-                />
-              </IconContainer>
-            </Link>
-            <Link href="https://www.instagram.com/marianavladescu/">
-              <IconContainer>
-                <Icon
-                  as={SiInstagram}
-                  color={`${secondaryColor}`}
-                  width="16px"
-                  height="16px"
-                />
-              </IconContainer>
-            </Link>
-            <Link href="src/components">
-              <IconContainer>
-                <Icon
-                  as={HiPhone}
-                  color={`${secondaryColor}`}
-                  width="16px"
-                  height="16px"
-                />
-              </IconContainer>
-            </Link>
-          </Flex>
+          <Text> DESIGN & DEVELOPMENT BY RALUCA RIZEA.</Text>
+          <Text fontWeight={"400"} ml="8px">
+            {" "}
+            ALL RIGHTS RESERVED.
+          </Text>
         </Flex>
       </Flex>
     </Flex>

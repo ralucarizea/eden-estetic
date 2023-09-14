@@ -33,7 +33,7 @@ export const translatedTags = {
   lifting: { translation: "Lifting", icon: "" },
   extrahydrating: { translation: "Hidratare intensivă", icon: "" },
   hydrating: { translation: "Hidratare blândă", icon: "" },
-  scalp: { translation: "Scalp", icon: "" },
+  hairfall: { translation: "Scalp", icon: "" },
   cleavage: { translation: "Decolteu", icon: "" },
   lips: { translation: "Buze", icon: "" },
   eyes: { translation: "Zona ochilor", icon: "" },
@@ -111,5 +111,35 @@ export const faqMainpage = [
       "Sunt recomandate tratamentele cosmetice avansate persoanelor sub 30 ani?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+];
+export const socialproofReviews = [
+  {
+    name: "Maria Florentina",
+    thumbnail:
+      "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194169/edenestetic/mainpage-socialproof3_k9geji.jpg",
+    reviewText:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    name: "Andreea Teodorescu",
+    thumbnail:
+      "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194169/edenestetic/mainpage-socialproof1_tq34cr.jpg",
+    reviewText:
+      "Tincidunt arcu non sodales neque sodales. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Purus sit amet luctus venenatis lectus magna fringilla.",
+  },
+  {
+    name: "Ramona Popescu",
+    thumbnail:
+      "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194170/edenestetic/mainpage-socialproof2_dugreh.jpg",
+    reviewText:
+      "Ut tellus elementum sagittis vitae et. Duis ut diam quam nullaporttitor massa id.",
+  },
+  {
+    name: "Alina Cojocariu  ",
+    thumbnail:
+      "https://res.cloudinary.com/dgykbnubn/image/upload/v1693408534/stefan-stefancik-QXevDflbl8A-unsplash_eavnct.jpg",
+    reviewText:
+      "Ut tellus elementum sagittis vitae et. Duis ut diam quam nullaporttitor massa id.",
   },
 ];
