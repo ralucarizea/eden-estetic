@@ -31,7 +31,7 @@ function Footer({
         position={"relative"}
       >
         <Text
-          fontSize="100px"
+          fontSize="10vw"
           fontFamily={"RollgatesLuxury"}
           letterSpacing={"-4px"}
           position={"absolute"}
@@ -45,7 +45,7 @@ function Footer({
           Te intereseaza{" "}
         </Text>
         <Text
-          fontSize="100px"
+          fontSize="10vw"
           fontFamily={"RollgatesLuxury"}
           letterSpacing={"-4px"}
           position={"absolute"}

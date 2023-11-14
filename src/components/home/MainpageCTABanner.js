@@ -7,13 +7,32 @@ import "../../assets/fonts/fonts.css";
 
 export default function MainpageCTABanner() {
   return (
-    <Flex height="30vh" alignItems={"center"}>
+    <Flex height="fit-content" alignItems={"center"}>
       <Text
-        height="auto"
-        fontSize={"60px"}
-        pl="64px"
+        // height="fit-content"
+        py={{
+          base: "28px",
+          sm: "36px",
+          md: "40px",
+          lg: "52px",
+          xl: "80px",
+        }}
+        fontSize={{
+          base: "20px",
+          sm: "32px",
+          md: "36px",
+          lg: "48px",
+          xl: "64px",
+        }}
+        pl={{
+          base: "28px",
+          sm: "36px",
+          md: "40px",
+          lg: "52px",
+          xl: "72px",
+        }}
         fontFamily={"RollgatesLuxury"}
-        letterSpacing={"-1px"}
+        letterSpacing={"-0.5px"}
       >
         SERVICIILE NOASTRE
       </Text>

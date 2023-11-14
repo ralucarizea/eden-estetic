@@ -11,8 +11,8 @@ const ThinLineEllipse = styled.div`
   border-radius: 50%;
   border: 0.5px solid ${(props) => props.primaryColor};
   opacity: 0.6;
-  width: ${(props) => props.maxWidth}px;
-  height: ${(props) => props.maxHeight}px;
+  width: ${(props) => props.maxWidth};
+  height: ${(props) => props.maxHeight};
   rotate: -18deg;
   position: absolute;
   left: 0;
@@ -25,24 +25,27 @@ const ThinLineEllipse = styled.div`
   //   transform: rotate(35deg); /* Rotate by 4 more degrees on hover */
   // }
 `;
-// const TintedEllipse = styled.div`
-//   border-radius: 50%;
-//   background: ${(props) => props.primaryColor};
-//   width: ${(props) => props.maxWidth}px;
-//   height: ${(props) => props.maxHeight}px;
-//   rotate: -8deg;
-//   position: relative;
-//   align-self: center;
-//   margin: 0px;
-//   opacity: 0.8;
-// `;
 
 const StyledButton = styled.button`
  
   color: ${(props) => props.primaryColor};
   font-family: "Montserrat",serif;
-  font-size: ${(props) => props.fontSize}px;
+  font-size: 20px;
   z-index: 2;
+  font-weight: 500;
+
+  @media only screen and (max-width: 1250px) {
+    font-size: 16px;
+    
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 13.25px;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 12px;
+  
+  }
   
   }
 `;
@@ -57,23 +60,25 @@ function ButtonEllipse({
 }) {
   return (
     <>
-      {/* // <TintedEllipse
-    //   primaryColor={primaryColor}
-    //   maxHeight={maxHeight}
-    //   maxWidth={maxWidth}
-    // > */}
       <Flex
         position="relative"
-        // border="1px solid red"
-        width="auto"
-        height="10vh"
         justifyContent="center"
+        width={{
+          base: "90px",
+          sm: "120px",
+          md: "160px",
+          lg: "180px",
+          xl: "220px",
+        }}
+        height={{
+          base: "20px",
+          sm: "24px",
+          md: "38px",
+          lg: "50px",
+          xl: "65px",
+        }}
       >
-        <StyledButton
-          {...rest}
-          secondaryColor={secondaryColor}
-          fontSize={fontSize}
-        >
+        <StyledButton {...rest} secondaryColor={secondaryColor}>
           {textCTA}
           <ThinLineEllipse maxHeight={maxHeight} maxWidth={maxWidth} />
         </StyledButton>

@@ -53,20 +53,20 @@ export default function Home() {
         <GridItem
           backgroundColor={`${beige}`}
           color={`${green}`}
-          borderBottom={`2px solid ${green}`}
+          borderBottom={`1px solid ${green}`}
         >
           <MainPageSectionAbout />
         </GridItem>
         <GridItem
           backgroundColor={`${beige}`}
-          // border={"2px solid ${green}"}
+          // border={"1px solid ${green}"}
           color={`${green}`}
         >
           <MainpageCTABanner />
         </GridItem>
         <GridItem
           backgroundColor={`${beige}`}
-          border={`2px solid ${green}`}
+          border={`1px solid ${green}`}
           // borderBottom={"0px"}
           color={`${green}`}
         >

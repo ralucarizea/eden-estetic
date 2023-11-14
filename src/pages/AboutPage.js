@@ -5,6 +5,7 @@ import {
   CaptionText,
 } from "../assets/constants/styledcomponents";
 import { useEffect } from "react";
+import { beige, green } from "../assets/constants/constants";
 
 function AboutPage() {
   useEffect(() => {
@@ -21,7 +22,7 @@ function AboutPage() {
         flexDirection={"row"}
         justifyContent={"space-between"}
       >
-        <Box width="52%" backgroundColor={"#f3eee7"} position="relative">
+        <Box width="52%" backgroundColor={beige} position="relative">
           <Box
             position="absolute"
             top="25%"
@@ -40,11 +41,12 @@ function AboutPage() {
         <Box
           width="48%"
           backgroundImage="linear-gradient(90deg, rgba(243,238,231,1) 3%, rgba(243,238,231,0.7497811624649859) 32%, rgba(108,138,150,0.6153273809523809) 48%, rgba(108,138,150,0.6909576330532212) 66%, rgba(108,138,150,1) 93%)"
-          //   backgroundColor="rgb(108,138,150)"
+          // position="absolute"
+          // zIndex="3"
         >
           <Box
-            //   src={`${img}`}
-            //   alt="" fit
+            // position={"absolute"}
+            // zIndex={"2"}
             width="100%"
             height="100%"
             backgroundImage={`url("https://res.cloudinary.com/dgykbnubn/image/upload/v1690194165/edenestetic/aboutpage-heroimage_goinjh.jpg")`}
@@ -55,9 +57,9 @@ function AboutPage() {
         </Box>
       </Flex>
       <Flex
-        height="55vh"
-        color="#f3eee7"
-        backgroundColor={"#6c8a96"}
+        height="50vh"
+        color={beige}
+        backgroundColor={green}
         flexDirection={"column"}
         justifyContent={"space-around"}
         alignItems="center"
@@ -97,17 +99,17 @@ function AboutPage() {
       </Flex>
       <Flex
         height="120vh"
-        backgroundColor="#f3eee7"
+        backgroundColor={beige}
         justifyContent={"space-evenly"}
         alignItems="center"
         py="120px"
         px="64px"
-        color="#6c8a96"
+        color={green}
       >
         <Box
           height={"100%"}
           width={"38%"}
-          border="1px solid #6c8a96"
+          border={`1px solid ${green}`}
           backgroundImage={`url("https://res.cloudinary.com/dgykbnubn/image/upload/v1690194165/edenestetic/aboutpage-portrait_j6rvqt.png")`}
           backgroundSize={"cover"}
           backgroundRepeat={"no-repeat"}
@@ -164,14 +166,14 @@ function AboutPage() {
           </Box>
         </Flex>
       </Flex>
-      <Box pt="64px" backgroundColor={"#f3eee7"} color="#6c8a96">
+      <Box pt="64px" backgroundColor={beige} color={green}>
         <Flex
           flexDirection={"row"}
           justifyContent={"center"}
           alignItems={"center"}
           height="33vh"
-          borderTop="1px solid #6c8a96"
-          borderBottom="1px solid #6c8a96"
+          borderTop={`1px solid ${green}`}
+          borderBottom={`1px solid ${green}`}
           fontFamily={"Montserrat"}
         >
           <CaptionBox>

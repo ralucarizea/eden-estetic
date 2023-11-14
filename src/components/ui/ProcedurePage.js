@@ -3,18 +3,40 @@ import {
   Flex,
   Text,
   Button,
-  Tabs,
-  TabList,
-  Tab,
-  TabPanel,
-  TabPanels,
-  Image,
+  Accordion,
+  AccordionButton,
+  AccordionItem,
+  AccordionPanel,
+  AccordionIcon,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import data from "../../../src/assets/constants/data.json";
-import { green, beige } from "../../assets/constants/constants";
+import { green, beige, translatedTags } from "../../assets/constants/constants";
 import { ProductPageImageContainer } from "../../assets/constants/styledcomponents";
+import { PiPlusThin } from "react-icons/pi";
+import styled from "@emotion/styled";
+
+export const StyledAccordionItem = styled(AccordionItem)`
+  transition: all 0.1s ease-in-out;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: ${green};
+  border-top: 0.5px solid ${green};
+  &:hover {
+    background-color: #e9e4de;
+  }
+  &:last-child {
+    border-bottom: 0.5px solid ${green};
+  }
+`;
+export const StyledAccordionButton = styled(AccordionButton)`
+  padding-left: 8px;
+  padding-right: 8px;
+  &:hover {
+    background-color: transparent;
+  }
+`;
 
 export default function ProcedurePage() {
   const [procedure, setProcedure] = useState({});
@@ -76,13 +98,13 @@ export default function ProcedurePage() {
       >
         {" "}
         <Text
-          width="90%"
+          width="98%"
           height="auto"
           mt="2vh"
           ml="-4px"
-          fontSize={"64px"}
+          fontSize={"48px"}
           fontFamily={"RollgatesLuxury"}
-          lineHeight={"58px"}
+          lineHeight={"44px"}
         >
           {" "}
           {procedure?.name + " " + procedure?.nickname}
@@ -110,7 +132,7 @@ export default function ProcedurePage() {
           width="85%"
           mt="3vh"
           mb="6vh"
-          fontSize={"18px"}
+          fontSize={"16.5px"}
           fontWeight="400"
           lineHeight={"30px"}
           letterSpacing={"-0.5px"}
@@ -121,7 +143,6 @@ export default function ProcedurePage() {
           backgroundColor={green}
           color={beige}
           border={`1px solid ${green}`}
-          // fontFamily={"RollgatesLuxury"}
           my="3vh"
           width="fit-content"
           height="3rem"
@@ -137,7 +158,86 @@ export default function ProcedurePage() {
           {" "}
           Programează-te acum{" "}
         </Button>
-        <Tabs mt="3vh" width="84%">
+        <Box mt="3vh" width="94%">
+          <Accordion allowMultiple color={beige} fontSize={"13px"}>
+            <StyledAccordionItem>
+              <StyledAccordionButton>
+                <Box as="span" flex="1" textAlign="left" fontSize={"15px"}>
+                  Acțiune locală
+                </Box>
+                <AccordionIcon as={PiPlusThin} width="21px" height="21px" />
+              </StyledAccordionButton>
+              <AccordionPanel pb={4}>
+                {procedure?.bulletFacts?.map((fact) => (
+                  <Flex alignItems={"center"}>
+                    <Box
+                      height="4px"
+                      width="4px"
+                      borderRadius={"50%"}
+                      backgroundColor={green}
+                      mr="8px"
+                    />
+                    <Box my="4px">{fact}</Box>
+                  </Flex>
+                ))}
+              </AccordionPanel>
+            </StyledAccordionItem>
+            <StyledAccordionItem>
+              <StyledAccordionButton>
+                <Box as="span" flex="1" textAlign="left" fontSize={"15px"}>
+                  Ce probleme cosmetice ameliorează
+                </Box>
+                <AccordionIcon as={PiPlusThin} width="21px" height="21px" />
+              </StyledAccordionButton>
+              <AccordionPanel pb={4}>
+                {procedure?.cosmeticConcernCategory?.map((fact) => (
+                  <Flex alignItems={"center"}>
+                    <Box
+                      height="4px"
+                      width="4px"
+                      borderRadius={"50%"}
+                      backgroundColor={green}
+                      mr="8px"
+                    />
+                    <Box my="4px">{translatedTags[fact].translation}</Box>
+                  </Flex>
+                ))}
+              </AccordionPanel>
+            </StyledAccordionItem>
+            <StyledAccordionItem>
+              <StyledAccordionButton>
+                <Box as="span" flex="1" textAlign="left" fontSize={"15px"}>
+                  Substanțe active
+                </Box>
+                <AccordionIcon as={PiPlusThin} width="21px" height="21px" />
+              </StyledAccordionButton>
+              <AccordionPanel pb={4}>
+                {procedure?.activeIngredients?.map((fact) => (
+                  <Flex alignItems={"center"}>
+                    <Box
+                      height="4px"
+                      width="4px"
+                      borderRadius={"50%"}
+                      backgroundColor={green}
+                      mr="8px"
+                    />
+                    <Box my="4px">{fact}</Box>
+                  </Flex>
+                ))}
+              </AccordionPanel>
+            </StyledAccordionItem>
+            <StyledAccordionItem>
+              <StyledAccordionButton>
+                <Box as="span" flex="1" textAlign="left" fontSize={"15px"}>
+                  Îngrijire post-tratament
+                </Box>
+                <AccordionIcon as={PiPlusThin} width="21px" height="21px" />
+              </StyledAccordionButton>
+              <AccordionPanel pb={4}>{procedure?.aftercare}</AccordionPanel>
+            </StyledAccordionItem>
+          </Accordion>
+        </Box>
+        {/* <Tabs>
           <TabList borderBottom="0.5px solid beige">
             <Tab
               fontSize={"13px"}
@@ -163,7 +263,7 @@ export default function ProcedurePage() {
             >
               Cui i se adresează
             </Tab>
-            <Tab
+            {/* <Tab
               fontSize={"13px"}
               _selected={{
                 borderBottom: `0.5px solid ${green}`,
@@ -192,10 +292,11 @@ export default function ProcedurePage() {
             fontSize={"15px"}
             border={`0.5px solid ${green}`}
             minHeight="25vh"
+            // backgroundColor={"green"}
           >
-            <TabPanel>{procedure?.bulletFacts}</TabPanel>
+            <TabPanel fontSize={"13px"} pl="8px" pt="16px"></TabPanel>
             <TabPanel>{procedure?.cosmeticConcernCategory}</TabPanel>
-            <TabPanel>
+            {/* <TabPanel>
               {procedure?.activeIngredients
                 ? procedure?.activeIngredients
                 : "Intreaba specialistul pentru mai multe detalii"}
@@ -204,30 +305,9 @@ export default function ProcedurePage() {
               {procedure?.aftercare
                 ? procedure?.aftercare
                 : "Evită expunerea directă la radiații pentru aprox. 5-7 zile. Înainte de culcare, aplică o cremă intens hidratantă potrivită tipului tău de ten. Pe timpul zilei, se recomandă aplicarea unei loțiuni cu factor ridicat de protecție."}
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
-        {/* <Flex
-          flexDirection={"column"}
-          borderTop={`1px solid ${green}`}
-          mt="6vh"
-          width="90%"
-          fontWeight={"600"}
-          fontSize="20px"
-        >
-          <Text my="24px">Proprietăți & beneficii:</Text>
-          {procedure?.bulletFacts?.map((fact) => (
-            <Box
-              ml="8px"
-              width="100%"
-              py="4px"
-              fontWeight={"300"}
-              fontSize="16px"
-            >
-              {fact}
-            </Box>
-          ))}
-        </Flex> */}
+            </TabPanel> 
+            </TabPanels> 
+        </Tabs> */}
       </Flex>
     </Flex>
   );

@@ -15,23 +15,23 @@ import ellipse from "../../assets/images/tintedEllipse.svg";
             <Image
             src={`${thin}`}
             alt=""
-            width="56%"
+            width={{ base: "58%", sm:"65%", md: "60%", lg: "72%" }}
             position={"relative"}
-            minWidth="175px"
+            minWidth={{ base: "18.5vw", sm:"18.5vw", md: "58%", lg: "70%" }}
           />
           <Image
             src={`${thick}`}
             alt=""
             position={"absolute"}
-            width="26%"
-            minWidth="200px"
+            width={{ base: "21%", sm:"22%", md: "23%", lg: "24.5%" }}
+            minWidth={{ base: "18.5vw", sm:"25.5vw", md: "21%", lg: "20%" }}
           />
           <Image
             src={`${ellipse}`}
             position={"absolute"}
-            width="20%"
+            width={{ base: "17%", sm:"20%", md: "18%", lg: "19.5%" }}
             // height="300px"
-            minWidth={"156px"} 
+            minWidth={{ base: "17%", sm:"15%", md: "15%", lg: "19%" }}
           />
         </>
     );

@@ -99,24 +99,33 @@ export const IconContainer = styled.div`
 //   mask-size:10vmin;
 //   mask-position: bottom;
 // `;
-
+export const StatBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 24px 8px;
+  width: 100%;
+  min-width: 35%;
+  justify-content: flex-start;
+  text-align: center;
+`;
 export const StatNumbers = styled.div`
-  padding-top: 28px;
-  font-size: 48px;
+  font-size: 2.85vw;
+  font-weight: 500;
   font-family: "RollgatesLuxury";
-  // font-weight: 200;
   font-style: normal;
+  padding: 4px 0px;
 `;
 export const StatDescriber = styled.div`
-  margin-top: -12px;
-  font-size: 24px;
+  font-size: inherit;
   font-family: "Montserrat";
   font-weight: 400;
   font-style: normal;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
+  text-align: ${(props) => props.textAlign};
+  // align-self: center;
 `;
 export const ServiceGridItem = styled.div`
-  padding: 32px 64px 32px 80px;
+  padding: 8vw 4vw;
   width: 100%;
   height: 100%;
   background-color: ${(props) => props.backgroundColor};
@@ -125,27 +134,75 @@ export const ServiceGridItem = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
+  // background-color: purple;
+
+
+  @media only screen and (max-width: 1250px) {
+    padding: 7vw 3.5vw;
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding: 10vw;
+  }
 `;
 export const ImageWrapper = styled.div`
   display: flex;
-  width: 60%;
+  width: 80%;
   justify-content: center;
   align-items: center;
+  // background-color: blue;
+
+  @media only screen and (max-width: 767px) {
+    width: 30%;
+  }
 `;
 export const ServiceTitle = styled.p`
-  padding-bottom: 28px;
-  font-size: 44px;
-  line-height: 30px;
+  padding-bottom: 1.95vw;
+  font-size: 38px;
+  line-height: 36px;
   font-family: "RollgatesLuxury";
+
+  @media only screen and (max-width: 1250px) {
+    font-size: 32px;
+    line-height: 23px;
+  }
+  @media only screen and (max-width: 990px) {
+    font-size: 25px;
+    line-height: 20px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    font-size: 28px;
+    line-height: 24px;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 22px;
+    line-height: 18px;
+    padding-bottom: 3vw;
+  }
+  @media only screen and (max-width: 440px) {
+    font-size: 20px;
+    line-height: 16px;
+  }
 `;
 export const NavbarButtonBox = styled.div`
   width: 12%;
-  border-left: 1px solid ${beige};
+  border-left: 0.5px solid ${beige};
+  padding: 0px 8px;
   height: 100%;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: 17px;
+  flex-wrap: wrap;
+  font-size: calc(9.5px + 0.390625vw);
+  line-height: calc(10px + 0.390625vw);
+`;
+export const DrawerLinkButtonBox = styled.div`
+&:hover {{
+  text-decoration: underline;
+  font-style: italic;
+transition: 210ms ease-in;}}
 `;
 
 export const Persona = styled.div`
@@ -190,7 +247,7 @@ export const Caption = styled.div`
 export const Ellipse = styled.img`
   position: absolute;
   width: 20%;
-  min-width: 184px;
+  min-width: 12vw;
   rotate: 356.5deg;
 `;
 export const DiagnosisHeading = styled.div`
@@ -255,4 +312,88 @@ export const ProductPageImageContainer = styled.div`
   height: 60vh;
   border-radius: 8px;
   background-color: ${(props) => props.backgroundColor};
+`;
+export const LatestBlogArticleLayoutBox = styled.div`
+  width: ${(props) => props.width};
+  // height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw 3.5vw;
+  @media only screen and (max-width: 953px) {
+    padding: 0px 0px 36px 0px;
+    max-height: 450px;
+    &:first-child {
+      border-bottom: 0.5px solid ${green};
+    }
+  }
+
+  @media only screen and (min-width: 966px) {
+    &:nth-child(2n + 1) {
+      border-bottom: 0px;
+      border-right: 0.5px solid ${green};
+    }
+  }
+`;
+export const BlogArticleLayoutBox = styled.div`
+  width: ${(props) => props.width};
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw 3.5vw;
+  @media only screen and (max-width: 906px) {
+    padding: 0px 0px 36px 0px;
+    max-height: 450px;
+    &:nth-child(n) {
+      border-bottom: 0.5px solid ${green};
+      border-right: 0px;
+    }
+  }
+
+  @media only screen and (min-width: 906px) {
+    &:nth-child(2n + 1) {
+      border-bottom: 0px;
+      border-left: 0px;
+      border-right: 0.5px solid ${green};
+    }
+  }
+  @media only screen and (min-width: 1377px) {
+    &:nth-child(n) {
+      border-bottom: 0px;
+      border-right: 0px;
+    }
+    &:nth-child(3n + 2) {
+      border-right: 0.5px solid ${green};
+      border-left: 0.5px solid ${green};
+    }
+  }
+`;
+
+export const BlogArticleImageBox = styled.div`
+  height: ${(props) => props.height};
+  border-radius: 12px;
+  width: 100%;
+  opacity: 0.9;
+  // background-color: ${green};
+  background-position: center;
+  background-size: cover;
+  background-image: url(${(props) => props.srcImage});
+`;
+export const BlogArticleTitleBig = styled.div`
+  font-family: "RollgatesLuxury";
+  line-height: calc(24px + 0.790625vw);
+  font-size: calc(24px + 0.690625vw);
+`;
+export const BlogArticleTitleMedium = styled.div`
+  font-family: "RollgatesLuxury";
+  line-height: calc(16px + 0.790625vw);
+  font-size: calc(17px + 0.590625vw);
+  margin-left: 4px;
+`;
+export const BlogArticleTag = styled.div`
+  width: fit-content;
+  font-size: calc(12.5px + 0.090625vw);
+  padding: calc(1.5px + 0.100625vw) calc(3px + 0.290625vw);
+  margin: 20px 4px;
+  border: 1px solid ${green};
+  border-radius: 4px;
 `;

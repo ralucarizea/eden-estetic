@@ -43,7 +43,7 @@ function ProductMenus() {
       height="100%"
       backgroundColor={`${beige}`}
       color={`${green}`}
-      overflowY={"hidden"}
+      // overflowY={"hidden"}
       flexDirection="column"
     >
       <Flex

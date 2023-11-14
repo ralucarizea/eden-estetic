@@ -1,5 +1,5 @@
 //3rd party imports
-import { Box, Icon, Text } from "@chakra-ui/react";
+import { Flex, Icon, Text } from "@chakra-ui/react";
 //local imports
 import "../../assets/fonts/fonts.css";
 import { green, beige } from "../../assets/constants/constants";
@@ -15,28 +15,46 @@ import {
 function MainpageServiceSection({ element }) {
   return (
     <ServiceGridItem backgroundColor={element.backgroundColor}>
-      <Box
-        width="45%"
+      <Flex
+        width={{
+          base: "50%",
+          md: "70%",
+        }}
         color={element.color}
         height="100%"
-        display="flex"
         flexDirection="column"
         justifyContent={"center"}
+        // backgroundColor={"green"}
       >
         <ServiceTitle>{element.title}</ServiceTitle>
         <Text
-          fontSize={"17px"}
-          pr="36px"
+          fontSize={{
+            base: "12px",
+            md: "13px",
+            lg: "16px",
+            xl: "18px",
+          }}
+          pr={{
+            base: "1.2vw",
+            md: "10px",
+            lg: "16px",
+            xl: "26px",
+          }}
           fontFamily={"Montserrat"}
           fontWeight={"400"}
-          letterSpacing={"-1px"}
-          lineHeight={"24px"}
-          maxWidth="70%"
+          letterSpacing={"-0.5px"}
+          lineHeight={{
+            base: "16px",
+            md: "18px",
+            lg: "19px",
+            xl: "22px",
+          }}
+          maxWidth="75%"
         >
           {" "}
           {element.caption}{" "}
         </Text>
-      </Box>
+      </Flex>
       <ImageWrapper>
         {element.backgroundColor !== beige ? (
           <ImageContainerSmallBeige />
@@ -47,10 +65,16 @@ function MainpageServiceSection({ element }) {
       <Icon
         as={VscArrowRight}
         position="absolute"
-        bottom="40px"
-        left="64px"
-        width="44px"
-        height="32px"
+        bottom={{ base: "10vw", md: "2vw", lg: "4vw ", xl: "5vw" }}
+        left={{ base: "10vw", md: "3vw", lg: "3.5vw", xl: "4vw" }}
+        width={{ base: "28px", sm: "32px", md: "36px", lg: "36px", xl: "44px" }}
+        height={{
+          base: "16px",
+          sm: "20px",
+          md: "24px",
+          lg: "24px",
+          xl: "32px",
+        }}
         color={element.color}
       />
     </ServiceGridItem>

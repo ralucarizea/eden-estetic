@@ -66,7 +66,7 @@ function useStaggerAnimation(filteredProcedures) {
       {
         duration: 0.4,
         delay: staggerMenuItems,
-      },
+      }
     );
   }, [filteredProcedures]);
 
@@ -86,8 +86,8 @@ const ProceduresSubmenu = ({ proceduresData, filterCategories }) => {
   useEffect(() => {
     setFilteredProcedures(
       proceduresData.filter((product) =>
-        checkIfProductIsFilterable(product, selectedCheckboxes),
-      ),
+        checkIfProductIsFilterable(product, selectedCheckboxes)
+      )
     );
   }, [proceduresData, selectedCheckboxes]);
 
@@ -99,6 +99,8 @@ const ProceduresSubmenu = ({ proceduresData, filterCategories }) => {
       gridTemplateColumns={`4.4fr repeat(${productMenuGridColNumber}, 1fr)`}
       gridAutoRows="auto"
       ref={scope}
+      pt="8px"
+      overflow={"hidden"}
     >
       <GridItem colSpan="1" rowSpan="16" borderRight="1px">
         <Accordion allowMultiple fontFamily="Montserrat">
@@ -122,8 +124,9 @@ const ProceduresSubmenu = ({ proceduresData, filterCategories }) => {
           <GridItem
             className="procedure-service"
             key={procedure.ID}
-            colSpan={index % 4 === 0 || index % 4 === 3 ? 7 : 5}
+            colSpan={index % 4 === 0 || index % 4 === 3 ? 6 : 5}
             rowSpan="auto"
+            // marginRight="16px"
           >
             <Link to={`/${procedure.ID}`}>
               <ProceduresCard procedure={procedure} />
@@ -133,6 +136,14 @@ const ProceduresSubmenu = ({ proceduresData, filterCategories }) => {
       ) : (
         <NoResults />
       )}
+      <GridItem
+        colSpan="1"
+        rowSpan="16"
+        borderLeft={`1px solid ${green}`}
+        borderTop={`1px solid ${green}`}
+      >
+        {" "}
+      </GridItem>
     </Grid>
   );
 };

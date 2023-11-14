@@ -30,7 +30,6 @@ const FAQ = ({ color = beige }) => {
       fontFamily={"Montserrat"}
       color={color}
     >
-      {/* {faqMainpage.map(qa => )} */}
       <Box pb="36px" fontSize={"64px"} fontFamily={"RollgatesLuxury"}>
         Întrebari frecvent întâlnite
       </Box>
@@ -43,7 +42,7 @@ const FAQ = ({ color = beige }) => {
         >
           {faqMainpage.map((qa, index) => (
             <AccordionItem
-              borderColor={color === beige ? "rgba(243,238,231, 0.6)" : green }
+              borderColor={color === beige ? "rgba(243,238,231, 0.6)" : green}
               transition="all 0.2s ease-in-out"
               py="16px"
               key={index}
@@ -64,7 +63,6 @@ const FAQ = ({ color = beige }) => {
             </AccordionItem>
           ))}
         </Accordion>
-
       </Box>
     </Box>
   );

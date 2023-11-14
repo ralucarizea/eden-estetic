@@ -101,7 +101,7 @@ export default function ProceduresCard({ procedure }) {
                 background={"transparent"}
                 py="4px"
                 borderTop={`1px solid ${hexToRgbToTextColor(
-                  procedure.images.display,
+                  procedure.images.display
                 )}`}
               >
                 <Box>ZONĂ TRATAMENT</Box>
@@ -110,7 +110,7 @@ export default function ProceduresCard({ procedure }) {
                     <StyledIcon
                       definition={convertToIconFormat(area)}
                       fillColor={`${hexToRgbToTextColor(
-                        procedure.images.display,
+                        procedure.images.display
                       )}`}
                     />
                   ))}
@@ -123,7 +123,7 @@ export default function ProceduresCard({ procedure }) {
                   alignItems={"center"}
                   background={"transparent"}
                   borderTop={`1px solid ${hexToRgbToTextColor(
-                    procedure.images.display,
+                    procedure.images.display
                   )}`}
                   py="4px"
                 >
@@ -149,7 +149,7 @@ export default function ProceduresCard({ procedure }) {
                   fontSize={"10px"}
                   borderRadius={"0px"}
                   border={`1px solid ${hexToRgbToTextColor(
-                    procedure.images.display,
+                    procedure.images.display
                   )}`}
                 >
                   Citeste mai multe
@@ -173,7 +173,7 @@ export default function ProceduresCard({ procedure }) {
               alignItems={"flex-end"}
               px="12px"
               pb="16px"
-              fontSize="28px"
+              fontSize="29px"
               fontWeight="400"
               fontFamily="RollgatesLuxury"
               lineHeight="28px"
@@ -200,14 +200,14 @@ export default function ProceduresCard({ procedure }) {
                 alignItems={"flex-end"}
                 flexDirection={"column"}
               >
-                <Text>{procedure.time} min </Text>
+                <Text as="b">{procedure.time} min </Text>
                 <Divider
                   mt="1px"
                   mb="5px"
                   width="70%"
                   borderColor={procedure.images.text}
                 />
-                <Text>{procedure.price} lei </Text>
+                <Text as="b">{procedure.price} lei </Text>
               </Flex>
             </Flex>
           </>

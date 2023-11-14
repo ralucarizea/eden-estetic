@@ -7,6 +7,7 @@ import "../../assets/fonts/fonts.css";
 import {
   StatNumbers,
   StatDescriber,
+  StatBox,
 } from "../../assets/constants/styledcomponents";
 import { green, beige } from "../../assets/constants/constants";
 //constants
@@ -19,54 +20,170 @@ const About = () => {
       marginRight="0px"
       justifyContent={"space-between"}
       flexWrap={"wrap"}
-      height="100vh"
+      height="fit-content"
     >
-      <Flex flexDirection="row" alignItems="center" width="67%" pl="64px">
+      <Flex
+        borderRight={`1px solid ${green}`}
+        py={{
+          base: "30px",
+          sm: "30px",
+          md: "36px",
+          lg: "60px",
+          xl: "128px",
+        }}
+        flexDirection={{
+          base: "column",
+          lg: "row",
+        }}
+        alignItems="center"
+        width="60%"
+        pl={{
+          base: "20px",
+          sm: "28px",
+          md: "36px",
+          lg: "44px",
+          xl: "128px",
+        }}
+      >
         <Box
-          height="60vh"
+          height="fit-content"
           width="60%"
           display="flex"
           alignItems={"center"}
           justifyContent={"center"}
+          pb={{ base: "28px", lg: "0px" }}
         >
           <ImageContainerLarge />
         </Box>
-        <Box ml="-36px">
-          <StatNumbers>15+ </StatNumbers>
-          <StatDescriber>ani de experiență în domeniu</StatDescriber>
-          <StatNumbers>1100+ </StatNumbers>
-          <StatDescriber>cliente</StatDescriber>
-          <StatNumbers>40+ </StatNumbers>
-          <StatDescriber>cursante</StatDescriber>
-        </Box>
+        <Flex
+          width={{
+            base: "70%",
+            lg: "50%",
+          }}
+          justifyContent={"space-evenly"}
+          pr={{ base: "0px", lg: "48px" }}
+          alignContent="center"
+          flexDirection={{
+            base: "row",
+            lg: "column",
+          }}
+          fontSize={{
+            base: "12px",
+            sm: "13px",
+            md: "15px",
+            lg: "18px",
+            xl: "20px",
+          }}
+          lineHeight={{
+            base: "12px",
+            sm: "16px",
+            md: "18px",
+            lg: "24px",
+            xl: "25px",
+          }}
+        >
+          <StatBox>
+            <StatNumbers>15+ </StatNumbers>
+            <StatDescriber>ani de experiență în domeniu</StatDescriber>
+          </StatBox>
+          <StatBox>
+            <StatNumbers>1100+ </StatNumbers>
+            <StatDescriber>cliente</StatDescriber>
+          </StatBox>
+          <StatBox>
+            {" "}
+            <StatNumbers>40+ </StatNumbers>
+            <StatDescriber>cursante</StatDescriber>
+          </StatBox>
+        </Flex>
       </Flex>
-      <Box
-        width="33%"
+      <Flex
+        width="40%"
         height="100%"
-        borderLeft={"2px solid #6C8A96"}
-        display="flex"
         flexDirection={"column"}
         justifyContent={"center"}
-        // py="124px"
-        px="80px"
-        // fontSize={"18px"}
+        alignItems={"center"}
+        px={{
+          base: "10px",
+          sm: "20px",
+          md: "30px",
+          lg: "50px",
+          xl: "96px",
+        }}
+        py={{
+          base: "20px",
+          sm: "30px",
+          md: "40px",
+          lg: "50px",
+          xl: "128px",
+        }}
       >
         <Text
           textAlign={"center"}
-          fontSize={"48px"}
-          pb="48px"
+          fontSize={{
+            base: "16px",
+            sm: "24px",
+            md: "27x",
+            lg: "36px",
+            xl: "44px",
+          }}
+          pb={{
+            base: "15px",
+            sm: "20px",
+            md: "28px",
+            lg: "30px",
+            xl: "48px",
+          }}
           fontFamily={"RollgatesLuxury"}
         >
           DESPRE NOI{" "}
         </Text>
-        <Box fontFamily={"Montserrat"} fontWeight="400" letterSpacing={"-1px"}>
-          <Text pb="24px">
+        <Box
+          fontFamily={"Montserrat"}
+          fontWeight="400"
+          letterSpacing={"-1px"}
+          fontSize={{
+            base: "10.5px",
+            sm: "12px",
+            md: "14px",
+            lg: "15px",
+            xl: "18px",
+          }}
+          lineHeight={{
+            base: "13px",
+            sm: "15px",
+            md: "19px",
+            lg: "20px",
+            xl: "26px",
+          }}
+          textAlign={{
+            base: "center",
+            md: "left",
+          }}
+        >
+          <Text
+            pb={{
+              base: "10px",
+              sm: "12px",
+              md: "16px",
+              lg: "18px",
+              xl: "24px",
+            }}
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </Text>
-          <Text pb="84px">
+          <Text
+            pb={{
+              base: "20px",
+              sm: "32px",
+              md: "40px",
+              lg: "60px",
+              xl: "96px",
+            }}
+          >
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident, sunt in culpa qui officia deserunt mollit
@@ -76,11 +193,11 @@ const About = () => {
         <ButtonEllipse
           primaryColor={green}
           secondaryColor={beige}
-          textCTA={"Citeste mai multe"}
-          maxHeight={"84"}
-          maxWidth={"230"}
+          textCTA={"Află mai multe"}
+          maxHeight="100%"
+          maxWidth="100%"
         />
-      </Box>
+      </Flex>
     </Flex>
   );
 };
