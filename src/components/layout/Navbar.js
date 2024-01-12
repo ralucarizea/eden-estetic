@@ -50,7 +50,7 @@ function Navbar() {
       <Box
         width="37.5%"
         // height="100%"
-        pl={{ base: "",xs:"28px", sm: "48px", lg: "64px" }}
+        pl={{ base: "16px",xs:"28px", sm: "48px", lg: "64px" }}
         border="1px solid red"
       >
         <Link to="/">
@@ -58,8 +58,8 @@ function Navbar() {
             alt=""
             src="https://res.cloudinary.com/dgykbnubn/image/upload/v1704991730/logoEdenesteticwhite_fqnmx9.png"
             // width={{base: "calc(280px + 10.800625vw)", xs: "calc(380px + 10.800625vw)"}}
-            width={{ base: "", xs: "120px", md: "140px", lg: "160px", xl: "180px" }}
-            height={{ base: "60%", xs: "18px", md: "20px", lg: "23px", xl: "28px" }}
+            width={{ base: "110px", xs: "120px", md: "140px", lg: "160px", xl: "180px" }}
+            height={{ base: "16px", xs: "18px", md: "20px", lg: "23px", xl: "28px" }}
           />
         </Link>
       </Box>
