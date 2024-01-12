@@ -51,7 +51,7 @@ function Navbar() {
         width="37.5%"
         // height="100%"
         pl={{ base: "16px",xs:"28px", sm: "48px", lg: "64px" }}
-        border="1px solid red"
+        // border="1px solid red"
       >
         <Link to="/">
           <Image
