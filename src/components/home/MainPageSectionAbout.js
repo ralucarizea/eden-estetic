@@ -19,11 +19,13 @@ const About = () => {
       maxWidth={"100%"}
       marginRight="0px"
       justifyContent={"space-between"}
+      flexDirection={{ base: "column", xs: "row" }}
       flexWrap={"wrap"}
       height="fit-content"
     >
       <Flex
-        borderRight={`1px solid ${green}`}
+        borderRight={{ base: "0px", xs: `1px solid ${green}` }}
+        borderBottom={{ base: `1px solid ${green}`, xs: "0px" }}
         py={{
           base: "30px",
           sm: "30px",
@@ -36,9 +38,9 @@ const About = () => {
           lg: "row",
         }}
         alignItems="center"
-        width="60%"
+        width={{base: "100%", xs:"50%"}}
         pl={{
-          base: "20px",
+          base: "0px",
           sm: "28px",
           md: "36px",
           lg: "44px",
@@ -47,28 +49,29 @@ const About = () => {
       >
         <Box
           height="fit-content"
-          width="60%"
+          width={{base: "30%", xs: "60%"}}
           display="flex"
           alignItems={"center"}
           justifyContent={"center"}
-          pb={{ base: "28px", lg: "0px" }}
+          pb={{ base: "8px", xs: "28px", lg: "0px" }}
         >
           <ImageContainerLarge />
         </Box>
         <Flex
           width={{
-            base: "70%",
+            base: "75%",
             lg: "50%",
           }}
           justifyContent={"space-evenly"}
           pr={{ base: "0px", lg: "48px" }}
           alignContent="center"
           flexDirection={{
-            base: "row",
+            base: "column",
+            xs: "row",
             lg: "column",
           }}
           fontSize={{
-            base: "12px",
+            base: "13px",
             sm: "13px",
             md: "15px",
             lg: "18px",
@@ -81,10 +84,11 @@ const About = () => {
             lg: "24px",
             xl: "25px",
           }}
+          // border="1px solid red"
         >
           <StatBox>
             <StatNumbers>15+ </StatNumbers>
-            <StatDescriber>ani de experiență în domeniu</StatDescriber>
+            <StatDescriber>ani experiență în domeniu</StatDescriber>
           </StatBox>
           <StatBox>
             <StatNumbers>1100+ </StatNumbers>
@@ -98,59 +102,63 @@ const About = () => {
         </Flex>
       </Flex>
       <Flex
-        width="40%"
+        width="50%"
         height="100%"
         flexDirection={"column"}
         justifyContent={"center"}
         alignItems={"center"}
         px={{
-          base: "10px",
+          base: "0px",
+          xs: "25px",
           sm: "20px",
           md: "30px",
           lg: "50px",
-          xl: "96px",
+          xl: "100px",
         }}
         py={{
-          base: "20px",
+          base: "40px",
           sm: "30px",
           md: "40px",
-          lg: "50px",
-          xl: "128px",
+          lg: "36px",
+          xl: "44px",
         }}
       >
         <Text
           textAlign={"center"}
           fontSize={{
-            base: "16px",
-            sm: "24px",
-            md: "27x",
+            base: "26px",
+            xs: "24px",
+            sm: "26px",
+            md: "30px",
             lg: "36px",
-            xl: "44px",
+            xl: "40px",
           }}
+          pt={{ xl: "30px" }}
           pb={{
-            base: "15px",
-            sm: "20px",
+            base: "20px",
+            sm: "25px",
             md: "28px",
-            lg: "30px",
-            xl: "48px",
+            lg: "28px",
+            xl: "30px",
           }}
           fontFamily={"RollgatesLuxury"}
         >
           DESPRE NOI{" "}
         </Text>
         <Box
+          w={{ base: "", sm: "88%", md: "80%" }}
           fontFamily={"Montserrat"}
           fontWeight="400"
-          letterSpacing={"-1px"}
+          letterSpacing={"-0.5px"}
           fontSize={{
-            base: "10.5px",
-            sm: "12px",
-            md: "14px",
+            base: "13px",
+            sm: "13.7px",
+            md: "15px",
             lg: "15px",
-            xl: "18px",
+            xl: "17.5px",
           }}
           lineHeight={{
-            base: "13px",
+            base: "15px",
             sm: "15px",
             md: "19px",
             lg: "20px",
@@ -163,11 +171,11 @@ const About = () => {
         >
           <Text
             pb={{
-              base: "10px",
-              sm: "12px",
+              base: "16px",
+              sm: "16px",
               md: "16px",
               lg: "18px",
-              xl: "24px",
+              xl: "32px",
             }}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -177,11 +185,11 @@ const About = () => {
           </Text>
           <Text
             pb={{
-              base: "20px",
+              base: "28px",
               sm: "32px",
               md: "40px",
-              lg: "60px",
-              xl: "96px",
+              lg: "40px",
+              xl: "60px",
             }}
           >
             Duis aute irure dolor in reprehenderit in voluptate velit esse

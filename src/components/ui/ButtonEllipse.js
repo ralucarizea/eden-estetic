@@ -21,9 +21,9 @@ const ThinLineEllipse = styled.div`
   bottom: 0;
   margin: auto;
   transition: transform 0.25s ease-in-out; /* Add a transition for smooth rotation */
-  // &:hover {
-  //   transform: rotate(35deg); /* Rotate by 4 more degrees on hover */
-  // }
+  &:hover {
+    transform: rotate(35deg); /* Rotate by 4 more degrees on hover */
+  }
 `;
 
 const StyledButton = styled.button`
@@ -32,18 +32,24 @@ const StyledButton = styled.button`
   font-family: "Montserrat",serif;
   font-size: 20px;
   z-index: 2;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 22px;
+
 
   @media only screen and (max-width: 1250px) {
-    font-size: 16px;
-    
+    font-size: 16.5px;
+    line-height: 18px;
+
   }
 
   @media only screen and (max-width: 768px) {
-    font-size: 13.25px;
+    font-size: 14.25px;
+    line-height: 16px;
+
   }
   @media only screen and (max-width: 600px) {
-    font-size: 12px;
+    font-size: 13.75px;
+    line-height: 15px;
   
   }
   
@@ -61,17 +67,18 @@ function ButtonEllipse({
   return (
     <>
       <Flex
+      alignSelf="center"
         position="relative"
         justifyContent="center"
         width={{
-          base: "90px",
+          base: "100px",
           sm: "120px",
           md: "160px",
           lg: "180px",
           xl: "220px",
         }}
         height={{
-          base: "20px",
+          base: "28px",
           sm: "24px",
           md: "38px",
           lg: "50px",

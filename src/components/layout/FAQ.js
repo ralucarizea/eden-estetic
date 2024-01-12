@@ -8,7 +8,6 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  background,
 } from "@chakra-ui/react";
 import { VscArrowRight } from "react-icons/vsc";
 //local imports
@@ -22,7 +21,7 @@ const FAQ = ({ color = beige }) => {
     <Box
       height="120vh"
       py="100px"
-      px="64px"
+      px={{base: "20px", md: "64px"}}
       display={"flex"}
       flexDirection="column"
       justifyContent={"space-evenly"}
@@ -30,7 +29,19 @@ const FAQ = ({ color = beige }) => {
       fontFamily={"Montserrat"}
       color={color}
     >
-      <Box pb="36px" fontSize={"64px"} fontFamily={"RollgatesLuxury"}>
+      <Box
+        pb="36px"
+        fontSize={{
+          base: "30px",
+          xs: "37px",
+          sm: "46px",
+          md: "51px",
+          lg: "59px",
+          xl: "70px",
+          "2xl": "58px",
+        }}
+        fontFamily={"RollgatesLuxury"}
+      >
         Întrebari frecvent întâlnite
       </Box>
       <Box width="68%" alignItems={"center"}>

@@ -7,12 +7,12 @@ import {
   Drawer,
   DrawerBody,
   DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
   IconButton,
   useDisclosure,
+  Image,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { Show } from "@chakra-ui/react";
@@ -24,7 +24,7 @@ import {
   NavbarButtonBox,
   DrawerLinkButtonBox,
 } from "../../assets/constants/styledcomponents";
-import { ReactComponent as Logo } from "../../assets/images/logo-edenesteticwhite.svg";
+// import { ReactComponent as Logo } from "../../assets/images/logo-edenesteticwhite.svg";
 import { ROUTES, beige, green } from "../../assets/constants/constants";
 //-------------constants
 
@@ -36,7 +36,7 @@ function Navbar() {
     <Flex
       alignItems="center"
       justifyContent="space-between"
-      height="calc(55px + 2.800625vw)"
+      height="calc(50px + 2.800625vw)"
       fontFamily={"Montserrat"}
       fontWeight="300"
       fontStyle="normal"
@@ -44,15 +44,22 @@ function Navbar() {
       color={beige}
       borderBottom={`0.5px solid ${beige}`}
       position={"sticky"}
-      zIndex="200"
+      zIndex="20"
+      top={0}
     >
-      <Box width="40%" height="100%" pl="4.800625vw" py="1.500625vw">
+      <Box
+        width="37.5%"
+        // height="100%"
+        pl={{ base: "",xs:"28px", sm: "48px", lg: "64px" }}
+        border="1px solid red"
+      >
         <Link to="/">
-          <Logo
+          <Image
             alt=""
-            width="calc(380px + 10.800625vw)"
-            height="100%"
-            viewBox="0 0 580 25"
+            src="https://res.cloudinary.com/dgykbnubn/image/upload/v1704991730/logoEdenesteticwhite_fqnmx9.png"
+            // width={{base: "calc(280px + 10.800625vw)", xs: "calc(380px + 10.800625vw)"}}
+            width={{ base: "", xs: "120px", md: "140px", lg: "160px", xl: "180px" }}
+            height={{ base: "60%", xs: "18px", md: "20px", lg: "23px", xl: "28px" }}
           />
         </Link>
       </Box>
@@ -113,7 +120,6 @@ function Navbar() {
                 fontWeight="500"
                 alignItems={"flex-end"}
                 color={green}
-                
               >
                 <DrawerLinkButtonBox>
                   <Link to={ROUTES.ABOUT}>Despre</Link>

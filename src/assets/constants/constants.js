@@ -132,7 +132,7 @@ export const socialproofReviews = [
   {
     name: "Maria Florentina",
     thumbnail:
-      "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194169/edenestetic/mainpage-socialproof3_k9geji.jpg",
+      "https://res..com/dgykbnubn/image/upload/v1690194169/edenestetic/mainpage-socialproof3_k9geji.jpg",
     reviewText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },

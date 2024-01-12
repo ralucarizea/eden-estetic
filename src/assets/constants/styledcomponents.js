@@ -102,18 +102,36 @@ export const IconContainer = styled.div`
 export const StatBox = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 24px 8px;
+  margin: 28px 4px;
   width: 100%;
-  min-width: 35%;
+  min-width: 40%;
   justify-content: flex-start;
   text-align: center;
+  @media only screen and (max-width: 490px) {
+    height: 12px;
+  }
 `;
 export const StatNumbers = styled.div`
-  font-size: 2.85vw;
+  font-size: 52px;
   font-weight: 500;
   font-family: "RollgatesLuxury";
   font-style: normal;
-  padding: 4px 0px;
+  padding: 8px 0px;
+  @media only screen and (max-width: 1350px) {
+    font-size: 39px;
+  }
+  @media only screen and (max-width: 100px) {
+    font-size: 36px;
+  }
+  @media only screen and (max-width: 820px) {
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 640px) {
+    font-size: 28px;
+  }
+  @media only screen and (max-width: 560px) {
+    font-size: 23px;
+  }
 `;
 export const StatDescriber = styled.div`
   font-size: inherit;
@@ -121,8 +139,23 @@ export const StatDescriber = styled.div`
   font-weight: 400;
   font-style: normal;
   letter-spacing: -0.5px;
+  min-width: 100%;
+  line-height: 18px;
+
   text-align: ${(props) => props.textAlign};
   // align-self: center;
+
+  @media only screen and (max-width: 820px) {
+    line-height: 14px;
+    margin-left: -4px;
+  }
+  @media only screen and (max-width: 640px) {
+    line-height: 12px;
+    // margin-left: -8px;
+  }
+  @media only screen and (max-width: 560px) {
+    // font-size: 23px;
+  }
 `;
 export const ServiceGridItem = styled.div`
   padding: 8vw 4vw;
@@ -135,7 +168,6 @@ export const ServiceGridItem = styled.div`
   align-items: center;
   position: relative;
   // background-color: purple;
-
 
   @media only screen and (max-width: 1250px) {
     padding: 7vw 3.5vw;
@@ -186,7 +218,7 @@ export const ServiceTitle = styled.p`
   }
 `;
 export const NavbarButtonBox = styled.div`
-  width: 12%;
+  width: 12.5%;
   border-left: 0.5px solid ${beige};
   padding: 0px 8px;
   height: 100%;
@@ -195,7 +227,7 @@ export const NavbarButtonBox = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: calc(9.5px + 0.390625vw);
+  font-size: calc(9.5px + 0.490625vw);
   line-height: calc(10px + 0.390625vw);
 `;
 export const DrawerLinkButtonBox = styled.div`
@@ -227,15 +259,21 @@ export const Name = styled.div`
   font-style: italic;
 `;
 export const ProfilePic = styled.div`
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   background-image: url(${(props) => props.src});
   background-position: center;
   background-size: cover;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  place-self: center;
+
+  @media only screen and (max-width:900px) {
+    width: 80px;
+    height: 80px;
+  }
+  @media only screen and (max-width:540px) {
+    width: 80px;
+    height: 80px;
+  }
 `;
 export const Caption = styled.div`
   padding-top: 16px;
@@ -271,27 +309,6 @@ export const DiagnosisNumberedElement = styled.div`
   right: ${(props) => props.right};
   top: ${(props) => props.top};
   transform: ${(props) => props.transform};
-`;
-export const StyledSliderButton = styled.button`
-  position: ${(props) => props.position};
-  z-index: ${(props) => props.zIndex};
-  left: ${(props) => props.left};
-  right: ${(props) => props.right};
-  top: ${(props) => props.top};
-  bottom: ${(props) => props.bottom};
-  border-radius: 50%;
-  background: transparent;
-  &:hover {{background-color : ${green}; 
-            color: ${beige};  
-            opacity: 0.8;
-            transition: 210ms ease-in;}}
-  // &:active {{
-  //   background-color : ${beige};
-  //           color : ${green}; 
-  //           border: 0.5px solid ${green};  
-  //           border-radius: 50%;
-  //           opacity: 0.8;
-  //           }}
 `;
 
 // export const CarouselThumb = styled.div`

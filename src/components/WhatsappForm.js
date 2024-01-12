@@ -26,56 +26,110 @@ export default function WhatsappForm() {
   const [message, setMessage] = useState("");
 
   return (
-    <Flex height="140vh">
+    <Flex
+      mb={{ base: "160px" }}
+      minHeight="fit-content"
+      height={{ base: "100vh", xs: "80vh", md: "90vh", xl: "120vh" }}
+      flexDirection={{ base: "column", xs: "row" }}
+    >
       <Box
-        width="50%"
-        height="100%"
+        width={{ base: "100%", xs: "50%" }}
+        height={{ base: "80%", xs: "100%" }}
         backgroundImage={`url(${img})`}
         backgroundSize={"cover"}
         backgroundRepeat={"no-repeat"}
         backgroundPosition={"left"}
       />
       <Flex
-        width="50%"
+        width={{ base: "100%", xs: "50%" }}
         height="100%"
         flexDirection={"column"}
         justifyContent={"center"}
-        p="80px"
-        position="relative"
+        px={{ base: "80px", xs: "3.5vh", sm: "5vh", md: "9vw", xl: "9.5vw" }}
+        py={{ base: "50px", xs: "0px" }}
         borderBottom={`0.5px solid #f3eee7`}
+        position="relative"
+        minW={{ sm: "", md: "420px" }}
       >
         <Text
-          fontSize={"68px"}
-          pb="72px"
+          fontSize={{
+            base: "36px",
+            xs: "31.75px",
+            sm: "34.5px",
+            md: "40px",
+            lg: "46px",
+            xl: "56px",
+          }}
+          lineHeight={{ base: "36px", xs: "33px", md: "47px", xl: "44px" }}
           fontFamily={"RollgatesLuxury"}
-          // fontWeight={"300"}
           letterSpacing={"-1px"}
+          ml={{
+            base: "-36px",
+            xs: "-20px",
+            sm: "-30px",
+            md: "-50px",
+            lg: "-48px",
+            xl: "-36px",
+          }}
+          mt={{ base: "0", xs: "0", md: "-16px", lg: "0px", xl: "-48px" }}
+          // pb={{base: "36px", xs: "0"}}
         >
-          {" "}
-          Ai vreo curiozitate?{" "}
+          Ai vreo curiozitate?
         </Text>
         <Text
-          fontSize={"40px"}
+          width={{ base: "100%", xs: "88%", sm: "96%", md: "86%" }}
+          fontSize={{
+            base: "24px",
+            xs: "23px",
+            md: "24px",
+            lg: "28px",
+            xl: "34px",
+          }}
+          textAlign={"right"}
           fontFamily={"TheReason"}
           position="absolute"
-          right="3%"
-          top={["25%", "30%"]}
+          right={{
+            base: "16px",
+            xs: "12px",
+            sm: "12px",
+            md: "16px",
+            lg: "24px",
+            xl: "36px",
+          }}
+          top={{
+            base: "105px",
+            xs: "110px",
+            sm: "115px",
+            md: "140px",
+            lg: "150px",
+            xl: "230px",
+          }}
         >
           Trimite-ne un mesaj pe Whatsapp!
         </Text>
-        {/* <Text
-          pl="12px"
-          fontSize={"20px"}
+        <Box
+          pt={{
+            base: "70px",
+            xs: "80px",
+            sm: "70px",
+            md: "80px",
+            lg: "90px",
+            xl: "120px",
+          }}
+          pb={{ base: "28px", md: "10vh" }}
           fontFamily={"Montserrat"}
-          fontWeight={"300"}
-          letterSpacing={"-1px"}
+          fontSize={{
+            base: "13px",
+            xs: "13.5px",
+            md: "14px",
+            lg: "15px",
+            xl: "16px",
+          }}
         >
-          Promitem ca te contactam inapoi cat de repede cu putinta!
-        </Text> */}
-        <Box pt="48px" pb="10vh" fontFamily={"Montserrat"}>
-          <FormControl py="12px">
-            <FormLabel>Nume</FormLabel>
+          <FormControl py="12px" fontSize="inherit">
+            <FormLabel fontSize="calc( 1em + 1px) ">Nume</FormLabel>
             <Input
+              fontSize={"inherit"}
               placeholder="Mariana"
               value={name}
               onChange={(e) => setName(e?.currentTarget?.value)}
@@ -90,8 +144,9 @@ export default function WhatsappForm() {
             />
           </FormControl>
           <FormControl py="12px">
-            <FormLabel>Număr de telefon</FormLabel>
+            <FormLabel fontSize="calc( 1em + 1px) ">Număr de telefon</FormLabel>
             <Input
+              fontSize={"inherit"}
               variant={"flushed"}
               type="tel"
               borderColor="rgba(243,238,231, 0.3)"
@@ -104,8 +159,10 @@ export default function WhatsappForm() {
             />
           </FormControl>
           <FormControl py="12px">
-            <FormLabel>Mesajul tău</FormLabel>
+            <FormLabel fontSize="calc( 1em + 1px) ">Mesajul tău</FormLabel>
             <Textarea
+              textOverflow={"ellipsis"}
+              fontSize={"inherit"}
               placeholder="Bună, Mariana! Sunt interesată să programez o ședință de diagnoză & consultanță pentru săptămâna viitoare. Ai vreun loc disponibil?"
               _placeholder={{
                 color: "rgba(243,238,231, 0.5)",

@@ -29,12 +29,32 @@ const Promo = () => {
           {" "}
           Oferta lunii{" "}
         </Text> */}
-        <Text fontSize={"72px"} pb="8vh" fontFamily={"RollgatesLuxury"}>
+        <Text
+          fontSize={{
+            base: "19px",
+            xs: "22px",
+            sm: "24px",
+            md: "32px",
+            lg: "40px",
+            xl: "72px",
+            "2xl": "58px",
+          }}
+          pb="8vh"
+          fontFamily={"RollgatesLuxury"}
+        >
           {" "}
           De ziua ei, ofera-i timp doar pentru ea
         </Text>
         <Text
-          fontSize={"24px"}
+          fontSize={{
+            base: "19px",
+            xs: "22px",
+            sm: "24px",
+            md: "32px",
+            lg: "40px",
+            xl: "72px",
+            "2xl": "58px",
+          }}
           width="60%"
           textAlign={"center"}
           fontFamily={"Montserrat"}
