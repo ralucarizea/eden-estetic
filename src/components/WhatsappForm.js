@@ -64,45 +64,53 @@ export default function WhatsappForm() {
           fontFamily={"RollgatesLuxury"}
           letterSpacing={"-1px"}
           ml={{
-            base: "-36px",
+            base: "0",
             xs: "-20px",
             sm: "-30px",
             md: "-50px",
             lg: "-48px",
             xl: "-36px",
           }}
-          mt={{ base: "0", xs: "0", md: "-16px", lg: "0px", xl: "-48px" }}
+          mt={{
+            base: "0",
+            xs: "-16px",
+            sm: "-28px",
+            md: "-16px",
+            lg: "0px",
+            xl: "-48px",
+          }}
           // pb={{base: "36px", xs: "0"}}
         >
           Ai vreo curiozitate?
         </Text>
         <Text
-          width={{ base: "100%", xs: "88%", sm: "96%", md: "86%" }}
+          width={{ base: "95%", xs: "88%", sm: "96%", md: "86%" }}
           fontSize={{
             base: "24px",
-            xs: "23px",
+            xs: "21px",
             md: "24px",
             lg: "28px",
             xl: "34px",
           }}
+          lineHeight="calc(1em + 2px)"
           textAlign={"right"}
           fontFamily={"TheReason"}
           position="absolute"
           right={{
-            base: "16px",
-            xs: "12px",
-            sm: "12px",
-            md: "16px",
-            lg: "24px",
+            base: "0",
+            xs: "20px",
+            sm: "24px",
+            md: "24px",
+            lg: "28px",
             xl: "36px",
           }}
           top={{
             base: "105px",
-            xs: "110px",
-            sm: "115px",
-            md: "140px",
-            lg: "150px",
-            xl: "230px",
+            xs: "175px",
+            sm: "180px",
+            md: "175px",
+            lg: "180px",
+            xl: "280px",
           }}
         >
           Trimite-ne un mesaj pe Whatsapp!

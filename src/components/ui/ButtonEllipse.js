@@ -34,25 +34,18 @@ const StyledButton = styled.button`
   z-index: 2;
   font-weight: 600;
   line-height: 22px;
-
-
   @media only screen and (max-width: 1250px) {
     font-size: 16.5px;
     line-height: 18px;
-
   }
-
   @media only screen and (max-width: 768px) {
     font-size: 14.25px;
     line-height: 16px;
-
   }
   @media only screen and (max-width: 600px) {
     font-size: 13.75px;
     line-height: 15px;
-  
   }
-  
   }
 `;
 function ButtonEllipse({
