@@ -15,7 +15,7 @@ import ellipse from "../../assets/images/tintedEllipse.svg";
             <Image
             src={`${thin}`}
             alt=""
-            width={{ base: "75%", sm:"65%", md: "60%", lg: "72%" }}
+            width={{ base: "75%", sm:"65%", md: "60%", lg: "85%" }}
             position={"relative"}
             minWidth={{ base: "18.5vw", sm:"18.5vw", md: "58%", lg: "70%" }}
           />

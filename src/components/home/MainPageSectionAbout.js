@@ -113,7 +113,7 @@ const About = () => {
           sm: "20px",
           md: "30px",
           lg: "50px",
-          xl: "100px",
+          xl: "120px",
         }}
         py={{
           base: "40px",

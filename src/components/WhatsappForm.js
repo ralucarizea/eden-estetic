@@ -45,7 +45,7 @@ export default function WhatsappForm() {
         height="100%"
         flexDirection={"column"}
         justifyContent={"center"}
-        px={{ base: "80px", xs: "3.5vh", sm: "5vh", md: "9vw", xl: "9.5vw" }}
+        px={{ base: "80px", xs: "3.5vh", sm: "4vh", md: "7vw", xl: "9.5vw" }}
         py={{ base: "50px", xs: "0px" }}
         borderBottom={`0.5px solid #f3eee7`}
         position="relative"
@@ -107,7 +107,7 @@ export default function WhatsappForm() {
           top={{
             base: "105px",
             xs: "175px",
-            sm: "180px",
+            sm: "165px",
             md: "175px",
             lg: "180px",
             xl: "280px",

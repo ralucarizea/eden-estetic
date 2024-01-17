@@ -218,9 +218,10 @@ export const ServiceTitle = styled.p`
   }
 `;
 export const NavbarButtonBox = styled.div`
-  width: 12.5%;
+background-color: red;  
+width: 12%;
   border-left: 0.5px solid ${beige};
-  padding: 0px 8px;
+  // padding: 0px 8px;
   height: 100%;
   display: flex;
   text-align: center;
@@ -266,11 +267,11 @@ export const ProfilePic = styled.div`
   background-position: center;
   background-size: cover;
 
-  @media only screen and (max-width:900px) {
+  @media only screen and (max-width: 900px) {
     width: 80px;
     height: 80px;
   }
-  @media only screen and (max-width:540px) {
+  @media only screen and (max-width: 540px) {
     width: 80px;
     height: 80px;
   }

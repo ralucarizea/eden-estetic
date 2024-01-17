@@ -7,12 +7,14 @@ const Hero = () => {
   return (
     <Flex
       // pl="44px"
+      maxW="100vw"
       alignItems={"center"}
-      maxWidth={"100%"}
-      marginRight="0px"
+      w="100%"
+      // marginRight="0px"
       justifyContent={"space-between"}
       flexWrap={"wrap"}
       height="fit-content"
+      maxH="100vh"
       position="relative"
       // borderTop={`0.5px solid ${beige}`}
     >
@@ -20,28 +22,27 @@ const Hero = () => {
         flexDirection="column"
         width="50%"
         pl={{ base: "20px", xs: "24px", md: "36px", lg: "64px" }}
-        pr={{ base: "12px", xs: "28px", md: "36px", lg: "36px", xl: "56px" }}
+        pr={{ base: "12px", xs: "20px", md: "28px", lg: "20px", xl: "56px" }}
         // border="1px solid red"
       >
         <Flex
+        mt={{sm: "-44px", md: "-60px", lg: "-80px", xl: "-130px" }}
           flexWrap={"wrap"}
           fontSize={{
             base: "19px",
             xs: "22px",
-            sm: "24px",
-            md: "32px",
+            sm: "28px",
+            md: "35px",
             lg: "40px",
-            xl: "55px",
-            "2xl": "58px",
+            xl: "58px",
           }}
           lineHeight={{
             base: "20px",
             xs: "22px",
-            sm: "28px",
+            sm: "30px",
             md: "36px",
             lg: "44px",
-            xl: "52px",
-            "2xl": "60px",
+            xl: "55px",
           }}
           fontFamily={"RollgatesLuxury"}
           fontStyle={"normal"}
@@ -56,11 +57,10 @@ const Hero = () => {
             fontSize={{
               base: "20px",
               xs: "22px",
-              sm: "24px",
-              md: "32px",
+              sm: "30px",
+              md: "35px",
               lg: "40px",
-              xl: "55px",
-              "2xl": "58px",
+              xl: "58px",
             }}
             py="2px"
             fontWeight={"400"}
@@ -72,17 +72,17 @@ const Hero = () => {
         <Box
           fontSize={{
             base: "12.5px",
-            sm: "13px",
+            sm: "15px",
             md: "16px",
-            lg: "17.75px",
-            xl: "20px",
+            lg: "18px",
+            xl: "22px",
           }}
           lineHeight={{
             base: "15px",
-            sm: "16px",
-            md: "19px",
-            lg: "23px",
-            xl: "26px",
+            sm: "19px",
+            md: "22px",
+            lg: "27px",
+            xl: "33px",
           }}
           pt={{ base: "20px", xs: "24px", sm: "28px", md: "36px", lg: "48px", xl: "64px" }}
           width={{ base: "92%", sm: "82%" }}
