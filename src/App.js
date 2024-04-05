@@ -22,6 +22,7 @@ import ProcedurePage from "./components/ui/ProcedurePage";
 import Marquee from "react-fast-marquee";
 
 const breakpoints = {
+  base: "0em", 
   xs: "490px",
   sm: "640px",
   md: "820px",

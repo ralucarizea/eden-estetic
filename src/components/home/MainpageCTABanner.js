@@ -7,25 +7,25 @@ import "../../assets/fonts/fonts.css";
 
 export default function MainpageCTABanner() {
   return (
-    <Flex height="fit-content" alignItems={"center"}>
+    <Flex height="fit-content" alignItems={"center"} justifyContent={{base: "center", sm: "left"}}>
       <Text
         // height="fit-content"
         py={{
-          base: "28px",
-          sm: "36px",
-          md: "40px",
-          lg: "52px",
+          base: "40px",
+          sm: "48px",
+          md: "52px",
+          lg: "60px",
           xl: "80px",
         }}
         fontSize={{
-          base: "20px",
+          base: "28px",
           sm: "32px",
           md: "36px",
           lg: "48px",
           xl: "64px",
         }}
         pl={{
-          base: "28px",
+          base: "0px",
           sm: "36px",
           md: "40px",
           lg: "52px",

@@ -50,16 +50,15 @@ function Navbar() {
       fontStyle="normal"
       backgroundColor={green}
       color={beige}
-      borderBottom={`0.5px solid ${beige}`}
+      borderBottom={{base: `0.5px solid ${green}`, sm: `0.5px solid ${beige}`}}
       position={"sticky"}
       zIndex="20"
       top={0}
     >
-      <Box
-        width={{ base: "45%", md: "37.5%" }}
-        // height="100%"
+      <Flex
+        width={{ base: "100%", md: "59.25%" }}
         pl={{ base: "16px", xs: "28px", md: "36px", lg: "64px" }}
-        // border="1px solid red"
+        justifyContent={{base:"center", sm: "left"}}
       >
         <Link to="/">
           <Image
@@ -67,14 +66,14 @@ function Navbar() {
             src="https://res.cloudinary.com/dgykbnubn/image/upload/v1704991730/logoEdenesteticwhite_fqnmx9.png"
             // width={{base: "calc(280px + 10.800625vw)", xs: "calc(380px + 10.800625vw)"}}
             width={{
-              base: "110px",
+              base: "115px",
               xs: "130px",
               md: "140px",
               lg: "160px",
               xl: "180px",
             }}
             height={{
-              base: "16px",
+              base: "18px",
               xs: "19px",
               md: "21px",
               lg: "24px",
@@ -82,9 +81,14 @@ function Navbar() {
             }}
           />
         </Link>
-      </Box>
+      </Flex>
       <Show breakpoint="(min-width: 820px)">
-        <Flex>
+        <Flex
+          // border="1px solid blue"
+          w="full"
+          h="100%"
+          justifyContent={"flex-end"}
+        >
           <NavbarButtonBox>
             <Link to={ROUTES.ABOUT}>Despre</Link>
           </NavbarButtonBox>
@@ -109,7 +113,8 @@ function Navbar() {
       <Show breakpoint="(max-width: 819px)">
         <Button
           // ref={btnRef}
-          mr="16px"
+          mr="8px"
+          px="10px"
           backgroundColor={green}
           color={beige}
           onClick={onOpen}
@@ -165,10 +170,10 @@ function Navbar() {
             </DrawerBody>
 
             <DrawerFooter>
-              <Button variant="outline" mr={3} onClick={onClose}>
+              {/* <Button variant="outline" mr={3} onClick={onClose}>
                 Cancel
-              </Button>
-              <Button colorScheme="blue">Save</Button>
+              </Button> */}
+              {/* <Button colorScheme="blue">Save</Button>s */}
             </DrawerFooter>
           </DrawerContent>
         </Drawer>

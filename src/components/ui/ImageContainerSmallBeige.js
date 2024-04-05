@@ -10,18 +10,29 @@ export default function ImageContainerSmallBeige() {
       <Image
         src={`${thin}`}
         alt=""
-        width="100%"
         position={"relative"}
-        maxWidth={{ base: "21vw", sm:"20.5vw", md: "14.70vw", lg: "14.7vw" }}
-        minWidth={"80px"}
+        width={{
+          base: "130px",
+          xs: "170px",
+          sm: "180px",
+          md: "205px",
+          lg: "190px",
+          xl: "270px",
+        }}
+        minWidth={{base: "140px", xs: "150px", sm: "175px", md: "150px"}}
       />
       <Image
         src={`${ellipse}`}
         alt=""
         position={"absolute"}
-        width="100%"
-        maxWidth={{ base: "18.5vw", sm:"18.5vw", md: "12.5vw", lg: "12vw" }}
-        minWidth={"70px"}
+        width={{
+          base: "120px",
+          xs: "130px",
+          sm: "160px",
+          md: "185px",
+          lg: "170px",
+          xl: "240px",
+        }}
       />
     </>
   );

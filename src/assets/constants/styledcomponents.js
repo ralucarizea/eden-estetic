@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { beige, green } from "./constants";
+import { Image } from "@chakra-ui/react";
 // import ellipse from "../images/tintedEllipse.svg";
 
 export const AccordionBox = styled.div`
@@ -103,8 +104,8 @@ export const StatBox = styled.div`
   display: flex;
   flex-direction: column;
   margin: 28px 4px;
-  width: 100%;
-  min-width: 40%;
+  // width: fit-content;
+  min-width: 33%;
   justify-content: flex-start;
   text-align: center;
   @media only screen and (max-width: 490px) {
@@ -158,7 +159,7 @@ export const StatDescriber = styled.div`
   }
 `;
 export const ServiceGridItem = styled.div`
-  padding: 8vw 4vw;
+  padding: 90px 52px;
   width: 100%;
   height: 100%;
   background-color: ${(props) => props.backgroundColor};
@@ -167,14 +168,16 @@ export const ServiceGridItem = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  // background-color: purple;
 
   @media only screen and (max-width: 1250px) {
-    padding: 7vw 3.5vw;
+    padding: 64px 40px;
+  }
+  @media only screen and (max-width: 1000px) {
+    padding: 40px 48px 60px 72px;
   }
 
   @media only screen and (max-width: 767px) {
-    padding: 10vw;
+    padding: 0vw 7vw;
   }
 `;
 export const ImageWrapper = styled.div`
@@ -185,12 +188,12 @@ export const ImageWrapper = styled.div`
   // background-color: blue;
 
   @media only screen and (max-width: 767px) {
-    width: 30%;
+    width: 40%;
   }
 `;
 export const ServiceTitle = styled.p`
   padding-bottom: 1.95vw;
-  font-size: 38px;
+  font-size: 40px;
   line-height: 36px;
   font-family: "RollgatesLuxury";
 
@@ -199,8 +202,8 @@ export const ServiceTitle = styled.p`
     line-height: 23px;
   }
   @media only screen and (max-width: 990px) {
-    font-size: 25px;
-    line-height: 20px;
+    font-size: 32px;
+    line-height: 32px;
   }
 
   @media only screen and (max-width: 767px) {
@@ -208,18 +211,19 @@ export const ServiceTitle = styled.p`
     line-height: 24px;
   }
   @media only screen and (max-width: 600px) {
-    font-size: 22px;
-    line-height: 18px;
-    padding-bottom: 3vw;
+    font-size: 26px;
+    line-height: 21px;
+    padding-bottom: 3.5vw;
   }
   @media only screen and (max-width: 440px) {
-    font-size: 20px;
-    line-height: 16px;
+    font-size: 23px;
+    line-height: 20px;
+    padding-bottom:5vw;
+
   }
 `;
 export const NavbarButtonBox = styled.div`
-background-color: red;  
-width: 12%;
+  width: 20%;
   border-left: 0.5px solid ${beige};
   // padding: 0px 8px;
   height: 100%;
@@ -283,10 +287,10 @@ export const Caption = styled.div`
   font-style: normal;
 `;
 
-export const Ellipse = styled.img`
+export const Ellipse = styled(Image)`
   position: absolute;
-  width: 20%;
-  min-width: 12vw;
+  width: ${props => props.w};
+  min-width: ${props => props.minWidth};
   rotate: 356.5deg;
 `;
 export const DiagnosisHeading = styled.div`

@@ -19,23 +19,33 @@ import { green, faqMainpage, beige } from "../../assets/constants/constants";
 const FAQ = ({ color = beige }) => {
   return (
     <Box
-      height="120vh"
-      py="100px"
-      px={{base: "20px", md: "64px"}}
+      height="fit-content"
+      px={{ base: "28px", xs: "36px", sm: "48px", md: "64px" }}
       display={"flex"}
       flexDirection="column"
-      justifyContent={"space-evenly"}
+      // justifyContent={"space-evenly"}
       alignItems={"center"}
       fontFamily={"Montserrat"}
       color={color}
     >
       <Box
-        pb="36px"
+        pb={{base: "36px", sm: "48px", md: "56px", lg:"64px", xl: "72px"}}
+        width={{base: "90%", md:"100%"}}
+        textAlign={"center"}
         fontSize={{
-          base: "30px",
+          base: "31px",
+          xs: "35px",
+          sm: "39px",
+          md: "46px",
+          lg: "52px",
+          xl: "64px",
+          "2xl": "58px",
+        }}
+        lineHeight={{
+          base: "33px",
           xs: "37px",
           sm: "46px",
-          md: "51px",
+          md: "48px",
           lg: "59px",
           xl: "70px",
           "2xl": "58px",
@@ -44,7 +54,7 @@ const FAQ = ({ color = beige }) => {
       >
         Întrebari frecvent întâlnite
       </Box>
-      <Box width="68%" alignItems={"center"}>
+      <Box width={{base: "84%%", md: "68%"}} alignItems={"center"}>
         <Accordion
           allowMultiple
           fontFamily="Montserrat"
@@ -65,12 +75,28 @@ const FAQ = ({ color = beige }) => {
               }}
             >
               <AccordionButton _hover={{}}>
-                <Box as="span" flex="1" textAlign="left" fontSize={"18px"}>
+                <Box
+                  as="span"
+                  flex="1"
+                  textAlign="left"
+                  fontWeight="500"
+                  fontSize={{
+                    base: "14px",
+                    sm: "15px",
+                    lg: "17px",
+                    xl: "18px",
+                  }}
+                >
                   {qa.question}
                 </Box>
                 <AccordionIcon as={VscArrowRight} />
               </AccordionButton>
-              <AccordionPanel pb={4}>{qa.answer}</AccordionPanel>
+              <AccordionPanel pb={4} fontSize={{
+                    base: "13px",
+                    sm: "14px",
+                    lg: "15px",
+                    xl: "16px",
+                  }}>{qa.answer}</AccordionPanel>
             </AccordionItem>
           ))}
         </Accordion>

@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/constants/styles.css";
 import { VscArrowRight, VscArrowLeft } from "react-icons/vsc";
-import { useMediaQuery, styled } from "@chakra-ui/react";
+import { useMediaQuery } from "@chakra-ui/react";
 import { useSpringCarousel } from "react-spring-carousel";
 import {
   // Box,
@@ -56,15 +56,15 @@ function SocialProof() {
     >
       <Flex
         pt={{
-          base: "19px",
-          xs: "20vh",
-          sm: "21vh",
-          md: "22vh",
-          lg: "21vh",
+          base: "13vh",
+          xs: "15vh",
+          sm: "16vh",
+          md: "17vh",
+          lg: "18vh",
           xl: "20vh",
         }}
         mb={{
-          base: "19px",
+          base: "11vh",
           xs: "10vh",
           sm: "13vh",
           md: "13vh",
@@ -77,8 +77,8 @@ function SocialProof() {
         justifyContent={"center"}
         alignItems={"center"}
         fontSize={{
-          base: "30px",
-          xs: "37px",
+          base: "32px",
+          xs: "35px",
           sm: "46px",
           md: "51px",
           lg: "59px",

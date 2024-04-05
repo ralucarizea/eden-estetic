@@ -2,7 +2,7 @@
 import { Flex, Icon, Text } from "@chakra-ui/react";
 //local imports
 import "../../assets/fonts/fonts.css";
-import { green, beige } from "../../assets/constants/constants";
+import { beige } from "../../assets/constants/constants";
 import ImageContainerSmall from "../ui/ImageContainerSmall";
 import ImageContainerSmallBeige from "../ui/ImageContainerSmallBeige";
 import { VscArrowRight } from "react-icons/vsc";
@@ -17,7 +17,7 @@ function MainpageServiceSection({ element }) {
     <ServiceGridItem backgroundColor={element.backgroundColor}>
       <Flex
         width={{
-          base: "50%",
+          base: "100%",
           md: "70%",
         }}
         color={element.color}
@@ -29,10 +29,12 @@ function MainpageServiceSection({ element }) {
         <ServiceTitle>{element.title}</ServiceTitle>
         <Text
           fontSize={{
-            base: "12px",
-            md: "13px",
-            lg: "16px",
-            xl: "18px",
+            base: "13px",
+            xs: "14px",
+            sm: "15px",
+            md: "16px",
+            lg: "16.5px",
+            xl: "20px",
           }}
           pr={{
             base: "1.2vw",
@@ -42,17 +44,18 @@ function MainpageServiceSection({ element }) {
           }}
           fontFamily={"Montserrat"}
           fontWeight={"400"}
-          letterSpacing={"-0.5px"}
+          letterSpacing={"-0.25px"}
           lineHeight={{
             base: "16px",
-            md: "18px",
+            xs: "18px",
+            sm: "20px",
+            md: "22px",
             lg: "19px",
-            xl: "22px",
+            xl: "25px",
           }}
-          maxWidth="75%"
+          maxWidth="78%"
         >
-          {" "}
-          {element.caption}{" "}
+          {element.caption}
         </Text>
       </Flex>
       <ImageWrapper>
@@ -65,14 +68,14 @@ function MainpageServiceSection({ element }) {
       <Icon
         as={VscArrowRight}
         position="absolute"
-        bottom={{ base: "10vw", md: "2vw", lg: "4vw ", xl: "5vw" }}
-        left={{ base: "10vw", md: "3vw", lg: "3.5vw", xl: "4vw" }}
+        bottom={{ base: "10vw", md: "7vw", lg: "4vw", xl: "5vw" }}
+        // left={{ base: "10vw", md: "3vw", lg: "3.5vw", xl: "4vw" }}
         width={{ base: "28px", sm: "32px", md: "36px", lg: "36px", xl: "44px" }}
         height={{
-          base: "16px",
-          sm: "20px",
-          md: "24px",
-          lg: "24px",
+          base: "22px",
+          sm: "25px",
+          md: "26px",
+          lg: "28px",
           xl: "32px",
         }}
         color={element.color}

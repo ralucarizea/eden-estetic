@@ -9,11 +9,30 @@ export default function ImageContainerSmall() {
       <Image
         src={`${thin}`}
         alt=""
-        width={{ base: "50%", md: "25%" }}
+        width={{
+          base: "130px",
+          xs: "170px",
+          sm: "160px",
+          md: "200px",
+          lg: "180px",
+          xl: "254px",
+        }}
+        
         position={"relative"}
-        minWidth={{ base: "21vw", md: "13.5vw" }}
+        minWidth={{base: "140px", xs: "150px", sm: "180px", md: "150px"}}
       />
-      <Ellipse src={`${ellipse}`} alt="" />
+      <Ellipse
+         width={{
+          base: "130px",
+          xs: "140px",
+          sm: "170px",
+          md: "190px",
+          lg: "170px",
+          xl: "250px",
+        }}
+        src={`${ellipse}`}
+        alt=""
+      />
     </>
   );
 }

@@ -17,29 +17,54 @@ function AboutPage() {
   return (
     <>
       <Flex
-        height="120vh"
+        height="110vh"
         width={"100%"}
         flexDirection={"row"}
         justifyContent={"space-between"}
       >
-        <Box width="52%" backgroundColor={beige} position="relative">
-          <Box
-            position="absolute"
-            top="25%"
-            left="38%"
+        <Box width="50.5%" backgroundColor={beige} position="relative">
+          <Flex
+            h="100%"
+            flexDirection={"column"}
+            justifyContent={"center"}
+            alignItems="flex-end"
+            // position="absolute"
+            // top="23%"
             fontFamily={"RollgatesLuxury"}
             color="#937569"
-            lineHeight={"124px"}
-            fontSize={"140px"}
+            lineHeight={{
+              base: "24px",
+              xs: "34px",
+              sm: "54px",
+              md: "80px",
+              lg: "100px",
+              xl: "124px",
+            }}
+            fontSize={{
+              base: "36px",
+              xs: "44px",
+              sm: "64px",
+              md: "90px",
+              lg: "120px",
+              xl: "140px",
+            }}
             mixBlendMode={"difference"}
           >
-            <Text> Invata sa </Text>
-            <Text pl="164px"> te iubesti</Text>
-            <Text pl="244px">#farafiltru</Text>
-          </Box>
+            <Text mr={{ base: "", xs: "", sm: "", md: "", lg: "-8%", xl: "0" }}>
+              {" "}
+              Invata sa{" "}
+            </Text>
+            <Text mr={{ base: "", xs: "", sm: "", md: "", lg: "-60%", xl: "0" }}>
+              {" "}
+              te iubesti
+            </Text>
+            <Text mr={{ base: "", xs: "", sm: "", md: "", lg: "-8%", xl: "0" }}>
+              #farafiltru
+            </Text>
+          </Flex>{" "}
         </Box>
         <Box
-          width="48%"
+          width="49.5%"
           backgroundImage="linear-gradient(90deg, rgba(243,238,231,1) 3%, rgba(243,238,231,0.7497811624649859) 32%, rgba(108,138,150,0.6153273809523809) 48%, rgba(108,138,150,0.6909576330532212) 66%, rgba(108,138,150,1) 93%)"
           // position="absolute"
           // zIndex="3"

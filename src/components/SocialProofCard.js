@@ -23,10 +23,10 @@ export default function SocialProofCard({
     opacity: 0.76;
     width: ${isMobile ? "80%" : ""};
     padding: 2.5vw 2.65vw;
-    @media only screen and (max-width:900px) {
+    @media only screen and (max-width: 900px) {
       padding: 18px 16px;
     }
-    @media only screen and (max-width:640px) {
+    @media only screen and (max-width: 640px) {
       margin-left: 36px;
     }
   `;
@@ -49,6 +49,9 @@ export default function SocialProofCard({
     align-items: flex-start;
     z-index: 3;
     width: 88%;
+     @media only screen and (max-width: 900px) {
+      width: 94%;
+    }
     font-size: ${(props) => props.fontSize};
   `;
   return (
@@ -59,10 +62,10 @@ export default function SocialProofCard({
       // height={{ base: "40vh", sm: "40vh", md: "39vh", lg: "36vh", xl: "38vh" }}
       width={{
         base: "60vw",
-        sm: "43vw",
+        sm: "41vw",
         md: "43vw",
         lg: "40vw",
-        xl: "38vw",
+        xl: "41vw",
       }}
     >
       <HStack
@@ -73,8 +76,8 @@ export default function SocialProofCard({
         mt="1.5vw"
       >
         <Name
-          fontSize={{ base: "25px", sm: "25px", md: "28px", xl: "30px" }}
-          lineHeight={{ base: "23px", sm: "20px", md: "24px", xl: "26px" }}
+          fontSize={{ base: "25px", sm: "25px", md: "28px", lg:"30px", xl: "32px" }}
+          lineHeight={{ base: "23px", sm: "20px", md: "24px", xl: "28px" }}
         >
           {name}
         </Name>
@@ -86,8 +89,8 @@ export default function SocialProofCard({
           base: "13px",
           sm: "14px",
           md: "16px",
-          lg: "15px",
-          xl: "16.5px",
+          lg: "16px",
+          xl: "17px",
         }}
       >
         {reviewText}

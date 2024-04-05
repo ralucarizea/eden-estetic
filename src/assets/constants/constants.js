@@ -139,21 +139,21 @@ export const socialproofReviews = [
   {
     name: "Andreea Teodorescu",
     thumbnail:
-      "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194169/edenestetic/mainpage-socialproof1_tq34cr.jpg",
+      "",
     reviewText:
       "Tincidunt arcu non sodales neque sodales. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Purus sit amet luctus venenatis lectus magna fringilla.",
   },
   {
     name: "Ramona Popescu",
     thumbnail:
-      "https://res.cloudinary.com/dgykbnubn/image/upload/v1690194170/edenestetic/mainpage-socialproof2_dugreh.jpg",
+      "",
     reviewText:
       "Ut tellus elementum sagittis vitae et. Duis ut diam quam nullaporttitor massa id.",
   },
   {
     name: "Alina Cojocariu  ",
     thumbnail:
-      "https://res.cloudinary.com/dgykbnubn/image/upload/v1693408534/stefan-stefancik-QXevDflbl8A-unsplash_eavnct.jpg",
+      "",
     reviewText:
       "Ut tellus elementum sagittis vitae et. Duis ut diam quam nullaporttitor massa id.",
   },

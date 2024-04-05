@@ -32,10 +32,12 @@ function Footer({
       backgroundColor={`${primaryColor}`}
       color={`${secondaryColor}`}
       height={{ base: "", xs: "", sm: "", md: "", lg: "", xl: "150vh" }}
+      pt={{ base: "140px", xs: "180px", sm: "200px", md: "220px", lg: "240px", xl: "280px" }}
+
       width="100%"
       flexDirection={"column"}
       justifyContent={"flex-end"}
-      border="2px solid purple"
+      // border="2px solid purple"
       zIndex="3000"
       position="sticky"
       top={"4000px"}
@@ -46,24 +48,24 @@ function Footer({
         justifyContent={"center"}
         alignItems={"flex-end"}
         position={"relative"}
-        border="1px solid red"
+        // border="1px solid red"
       >
         <Box
           height={{
-            base: "280px",
+            base: "63vw",
             xs: "390px",
             sm: "430px",
             md: "460px",
             lg: "490px",
-            xl: "500px",
+            xl: "510px",
           }}
           width={{
-            base: "250px",
+            base: "60vw",
             xs: "370px",
             sm: "440px",
             md: "490px",
-            lg: "550px",
-            xl: "560px",
+            lg: "540px",
+            xl: "570px",
           }}
           borderRadius="50% 50% 0% 0%"
           backgroundColor={`${secondaryColor}`}
@@ -71,26 +73,26 @@ function Footer({
         >
           <Text
             fontSize={{
-              base: "38px",
+              base: "10vw",
               xs: "58px",
               sm: "64px",
               md: "75px",
-              lg: "88px",
-              xl: "100px",
+              lg: "80px",
+              xl: "90px",
             }}
             fontFamily={"RollgatesLuxury"}
             letterSpacing={{ base: "-1px", xs: "-4px" }}
             position={"absolute"}
             top={{
-              base: "100px",
+              base: "15vw",
               xs: "110px",
               sm: "110px",
               md: "130px",
               lg: "140px",
-              xl: "120px",
+              xl: "135px",
             }}
             left={{
-              base: "-20px",
+              base: "-15%",
               xs: "-40px",
               sm: "-50px",
               md: "-60px",
@@ -105,18 +107,18 @@ function Footer({
           </Text>
           <Text
             fontSize={{
-              base: "38px",
+              base: "10vw",
               xs: "58px",
               sm: "64px",
               md: "75px",
-              lg: "88px",
-              xl: "100px",
+              lg: "80px",
+              xl: "90px",
             }}
             fontFamily={"RollgatesLuxury"}
             letterSpacing={{ base: "-1px", xs: "-4px" }}
             position={"absolute"}
             top={{
-              base: "140px",
+              base: "25vw",
               xs: "165px",
               sm: "170px",
               md: "200px",
@@ -124,7 +126,7 @@ function Footer({
               xl: "220px",
             }}
             right={{
-              base: "-15px",
+              base: "-15%",
               xs: "-40px",
               sm: "-50px",
               md: "-60px",
@@ -184,9 +186,9 @@ function Footer({
       </Flex>
 
       <Divider
-        width="90%"
+        width={{base:"90%", lg: "95%"}}
         alignSelf={"center"}
-        mb={{ base: "16px", xs: "36px", sm: "48px", xl: "36px" }}
+        mb={{ base: "44px", sm: "50px", xl: "36px" }}
         color={`${primaryColor}`}
       />
 
@@ -201,7 +203,7 @@ function Footer({
       >
         <Box position={"relative"}>
           <Box
-            ml={{ base: "110px", sm: "60px", md: "60px", lg: "10px" }}
+            ml={{ base: "95px", sm: "60px", md: "60px", lg: "10px" }}
             width={{ base: "70%", sm: "100%" }}
             height="90%"
           >
@@ -210,16 +212,16 @@ function Footer({
               alt=""
               width="100%"
               height="100%"
-              viewBox="0 0 250 44"
+              viewBox="0 0 255 48"
               fill={secondaryColor}
             />
           </Box>
           <Text
-            fontSize={{ base: "19px", md: "21px" }}
+            fontSize={{ base: "18px", md: "21px" }}
             fontFamily={"TheReason"}
             position={"absolute"}
             right={{ base: "48px", sm: "10px", lg: "0px" }}
-            bottom={{ base: "-10px", sm: "-5px", md: "-12px" }}
+            bottom={{ base: "-15px", sm: "-5px", md: "-12px" }}
           >
             by Mariana Vladescu
           </Text>{" "}
@@ -233,8 +235,8 @@ function Footer({
             lg: "16px",
             xl: "17px",
           }}
-          mt={{ base: "20px", xs: "48px", sm: "60px", md: "44px" }}
-          ml={{ base: "0", lg: "16px" }}
+          mt={{ base: "44px", xs: "48px", sm: "50px", md: "28px" }}
+          ml={{ base: "0", lg: "36px" }}
           gap={{ base: 4 }}
           fontWeight={"300"}
           flexDirection={{ base: "column", xs: "row" }}
@@ -247,12 +249,13 @@ function Footer({
           <Flex
             flexDirection="column"
             alignItems={{ base: "center", xs: "flex-end" }}
+            // my="80px"
           >
             <Text
               fontFamily="RollgatesLuxury"
               fontSize={{ base: "22px", md: "25px", lg: "28px" }}
               pt="8px"
-              pb="4px"
+              pb="12px"
             >
               Contact
             </Text>
@@ -347,12 +350,12 @@ function Footer({
         mt={{
           base: "36px",
           xs: "48px",
-          sm: "60px",
+          sm: "48px",
           md: "36px",
           lg: "48px",
           xl: "50px",
         }}
-        width={{ base: "60%", sm: "100%", md: "100%" }}
+        width={{ base: "70%", sm: "100%", md: "100%" }}
         gap={0}
         flexDirection={{ base: "column", sm: "row" }}
         height="fit-content"
@@ -363,11 +366,11 @@ function Footer({
         letterSpacing={"1.5px"}
         fontWeight={"300"}
         userSelect={"none"}
-        fontSize={"8.5px"}
+        fontSize={"8px"}
         fontFamily={"Montserrat"}
         alignSelf={"center"}
       >
-        <Text> DESIGN & DEVELOPMENT BY RALUCA RIZEA.</Text>
+        <Text textAlign={"center"}> DESIGN & DEVELOPMENT BY RALUCA RIZEA.</Text>
         <Text fontWeight={"400"} ml="8px">
           ALL RIGHTS RESERVED.
         </Text>

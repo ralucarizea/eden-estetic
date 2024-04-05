@@ -9,14 +9,14 @@ import Marquee from "react-fast-marquee";
 export default function PartnerBrands() {
   return (
     <Flex
-      height="85vh"
+      height={{base: "40vh", sm: "65vh"}}
       flexDirection={"column"}
       alignItems={"center"}
       justifyContent={"center"}
       backgroundColor={beige}
     >
       <Box
-        fontSize={"12px"}
+        fontSize={{base: "10px", sm:"12px"}}
         fontFamily={"Montserrat"}
         fontWeight={"400"}
         letterSpacing={"1px"}
