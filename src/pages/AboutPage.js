@@ -4,20 +4,19 @@ import {
   CaptionHeading,
   CaptionText,
 } from "../assets/constants/styledcomponents";
-import { useEffect } from "react";
 import { beige, green } from "../assets/constants/constants";
 
 function AboutPage() {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // }, []);
   return (
     <>
       <Flex
-        height="110vh"
+        height={{ base: "80vh", sm: "70vh", md: "90vh", lg: "110vh" }}
         width={"100%"}
         flexDirection={"row"}
         justifyContent={"space-between"}
@@ -54,7 +53,9 @@ function AboutPage() {
               {" "}
               Invata sa{" "}
             </Text>
-            <Text mr={{ base: "", xs: "", sm: "", md: "", lg: "-60%", xl: "0" }}>
+            <Text
+              mr={{ base: "", xs: "", sm: "", md: "", lg: "-60%", xl: "0" }}
+            >
               {" "}
               te iubesti
             </Text>
@@ -82,29 +83,27 @@ function AboutPage() {
         </Box>
       </Flex>
       <Flex
-        height="50vh"
+        height="fit-content"
         color={beige}
         backgroundColor={green}
         flexDirection={"column"}
         justifyContent={"space-around"}
         alignItems="center"
         px="48px"
-        py="80px"
+        py={{base: "40px", xs: "80px"}}
       >
         <Text
-          py="40px"
-          fontSize={"13px"}
+          py={{base: "24px", xs: "36px", md:"40px"}}
+          fontSize={{ base: "11px", md: "12px", xl: "13px" }}
           fontFamily={"Montserrat"}
           fontWeight={"200"}
           letterSpacing={"1px"}
         >
-          {" "}
-          MISIUNEA NOASTRĂ{" "}
+          MISIUNEA NOASTRĂ
         </Text>
         <Text
-          width="45%"
-          pb="40px"
-          fontSize={"18px"}
+          width={{ base: "85%", xs: "75%", sm: "70%", md: "60%", lg: "45%" }}
+          fontSize={{ base: "13px", sm: "15px", md: "16px", lg: "17px", xl: "18px" }}
           fontFamily={"Montserrat"}
           fontWeight={"400"}
           textAlign={"center"}
@@ -115,48 +114,67 @@ function AboutPage() {
           convenient tool for mock-ups. It helps to outline the visual elements
           of a document or presentation, eg typography, font, or layout
         </Text>
-        {/* <Box width="30%" height="100%" >
-          <Link to="/">
+      </Flex>
+      <Flex
+        bg={beige}
+        flexDirection={{ base: "column", sm: "row" }}
+        justifyContent={"center"}
+        alignItems={"center"}
+        h="100vh"
+        minW="100%"
+        py={{ base: "15%", sm: "5%" }}
+      >
+        <Flex
+          bg="red"
+          h={{ base: "105%", sm: "68%", md: "85%", xl: "95%" }}
+          maxH={{ base: "390px", sm: "500px", md: "600px", xl: "620px" }}
+          w={{ base: "80%", sm: "48%", md: "45%", xl: "35%" }}
+          maxWidth={{ base: "280px", sm: "350px", lg: "450px", xl: "500px" }}
+          mr={{ base: "0%", sm: "5%" }}
+        ></Flex>
+        <Flex
+          bg="purple"
+          h={{ base: "80%", sm: "60%", md: "75%", xl: "80%" }}
+          w={{ base: "50%", xs:"40%",  sm: "40%", md: "35%", lg: "30%", xl: "23%" }}
+          minW={{ base: "230px", md: "300px", lg: "300px", xl: "" }}
+        ></Flex>
+      </Flex>
+      {/* <Box width="30%" height="100%" >
+          <Link to="/"> 
             <Logo alt="" width="100%" height="100%" viewBox="0 0 580 25" />
           </Link>
         </Box> */}
-        <Box height="8vh" />
-      </Flex>
-      <Flex
-        height="120vh"
+      {/* <Flex
+       
         backgroundColor={beige}
-        justifyContent={"space-evenly"}
-        alignItems="center"
-        py="120px"
-        px="64px"
-        color={green}
+  
+        flexDirection={{base: "column", sm: "row"}}
       >
         <Box
           height={"100%"}
-          width={"38%"}
+          width={"100%"}
           border={`1px solid ${green}`}
-          backgroundImage={`url("https://res.cloudinary.com/dgykbnubn/image/upload/v1690194165/edenestetic/aboutpage-portrait_j6rvqt.png")`}
+          // backgroundImage={`url("https://res.cloudinary.com/dgykbnubn/image/upload/v1690194165/edenestetic/aboutpage-portrait_j6rvqt.png")`}
           backgroundSize={"cover"}
           backgroundRepeat={"no-repeat"}
           backgroundPosition={"top"}
         />
         <Flex
-          height={"80%"}
-          width={"25%"}
-          flexDirection="column"
+          height={{base: "100%", md:"80%"}}
+          width={{ base: "100%", sm: "35%", md: "30%", lg: "25%" }}
+          flexDirection={"column"}
           justifyContent={"space-evenly"}
+          border="1px solid red"
         >
-          <Box>
+          <Box border="1px solid green">
             <Text
-              //   pb="8px"
-              fontSize={"24px"}
-              fontFamily={"Montserrat"}
+              fontSize={{ base: "18px", sm: "20px", md: "22px", lg: "24px" }}
               fontWeight={"700"}
             >
               Mariana Vlădescu
             </Text>
             <Text
-              fontSize={"15px"}
+              fontSize={{ base: "13px", sm: "14px", md: "15.5px", lg: "16px" }}
               fontStyle={"italic"}
               fontFamily={"Montserrat"}
               fontWeight={"400"}
@@ -164,13 +182,14 @@ function AboutPage() {
               Fondatoarea edenEstetic
             </Text>
           </Box>
-
           <Box
-            width="85%"
-            py="28px"
-            fontSize={"14px"}
+            width={{base: "100%", sm: "85%"}}
+            py={{base: "10px", sm: "28px"}}
+            fontSize={{ base: "13px", sm: "16px", md: "17px", lg: "18px" }}
             fontFamily={"Montserrat"}
             fontWeight={"500"}
+            border="1px solid purple"
+
           >
             <Text pb="16px">
               It is widely believed that the history of Lorem Ipsum originates
@@ -190,7 +209,7 @@ function AboutPage() {
             </Text>
           </Box>
         </Flex>
-      </Flex>
+      </Flex> */}
       <Box pt="64px" backgroundColor={beige} color={green}>
         <Flex
           flexDirection={"row"}
