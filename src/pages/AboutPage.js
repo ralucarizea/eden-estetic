@@ -127,7 +127,7 @@ function AboutPage() {
         flexDirection={{ base: "column", sm: "row" }}
         justifyContent={{ base: "center", sm: "left" }}
         alignItems={"center"}
-        h="100vh"
+        h={{base: "80vh", sm:"100vh"}}
         position="relative"
         zIndex={0}
         px={{base: "10%", sm: "0"}}
@@ -136,19 +136,21 @@ function AboutPage() {
         // border="2px solid yellow"
       >
         <Box
-          bg="red"
+          bg={green}
           w={{ base: "100%", sm:"37%", md: "34%", xl: "28%" }}
           h={{ base: "25%", sm:"39%", md: "52%", xl: "64%" }}
           ml={{ sm:"10%"}}
-          mb={{base: "24px", sm:"0"}}
+          mb={{base: "10px", sm:"0"}}
           // mx={{base: "10%", sm: "0"}}
         ></Box>
         <Flex
-          bg="purple"
+          bg={beige}
+          border="0.5px solid"
+          borderColor={green}
           position={{base: "relative", sm: "absolute"}}
           zIndex={-1}
           w={{base: "100%", sm:"90%"}}
-          h={{ base: "30%", sm: "27%", md: "32%", xl: "44%" }}
+          h={{ base: "38%", sm: "27%", md: "32%", xl: "44%" }}
           ml={{base: "0", sm:"5%"}}
         ></Flex>
       </Flex>
