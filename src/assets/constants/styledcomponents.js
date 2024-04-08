@@ -12,22 +12,54 @@ export const AccordionBox = styled.div`
 `;
 
 export const CaptionBox = styled.div`
-  padding: 24px 44px;
-  width: 28%;
+  padding: 24px;
+  width: 33%;
   height: inherit;
   border-right: 1px solid ${green};
+  border-left: 1px solid ${green};
   &:last-child {
-    border-right: 0px;
-    color: red;
+    border: 0px;
+    margin-right: 40px;
+  }
+  &:first-child {
+    border: 0px;
+    margin-left: 40px;
+  }
+
+  @media only screen and (max-width: 490px) {
+    width: 100%;
+    padding: 36px 48px 24px;
+    border-top: 1px solid ${green};
+
+    &:last-child {
+      border: 0px;
+      margin-right: 0px;
+      padding: 24px 48px 36px;
+      border-top: 1px solid ${green};
+
+    }
+    &:first-child {
+      border: 0px;
+      margin-left: 0px;
+      
+    }
   }
 `;
 export const CaptionHeading = styled.h1`
   font-size: 18px;
+  line-height: 18px;
   font-weight: 600;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
+  text-align: center;
+  @media only screen and (max-width: 490px) {
+    font-size: 14px;
+  }
 `;
 export const CaptionText = styled.p`
   font-size: 14px;
+  @media only screen and (max-width: 490px) {
+    font-size: 13px;
+  }
 `;
 export const CategoryBox = styled.button`
   background-color: ${green};

@@ -16,7 +16,7 @@ function AboutPage() {
   return (
     <>
       <Flex
-        height={{ base: "80vh", sm: "70vh", md: "90vh", lg: "110vh" }}
+        height={{ base: "680px", sm: "70vh", md: "90vh", lg: "110vh" }}
         width={"100%"}
         flexDirection={"row"}
         justifyContent={"space-between"}
@@ -89,11 +89,12 @@ function AboutPage() {
         flexDirection={"column"}
         justifyContent={"space-around"}
         alignItems="center"
-        px="48px"
-        py={{base: "40px", xs: "80px"}}
+        px={{ base: "28px", xs: "48px" }}
+        py={{ base: "28px", xs: "80px" }}
+        pb={{ base: "60px", xs: "80px" }}
       >
         <Text
-          py={{base: "24px", xs: "36px", md:"40px"}}
+          py={{ base: "24px", xs: "36px", md: "40px" }}
           fontSize={{ base: "11px", md: "12px", xl: "13px" }}
           fontFamily={"Montserrat"}
           fontWeight={"200"}
@@ -103,7 +104,13 @@ function AboutPage() {
         </Text>
         <Text
           width={{ base: "85%", xs: "75%", sm: "70%", md: "60%", lg: "45%" }}
-          fontSize={{ base: "13px", sm: "15px", md: "16px", lg: "17px", xl: "18px" }}
+          fontSize={{
+            base: "13px",
+            sm: "15px",
+            md: "16px",
+            lg: "17px",
+            xl: "18px",
+          }}
           fontFamily={"Montserrat"}
           fontWeight={"400"}
           textAlign={"center"}
@@ -118,25 +125,31 @@ function AboutPage() {
       <Flex
         bg={beige}
         flexDirection={{ base: "column", sm: "row" }}
-        justifyContent={"center"}
+        justifyContent={{ base: "center", sm: "left" }}
         alignItems={"center"}
         h="100vh"
-        minW="100%"
-        py={{ base: "15%", sm: "5%" }}
+        position="relative"
+        zIndex={0}
+        px={{base: "10%", sm: "0"}}
+        // minW="100%"
+        // py={{ base: "25%", xs: "15%", sm: "5%" }}
+        // border="2px solid yellow"
       >
-        <Flex
+        <Box
           bg="red"
-          h={{ base: "105%", sm: "68%", md: "85%", xl: "95%" }}
-          maxH={{ base: "390px", sm: "500px", md: "600px", xl: "620px" }}
-          w={{ base: "80%", sm: "48%", md: "45%", xl: "35%" }}
-          maxWidth={{ base: "280px", sm: "350px", lg: "450px", xl: "500px" }}
-          mr={{ base: "0%", sm: "5%" }}
-        ></Flex>
+          w={{ base: "100%", sm:"37%", md: "34%", xl: "28%" }}
+          h={{ base: "25%", sm:"39%", md: "52%", xl: "64%" }}
+          ml={{ sm:"10%"}}
+          mb={{base: "24px", sm:"0"}}
+          // mx={{base: "10%", sm: "0"}}
+        ></Box>
         <Flex
           bg="purple"
-          h={{ base: "80%", sm: "60%", md: "75%", xl: "80%" }}
-          w={{ base: "50%", xs:"40%",  sm: "40%", md: "35%", lg: "30%", xl: "23%" }}
-          minW={{ base: "230px", md: "300px", lg: "300px", xl: "" }}
+          position={{base: "relative", sm: "absolute"}}
+          zIndex={-1}
+          w={{base: "100%", sm:"90%"}}
+          h={{ base: "30%", sm: "27%", md: "32%", xl: "44%" }}
+          ml={{base: "0", sm:"5%"}}
         ></Flex>
       </Flex>
       {/* <Box width="30%" height="100%" >
@@ -210,15 +223,16 @@ function AboutPage() {
           </Box>
         </Flex>
       </Flex> */}
-      <Box pt="64px" backgroundColor={beige} color={green}>
+      <Box pt={{base: "0px", lg: "64px"}} backgroundColor={beige} color={green}>
         <Flex
-          flexDirection={"row"}
+          flexDirection={{base: "column", sm: "row"}}
           justifyContent={"center"}
-          alignItems={"center"}
-          height="33vh"
+          alignItems={"flex-start"}
+          height="fit-content"
           borderTop={`1px solid ${green}`}
           borderBottom={`1px solid ${green}`}
           fontFamily={"Montserrat"}
+          w="100%"
         >
           <CaptionBox>
             <CaptionHeading>Specializări</CaptionHeading>
@@ -226,7 +240,8 @@ function AboutPage() {
               Nor again is there anyone who loves or pursues or desires to
               obtain pain of itself, because it is pain, but occasionally
               circumstances occur in which toil and pain can procure him some
-              great pleasure
+              great pleasure word-processing templates containing a version of the
+              faux latin language.
             </CaptionText>
           </CaptionBox>
           <CaptionBox>
